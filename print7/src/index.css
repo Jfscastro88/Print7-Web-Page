@@ -2,3 +2,4 @@
 @tailwind components;
 @tailwind utilities;
 a:focus-visible { outline: 2px solid #22d3ee; outline-offset: 3px; }
+html, body, #root { overflow-x: hidden; }

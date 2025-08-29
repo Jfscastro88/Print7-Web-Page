@@ -200,7 +200,7 @@ export default function HomePage() {
         </Container>
       </Box>
       {/* CAROUSEL HIGHLIGHT (component) */}
-      <section className="py-6 bg-white">
+      <section className="py-6 bg-white overflow-x-hidden">
         <ZoomOnScroll>
           <CarouselHighlight
             items={carouselItems}

@@ -32,7 +32,7 @@ export default function CarouselHighlight({
       onMouseLeave={autoplay.current.reset}
       onSlideChange={setActive}
       className={className}
-      classNames={{ indicators: indicatorsClass, control: 'rounded-full shadow-lg' }}
+      classNames={{ viewport: 'overflow-hidden', indicators: indicatorsClass, control: 'rounded-full shadow-lg' }}
     >
       {items.map((it, idx) => {
         const content = (
