@@ -32,8 +32,11 @@ function Footer() {
         <Text size="md">934 418 862 – 910 726 266</Text>
         <Text size="xs">Chamada para rede móvel nacional</Text>
         <Text size="md">
-        <Anchor href="mailto:geral@print7.pt" className="hover:underline">
-        geral@print7.pt
+        <Anchor
+            href="mailto:geral@print7.pt"
+            className="text-white hover:underline"
+            >
+            geral@print7.pt
         </Anchor>
         </Text>
         </div>
@@ -63,7 +66,9 @@ function Footer() {
         <Divider className="my-6 border-gray-700" />
         
         <Container size="lg" className="text-center text-white pb-8">
-        <Text size="xs">© {currentYear} Print7. All rights reserved.</Text>
+        <Text size="xs" className="text-gray-250 opacity-50">
+            © {currentYear} Print7. All rights reserved. · Made by Jfscastro
+        </Text>
         </Container>
         </BackgroundImage>
     );

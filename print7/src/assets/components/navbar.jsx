@@ -103,7 +103,7 @@ function Navbar() {
             ))}
           </ul>
         </nav>
-        {/* CTA */}
+        {/* CTA
         <div className="px-6 pb-8">
           <Link
             to="/contact"
@@ -111,7 +111,7 @@ function Navbar() {
             className="block w-full rounded-2xl bg-white text-[#00b5ff] text-center py-3 font-bold shadow-md active:scale-[.98]">
             Get a Quote
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>,
     document.body

@@ -1,7 +1,7 @@
 import { Container, Title, Text, SimpleGrid, Card, Image, Anchor, Group, Divider, AspectRatio, rem
 } from "@mantine/core";
 
-import heroImage from "../../assets/images/catalogs/catalogs.jpg";
+import heroImage from "../../assets/images/catalogs/catalogsv2.jpg";
 
 import textil1 from "../../assets/images/catalogs/textil/mukua.jpg";
 import textil2 from "../../assets/images/catalogs/textil/payper.jpg";
@@ -18,21 +18,21 @@ import brinde3 from "../../assets/images/catalogs/brindes/stamina.jpg";
 import brinde4 from "../../assets/images/catalogs/brindes/impacto.png";
 
 const textilCatalogs = [
-  { img: textil3, brand: "TH Clothes",   link: "https://viewer.joomag.com/thclothes-catalogue-2025-en/0575985001736156443?short&" },
-  { img: textil2, brand: "Payper",       link: "https://www.payperwear.com/flex/AppData/Redational/ppw/cataloghi/ClothingCatalogue/PayperCatalogue_ED33_ES_PT.pdf" },
+  { img: textil3, brand: "TH Clothes",   link: "https://thclothes.com/pt/" },
+  { img: textil2, brand: "Payper",       link: "https://www.payperwear.com/pt/home" },
   { img: textil4, brand: "Velilla",      link: "https://www.velilla-group.com/pt/velilla" },
-  { img: textil5, brand: "Roly",         link: "https://www.roly.eu/icatalog/urlCatRoly?lang=pt" },
-  { img: textil6, brand: "SOL'S",        link: "https://catalogue.sologroup-paris.com/solo-group/sols/e-catalogue-nouveautes-2025-sols/?page=1" },
+  { img: textil5, brand: "Roly",         link: "https://www.roly.eu/" },
+  { img: textil6, brand: "SOL'S",        link: "https://www.sols-europe.com/gb_sols/" },
   { img: textil7, brand: "Valento",      link: "https://www.valento.es/produtos" },
   { img: textil1, brand: "Mukua",        link: "https://www.velilla-group.com/pt/mukua" },
-  { img: textil8, brand: "Workteam",     link: "https://www.workteam.com/descargas.php" },
+  { img: textil8, brand: "Workteam",     link: "https://www.workteam.com/" },
 ];
 
 const brindeCatalogs = [
-  { img: brinde1, brand: "Hidea",    link: "https://www.hideagifts.com/pt/catalogo/?f7%5B0%5D=&f7%5B1%5D=0&f7%5B2%5D=" },
-  { img: brinde2, brand: "Makito",   link: "https://generalcatalogue2025.eu/6aca473ef2107957d9e6fa9a60923698/" },
-  { img: brinde3, brand: "Stamina",  link: "https://power-ideas.es/2025/pdf/stamina-2025-es-baja.pdf" },
-  { img: brinde4, brand: "Impacto",  link: "https://online.fliphtml5.com/hgeid/vqeo/#p=1" },
+  { img: brinde1, brand: "Hidea",    link: "https://www.hideagifts.com/pt/" },
+  { img: brinde2, brand: "Makito",   link: "https://makito.es/pt_PT" },
+  { img: brinde3, brand: "Stamina",  link: "https://stamina-shop.eu/?lang=pt" },
+  { img: brinde4, brand: "Impacto",  link: "https://impactogift.com/pt-pt/" },
 ];
 
 function CatalogsPage() {
