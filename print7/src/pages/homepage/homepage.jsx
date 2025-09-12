@@ -1,7 +1,8 @@
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
-import heroImage from '../../assets/images/Hero.png';
-import { Box, Image, Container, Title, Text, Button, Divider, Space } from '@mantine/core';
+import heroImage from '../../assets/images/LogoTextBlack.png';
+import bgImage from '../../assets/images/background.png';
+import { Box, Container, Title, Text, Button, Divider, Space } from '@mantine/core';
 import { useMemo, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Link } from 'react-router-dom';
@@ -39,40 +40,103 @@ function ZoomOnScroll({ children }) {
 export default function HomePage() {
   const carouselItems = useMemo(
     () => [
-      { 
+      {
   src: imgBrindes,
   alt: 'Branded giveaways with logo on various materials',
   title: 'Branded Gifts',
   subtitle: 'Custom corporate gadgets and gifts.',
   to: '/gifts',
 },
-{ 
+{
   src: imgLaser,
   alt: 'Laser machine that engraves and cuts wood and acrylic',
   title: 'Laser Cutting & Engraving',
   subtitle: 'Cutting and engraving on wood, acrylic, and metal.',
   to: '/laser',
 },
-{ 
+{
+  src: imgLogos,
+  alt: 'Examples of logos and visual identities on mockups',
+  title: 'Logo Design',
+  subtitle: 'Naming, logo design, and brand guidelines.',
+  to: '/logos',
+},
+{
+  src: imgDecoracao,
+  alt: 'Interior decoration with graphics on walls and glass',
+  title: 'Interior Decoration',
+  subtitle: 'Glass, walls, backlit features, and more.',
+  to: '/interior',
+},
+{
+  src: imgEstacionarios,
+  alt: 'Set with letterhead, envelopes, and business cards',
+  title: 'Stationery',
+  subtitle: 'Letterhead, envelopes, business cards, and coordinated materials.',
+  to: '/stationery',
+},
+{
   src: imgViaturas,
   alt: 'Vehicle with wrapping and branded decals',
   title: 'Vehicle Branding',
   subtitle: 'Partial/full wraps, lettering, and magnets.',
   to: '/cars',
 },
-{ 
+{
+  src: imgEpi,
+  alt: 'Custom uniforms and PPE with print and embroidery',
+  title: 'Workwear & PPE',
+  subtitle: 'Logo-branded workwear and PPE.',
+  to: '/uniforms',
+},
+{
+  src: imgLonas,
+  alt: 'Rigid panels and printed outdoor banners',
+  title: 'Signs & Banners',
+  subtitle: 'Rigid panels, banners, and large-format prints.',
+  to: '/plates',
+},
+{
+  src: imgReclames,
+  alt: 'Lighted shop sign at sunset',
+  title: 'Illuminated Signs',
+  subtitle: 'Illuminated signs and totems for your business.',
+  to: '/ad',
+},
+{
+  src: imgExpositores,
+  alt: 'Stands and roll-ups for events and retail',
+  title: 'Stands & Displays',
+  subtitle: 'Roll-ups, counters, display walls, and stands.',
+  to: '/stand',
+},
+{
   src: imgNeon,
   alt: 'Artistic lettering made in LED neon',
   title: 'LED Neon',
   subtitle: 'Custom LED neon signs and décor.',
   to: '/neon',
 },
-{ 
-  src: imgDecoracao,
-  alt: 'Interior decoration with graphics on walls and glass',
-  title: 'Interior Decoration',
-  subtitle: 'Glass, walls, backlit features, and more.',
-  to: '/interior',
+{
+  src: imgRelevo,
+  alt: '3D raised letters mounted on a wall',
+  title: 'Raised Lettering & 3D',
+  subtitle: '3D raised logos and letters for indoor/outdoor use.',
+  to: '/relief',
+},
+{
+  src: imgMontras,
+  alt: 'Shop window decorated with custom decals and graphics',
+  title: 'Window Decoration',
+  subtitle: 'Window decals, perforated films, and window graphics.',
+  to: '/window',
+},
+{
+  src: imgOutros,
+  alt: 'Example of graphic works and various prints',
+  title: 'Other Works',
+  subtitle: 'Special projects and customizations on request.',
+  to: '/others',
 },
 
     ],
@@ -186,41 +250,60 @@ export default function HomePage() {
 
   return (
     <>
-      {/* HERO */}
-      <Box sx={{ position: 'relative', height: '48vh', overflow: 'hidden' }}>
-        <Image src={heroImage} alt="Hero" fit="cover" classNames={{ image: 'w-full h-full scale-105' }} />
-        <div className="absolute inset-0 bg-black/5" />
-        <Container size="lg" className="h-full flex flex-col justify-center items-center text-center relative z-10">
-          <Title order={1} className="mb-3 tracking-tight drop-shadow-lg py-5">
-            Print7 — Design & Publicidade
+      <Box
+        className="relative h-[340px] sm:h-[440px] md:h-[520px] lg:h-[680px] xl:h-[760px] bg-cover bg-center"
+        style={{ backgroundImage: `url(${bgImage})` }}
+      >
+        <div className="absolute inset-0 bg-black/25 sm:bg-black/20 md:bg-black/15" />
+        <Container
+          size="lg"
+          className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6">
+          <img
+            src={heroImage}
+            alt="Hero Logo"
+            className="w-full h-auto mb-4 sm:mb-6"
+            style={{ width: "clamp(256px, 40vw, 720px)" }}/>
+
+          <Title
+            order={1}
+            className="mb-2 sm:mb-3 text-white tracking-tight drop-shadow-lg
+                        text-2xl sm:text-2xl md:text-5xl lg:text-6xl leading-tight">
+            Publicidade & Design
           </Title>
-          <Text size="lg" className="max-w-2xl mb-6">
+          <Text
+            className="max-w-2xl text-white/90 drop-shadow-sm
+                        text-sm sm:text-base md:text-lg lg:text-xl">
             We shape your brand: from logo creation to printing on textiles, large formats, and gadgets.
           </Text>
         </Container>
       </Box>
-      {/* CAROUSEL HIGHLIGHT (component) */}
+
+      {/* INTRO */}
+      <section className="py-14 bg-white">
+        <Container size="lg" className="text-center">
+          <Title order={2} className="mb-3">Projects at a Glance</Title>
+          <Text c="dimmed" className="max-w-2xl mx-auto">
+          Explore the carousel each one highlights a real project with more info inside.
+          </Text>
+          <Space h="xl" />
+          <Divider label="Portfolio highlight" labelPosition="center" />
+        </Container>
+      </section>
+
+      {/* CAROUSEL */}
       <section className="py-6 bg-white overflow-x-hidden">
         <ZoomOnScroll>
           <CarouselHighlight
             items={carouselItems}
-            indicatorsClass="bottom-16 md:bottom-20"  // dotts position
-            className="max-w-6xl mx-auto"
-            height={420}          
-            slideSize="60%"       
-          />
+            height={420}
+            slideSize="65%"
+            title=""
+            subtitle=""
+            headerAlign="center"
+            indicatorsClass="bottom-2 [&>button]:bg-white-400 [&>button]:opacity-0"/>
         </ZoomOnScroll>
       </section>
-            {/* YOUTUBE VIDEO */}
-      <Youtube
-        url="https://www.youtube.com/watch?v=_6WpnM6icT0&t=42s"
-        title="Why choose Print7?"
-        heightVh={30}      // (default 30)
-        autoplay           // true default
-        muted              // true default (needed for autoplay)
-        loop               // true default
-        // controls        // false default
-      />
+
       {/* INTRO */}
       <section className="py-14 bg-white">
         <Container size="lg" className="text-center">
@@ -233,7 +316,7 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* GRID CON IMMAGINI PIÙ PICCOLE (ridotte) */}
+      {/* GRID  */}
       <section className="py-20 bg-gray-50">
         <Container size="lg">
           <Title order={3} className="mb-6 text-center">More previews</Title>
@@ -262,7 +345,17 @@ export default function HomePage() {
         </Container>
       </section>
 
-      {/* CTA */}
+      {/* YOUTUBE VIDEO */}
+      <Youtube
+        url="https://www.youtube.com/watch?v=_6WpnM6icT0&t=42s"
+        title="Why choose Print7?"
+        heightVh={30}      // (default 30)
+        autoplay           // true default
+        muted              // true default (needed for autoplay)
+        loop               // true default
+        // controls        // false default
+      />
+
       <section className="py-16 bg-white">
         <Container size="lg" className="text-center">
           <Title order={3} className="mb-3">Do you need something similar?</Title>
