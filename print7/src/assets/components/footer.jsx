@@ -57,7 +57,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Instagram Print7"
-                    className="inline-flex items-center rounded-full p-2 hover:scale-95 transition">
+                    className="inline-flex items-center rounded-full p-2 transition-transform duration-300 hover:scale-125">
                     <InstagramIcon size={28} color="white" />
                 </Anchor>
                 <Anchor
@@ -65,7 +65,7 @@ function Footer() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook Print7"
-                    className="inline-flex items-center rounded-full p-2 hover:scale-95 transition">
+                    className="inline-flex items-center rounded-full p-2 transition-transform duration-300 hover:scale-125">
                     <FacebookIcon size={28} color="white" />
                 </Anchor>
                 </Group>

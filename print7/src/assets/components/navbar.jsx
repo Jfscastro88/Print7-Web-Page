@@ -108,7 +108,7 @@ function Navbar() {
           )}
       </Box>
 
-      <div aria-hidden className="h-16 md:h-20" />
+      <div aria-hidden className="h-16 md:h-19" />
     </>
   );
 }
