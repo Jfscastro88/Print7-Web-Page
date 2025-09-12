@@ -1,5 +1,3 @@
-import imgLaser   from '../images/carousel/cortelaser/cgl5.jpg';
-
 const logos = import.meta.glob('../images/carousel/design/*', { eager: true });
 const logoSlides = Object.values(logos).map((module, i) => ({
   src: module.default,

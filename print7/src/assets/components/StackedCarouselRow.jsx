@@ -3,12 +3,6 @@ import { Container, Title, Text } from '@mantine/core';
 import { Link } from 'react-router-dom';
 import CarouselHighlight from './carousel.jsx';
 
-/**
- * StackedCarouselRow
- * - Layout verticale: titolo + sottotitolo SOPRA al carousel
- * - Sempre centrato
- * - spacing: padding verticale (es: "py-20")
- */
 export default function StackedCarouselRow({
   title,
   subtitle,
@@ -29,7 +23,6 @@ export default function StackedCarouselRow({
   return (
     <section className={`${spacing} bg-white ${className}`}>
       <Container size="lg">
-        {/* Header: centrato, cliccabile */}
         <div className="mb-6 text-center">
           <Link to={to} aria-label={title} className="group block focus:outline-none">
             <Title order={2} className="mb-2 underline-offset-4 group-hover:underline">
@@ -39,7 +32,6 @@ export default function StackedCarouselRow({
           </Link>
         </div>
 
-        {/* Carousel con bordi arrotondati */}
         <div className="w-full overflow-hidden rounded-2xl ring-1 ring-black/5">
           <CarouselHighlight
             items={items}
