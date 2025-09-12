@@ -84,11 +84,12 @@ export default function HomePage() {
       </Container>
       </section>
       {/* CAROUSEL */}
-      <section className="py-6 bg-white overflow-x-hidden">
+      <section className="py-12 bg-white overflow-x-hidden">
       <ZoomOnScroll>
       <CarouselHighlight
       items={heroCarouselItems}
       height={420}
+      mobileHeight={280}
       slideSize="65%"
       title=""
       subtitle=""
@@ -97,7 +98,7 @@ export default function HomePage() {
       </ZoomOnScroll>
       </section>
 
-      <ThreeUpCarouselGrid items={homeThreeUpSections} spacing="py-20" height={320} />
+      <ThreeUpCarouselGrid items={homeThreeUpSections} spacing="py-8" height={320} />
 
       {homeCarouselRows.map((row, i) =>
         row.type === 'stacked' ? (
@@ -107,8 +108,8 @@ export default function HomePage() {
         )
       )}
 
-      <ThreeUpCarouselGrid items={homeLastThreeUpSection} spacing="py-20" height={320} />
-      
+      <ThreeUpCarouselGrid items={homeLastThreeUpSection} spacing="py-8" height={320} />
+      <Space h="xl" className="w-full bg-white" />
       <Divider />
       
       {/* YOUTUBE VIDEO */}

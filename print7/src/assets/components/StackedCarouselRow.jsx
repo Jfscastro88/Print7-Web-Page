@@ -9,7 +9,7 @@ export default function StackedCarouselRow({
   to = '#',
   slides = [],
   height = 380,
-  spacing = 'py-20',
+  spacing = 'py-16',
   className = '',
 }) {
   const items = slides.map((s) => ({
@@ -36,6 +36,7 @@ export default function StackedCarouselRow({
           <CarouselHighlight
             items={items}
             height={height}
+            mobileHeight={260}
             slideSize="100%"
             title=""
             subtitle=""

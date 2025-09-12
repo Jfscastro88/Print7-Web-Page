@@ -24,7 +24,7 @@ const homeCarouselRows = [
     to: '/relief',
     slides: reliefSlides,
     height: 400,
-    spacing: 'py-24',
+    spacing: 'py-8',
   },
   {
     type: 'split',
@@ -34,7 +34,7 @@ const homeCarouselRows = [
     to: '/cars',
     slides: carSlides,
     height: 400,
-    spacing: 'py-20',
+    spacing: 'py-8',
   },
   {
     type: 'split',
@@ -44,7 +44,7 @@ const homeCarouselRows = [
     to: '/stand',
     slides: standSlides,
     height: 400,
-    spacing: 'py-20',
+    spacing: 'py-8',
   },
 ];
 

@@ -10,7 +10,7 @@ export default function SplitCarouselRow({
   slides = [],
   side = 'right',
   height = 380,
-  spacing = 'py-20',
+  spacing = 'py-16',
   className = '',
 }) {
 
@@ -77,6 +77,7 @@ export default function SplitCarouselRow({
             <CarouselHighlight
               items={items}
               height={height}
+              mobileHeight={260}
               slideSize="100%"
               title=""
               subtitle=""
