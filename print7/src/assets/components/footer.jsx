@@ -26,8 +26,8 @@ function Footer() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white">
             <div className="space-y-2 text-center md:text-left">
                 <Text size="xl" className="font-semibold">Print7 — Publicidade & Design</Text>
-                <Text size="md">Rua Nossa Senhora do Carmo, 22A — 2900-146 Setúbal</Text>
-
+                <Text size="md">Rua Nossa Senhora do Carmo, 22A</Text>
+                <Text size="md">2900 - 146 Setúbal</Text>
                 <div className="flex flex-col items-center sm:flex-row sm:justify-start gap-2 sm:gap-6 mt-3">
                 <Anchor
                     href="tel:+351934418862"
