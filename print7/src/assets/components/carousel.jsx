@@ -13,7 +13,8 @@ export default function CarouselHighlight({
   loop = true,
   autoplayDelay = 2500,
   align = 'center',
-  indicatorsClass = 'bottom-0 [&>button]:bg-gray-400 [&>button]:opacity-100',
+  showIndicators = true,
+  indicatorsClass = '',
   className = '',
   title,
   subtitle,
@@ -49,7 +50,7 @@ export default function CarouselHighlight({
       )}
 
       <Carousel
-        withIndicators
+        withIndicators={showIndicators}
         height={height}
         slideSize={slideSize}
         slideGap="md"

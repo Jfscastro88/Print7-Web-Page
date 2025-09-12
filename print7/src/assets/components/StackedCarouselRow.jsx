@@ -40,7 +40,8 @@ export default function StackedCarouselRow({
             title=""
             subtitle=""
             headerAlign="center"
-            indicatorsClass="bottom-2 [&>button]:opacity-30 [&>button[aria-current='true']]:opacity-100"
+            indicatorsClass="hidden"
+            showIndicators={false} 
           />
         </div>
       </Container>

@@ -11,6 +11,9 @@ import SplitCarouselRow from '../../assets/components/SplitCarouselRow.jsx';
 import StackedCarouselRow from '../../assets/components/StackedCarouselRow.jsx';
 import heroCarouselItems from '../../assets/data/homeCarouselItems.js';
 import homeCarouselRows from '../../assets/data/homeCarouselRows.js';
+import ThreeUpCarouselGrid from '../../assets/components/ThreeUpCarouselGrid.jsx';
+import homeThreeUpSections from '../../assets/data/homeThreeUpSections.js';
+import homeLastThreeUpSection from '../../assets/data/homeLastThreeUpSection.js';
 
 
 function ZoomOnScroll({ children }) {
@@ -57,18 +60,29 @@ export default function HomePage() {
     </Container>
     </Box>
     
-    {/* INTRO */}
-    <section className="py-14 bg-white">
-    <Container size="lg" className="text-center">
-    <Title order={2} className="mb-3">Projects at a Glance</Title>
-    {/* <Text c="dimmed" className="max-w-2xl mx-auto">
+      {/* INTRO */}
+      {/*<section className="py-14 bg-white">
+      <Container size="lg" className="text-center">
+      <Title order={2} className="mb-3">Projects at a Glance</Title>
+      <Text c="dimmed" className="max-w-2xl mx-auto">
       Explore the carousel each one highlights a real project with more info inside.
-      </Text> */}
+      </Text>
       <Space h="xl" />
-      {/* <Divider label="Portfolio highlight" labelPosition="center" /> */}
+      <Divider label="Portfolio highlight" labelPosition="center" />
+      </Container>
+      </section>*/}
+
+      {/* INTRO */}
+      <section className="py-14 bg-white">
+      <Divider label="Portfolio highlight" labelPosition="center" />
+      <Space h="xl" />
+      <Container size="lg" className="text-center">
+      <Title order={2} className="mb-3">Some of our works</Title>
+      <Text c="dimmed" className="max-w-2xl mx-auto">
+      Explore the carousel each one highlights a real project with more info inside.
+      </Text>
       </Container>
       </section>
-      
       {/* CAROUSEL */}
       <section className="py-6 bg-white overflow-x-hidden">
       <ZoomOnScroll>
@@ -82,20 +96,9 @@ export default function HomePage() {
       indicatorsClass="bottom-2 [&>button]:bg-white-400 [&>button]:opacity-0"/>
       </ZoomOnScroll>
       </section>
-      
-      {/* INTRO */}
-      <section className="py-14 bg-white">
-      <Divider label="Portfolio highlight" labelPosition="center" />
-      <Space h="xl" />
-      <Container size="lg" className="text-center">
-      <Title order={2} className="mb-3">Some of our works</Title>
-      <Text c="dimmed" className="max-w-2xl mx-auto">
-      Explore the carousel each one highlights a real project with more info inside.
-      </Text>
-      </Container>
-      </section>
-      
-      
+
+      <ThreeUpCarouselGrid items={homeThreeUpSections} spacing="py-20" height={320} />
+
       {homeCarouselRows.map((row, i) =>
         row.type === 'stacked' ? (
           <StackedCarouselRow key={i} {...row} />
@@ -103,6 +106,10 @@ export default function HomePage() {
           <SplitCarouselRow key={i} {...row} />
         )
       )}
+
+      <ThreeUpCarouselGrid items={homeLastThreeUpSection} spacing="py-20" height={320} />
+      
+      <Divider />
       
       {/* YOUTUBE VIDEO */}
       <Youtube
@@ -111,8 +118,7 @@ export default function HomePage() {
         heightVh={30}
         autoplay
         muted
-        loop
-      />
+        loop/>
       
       <section className="py-16 bg-white">
       <Container size="lg" className="text-center">

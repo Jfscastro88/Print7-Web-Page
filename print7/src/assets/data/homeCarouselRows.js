@@ -1,17 +1,17 @@
-const logos = import.meta.glob('../images/carousel/design/*', { eager: true });
-const logoSlides = Object.values(logos).map((module, i) => ({
+const relief = import.meta.glob('../images/carousel/relevo/*', { eager: true });
+const reliefSlides = Object.values(relief).map((module, i) => ({
   src: module.default,
-  alt: `Examples of logos and visual identities designed by Print7 ${i + 1}`,
+  alt: ` ${i + 1}`,
 }));
 
-const brindes = import.meta.glob('../images/carousel/brindes/*', { eager: true });
-const brindesSlides = Object.values(brindes).map((module, i) => ({
+const cars = import.meta.glob('../images/carousel/veiculos/*', { eager: true });
+const carSlides = Object.values(cars).map((module, i) => ({
   src: module.default,
   alt: `Examples of branded gifts and corporate giveaways by Print7 ${i + 1}`,
 }));
 
-const laser = import.meta.glob('../images/carousel/cortelaser/*', { eager: true });
-const laserSlides = Object.values(laser).map((module, i) => ({
+const stand = import.meta.glob('../images/carousel/stand/*', { eager: true });
+const standSlides = Object.values(stand).map((module, i) => ({
   src: module.default,
   alt: `Examples of laser cutting and engraving by Print7 ${i + 1}`,
 }));
@@ -19,30 +19,30 @@ const laserSlides = Object.values(laser).map((module, i) => ({
 const homeCarouselRows = [
   {
     type: 'stacked',
-    title: 'Logo Design',
-    subtitle: 'Naming, logo design, and brand guidelines.',
-    to: '/logos',
-    slides: logoSlides,
+    title: 'Raised Lettering & 3D',
+    subtitle: '3D logos for indoor/outdoor.',
+    to: '/relief',
+    slides: reliefSlides,
     height: 400,
     spacing: 'py-24',
   },
   {
     type: 'split',
     side: 'left',
-    title: 'Branded Gifts',
-    subtitle: 'Custom corporate gadgets and gifts.',
-    to: '/gifts',
-    slides: brindesSlides,
+    title: 'Vehicle Branding',
+    subtitle: 'Partial/full wraps, lettering, magnets.',
+    to: '/cars',
+    slides: carSlides,
     height: 400,
     spacing: 'py-20',
   },
   {
     type: 'split',
     side: 'right',
-    title: 'Laser Cutting & Engraving',
-    subtitle: 'Cutting and engraving on wood, acrylic, and metal.',
-    to: '/laser',
-    slides: laserSlides,
+    title: 'Stands & Displays',
+    subtitle: 'Roll-ups, counters, walls, stands.',
+    to: '/stand',
+    slides: standSlides,
     height: 400,
     spacing: 'py-20',
   },
