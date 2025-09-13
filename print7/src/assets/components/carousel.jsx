@@ -1,12 +1,12 @@
-import React, { useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { Container, Text, Title } from '@mantine/core';
 import { Carousel } from '@mantine/carousel';
 import Autoplay from 'embla-carousel-autoplay';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import '@mantine/carousel/styles.css';
 
-export default function CarouselHighlight({
+function CarouselHighlight({
   items = [],
   height = 420,
   mobileHeight,              
@@ -25,6 +25,7 @@ export default function CarouselHighlight({
 }) {
   const [active, setActive] = useState(0);
   const autoplay = useRef(Autoplay({ delay: autoplayDelay }));
+  const navigate = useNavigate();
 
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
@@ -62,7 +63,7 @@ export default function CarouselHighlight({
 
       <Carousel
         withIndicators={showIndicators}
-        height={effectiveHeight}            
+        height={effectiveHeight}
         slideSize={slideSize}
         slideGap="md"
         emblaOptions={{ dragFree: true, loop, align }}
@@ -75,8 +76,7 @@ export default function CarouselHighlight({
           viewport: 'overflow-hidden',
           indicators: indicatorsClass,
           control: 'rounded-full shadow-lg',
-        }}
-      >
+        }}>
         {items.map((it, idx) => {
           const content = (
             <motion.div
@@ -111,9 +111,20 @@ export default function CarouselHighlight({
           return (
             <Carousel.Slide key={idx} className="px-2">
               {it.to ? (
-                <Link to={it.to} className="block focus:outline-none" aria-label={it.title}>
+                <div
+                  role="link"
+                  tabIndex={0}
+                  aria-label={it.title || 'carousel link'}
+                  className="block focus:outline-none cursor-pointer"
+                  onClick={() => navigate(it.to)}
+                  onKeyDown={(e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      e.preventDefault();
+                      navigate(it.to);
+                    }
+                  }}>
                   {content}
-                </Link>
+                </div>
               ) : (
                 content
               )}
@@ -124,3 +135,4 @@ export default function CarouselHighlight({
     </Container>
   );
 }
+export default CarouselHighlight;
