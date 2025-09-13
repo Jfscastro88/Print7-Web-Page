@@ -1,0 +1,49 @@
+{
+  "home": {
+    "hero": {
+      "title": "Advertising & Design",
+      "subtitle": "We shape your brand: from logo creation to printing on textiles, large formats, and gadgets.",
+      "alt": "Hero Logo"
+    },
+    "sections": {
+      "dividerPortfolio": "Portfolio highlight",
+      "someWorks": "Some of our works",
+      "someWorksDesc": "Explore the carousel; each one highlights a real project with more info inside."
+    },
+    "video": {
+      "whyChoose": "Why choose Print7?"
+    },
+    "cta": {
+      "title": "Do you need something similar?",
+      "desc": "Tell us about your project: we can take care of creating and improving the brand, as well as producing the materials.",
+      "button": "Contact us"
+    }
+  },
+  "navbar": {
+    "home": "Homepage",
+    "about": "About Us",
+    "catalogs": "Catalogs",
+    "contact": "Contact"
+  },
+  "footer": {
+    "company": "Print7 — Advertising & Design",
+    "address1": "Rua Nossa Senhora do Carmo, 22A",
+    "address2": "2900 - 146 Setúbal",
+    "mobileNote": "Call to national mobile network",
+    "rights": "All rights reserved.",
+    "madeBy": "Made by Jfscastro"
+  },
+  "catalogs": {
+    "heroTitle": "Catalogs",
+    "heroSubtitle": "Explore our categories: textiles and giveaways.\nClick on an item to open the related catalog in a new tab.",
+    "textile": "Textile",
+    "giveaways": "Giveaways"
+  },
+  "contacts": {
+    "heroTitle": "We want to be part of your story!",
+    "sectionTitle": "Get in touch with us",
+    "locationTitle": "Our Location",
+    "schedule": "Mon to Fri: 9am-1pm | 2pm-6pm"
+  }
+
+}

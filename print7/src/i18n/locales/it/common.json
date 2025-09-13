@@ -1,0 +1,48 @@
+{
+  "home": {
+    "hero": {
+      "title": "Pubblicità & Design",
+      "subtitle": "Diamo forma al tuo brand: dalla creazione del logo alla stampa su tessuti, grandi formati e gadget.",
+      "alt": "Logo Hero"
+    },
+    "sections": {
+      "dividerPortfolio": "Portfolio highlight",
+      "someWorks": "Alcuni dei nostri lavori",
+      "someWorksDesc": "Esplora il carosello; ognuno evidenzia un progetto reale con più informazioni."
+    },
+    "video": {
+      "whyChoose": "Perché scegliere Print7?"
+    },
+    "cta": {
+      "title": "Hai bisogno di qualcosa di simile?",
+      "desc": "Raccontaci il tuo progetto: possiamo occuparci della creazione e del miglioramento del brand, oltre alla produzione dei materiali.",
+      "button": "Contattaci"
+    }
+  },
+    "navbar": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "catalogs": "Cataloghi",
+    "contact": "Contatti"
+  },"footer": {
+    "company": "Print7 — Pubblicità & Design",
+    "address1": "Rua Nossa Senhora do Carmo, 22A",
+    "address2": "2900 - 146 Setúbal",
+    "mobileNote": "Chiamata alla rete mobile nazionale",
+    "rights": "Tutti i diritti riservati.",
+    "madeBy": "Creato da Jfscastro"
+  },
+  "catalogs": {
+    "heroTitle": "Cataloghi",
+    "heroSubtitle": "Esplora le nostre categorie: tessili e gadget.\nClicca su un elemento per aprire il catalogo corrispondente in una nuova scheda.",
+    "textile": "Tessile",
+    "giveaways": "Gadget"
+  },
+  "contacts": {
+    "heroTitle": "Vogliamo far parte della tua storia!",
+    "sectionTitle": "Contattaci",
+    "locationTitle": "La nostra posizione",
+    "schedule": "Lun a Ven: 9h-13h | 14h-18h"
+  }
+
+}

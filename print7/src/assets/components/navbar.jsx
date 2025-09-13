@@ -3,9 +3,12 @@ import { Box, Container, Burger } from '@mantine/core';
 import { createPortal } from 'react-dom';
 import { Link, useLocation } from 'react-router-dom';
 import Logo from '../images/LogoTextBlack.png';
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 function Navbar() {
   const [opened, setOpened] = useState(false);
+  const { t } = useTranslation();
 
   const location = useLocation();
   useEffect(() => {
@@ -21,10 +24,10 @@ function Navbar() {
   }, [opened]);
 
   const links = [
-    { to: '/', label: 'Homepage' },
-    { to: '/about', label: 'About Us' },
-    { to: '/catalogs', label: 'Catalogs' },
-    { to: '/contact', label: 'Contact' },
+    { to: '/', label: t("navbar.home") },
+    { to: '/about', label: t("navbar.about") },
+    { to: '/catalogs', label: t("navbar.catalogs") },
+    { to: '/contact', label: t("navbar.contact") },
   ];
 
   return (
@@ -40,7 +43,6 @@ function Navbar() {
               className="h-12 w-auto md:h-12 object-contain"
             />
           </Link>
-
           <div className="hidden md:flex items-center gap-6 text-white text-lg">
             {links.map((link) => (
               <Link
@@ -50,8 +52,8 @@ function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <LanguageSwitcher />
           </div>
-
           <Burger
             opened={opened}
             onClick={() => setOpened((p) => !p)}
@@ -60,21 +62,16 @@ function Navbar() {
             size="md"
             aria-label="Open mobile menu"
             aria-expanded={opened}
-            aria-controls="mobile-menu"/>
+            aria-controls="mobile-menu"
+          />
         </Container>
-
-        {/* Fullscreen mobile overlay via Portal */}
         {opened &&
           createPortal(
             <div
               id="mobile-menu"
               className="fixed inset-0 z-[1000] md:hidden transform transition-transform duration-300 translate-y-0"
               aria-hidden={!opened}>
-              
-              {/* fullscreen */}
               <div className="absolute inset-0 bg-[#00b5ff]" />
-
-              {/* Content */}
               <div className="relative flex h-full flex-col">
                 <div className="flex items-center justify-between px-6 py-4">
                   <Link to="/" className="flex items-center space-x-2" onClick={() => setOpened(false)}>
@@ -87,7 +84,6 @@ function Navbar() {
                     size="md"
                     aria-label="Close mobile menu"/>
                 </div>
-
                 <nav className="flex-1 overflow-y-auto px-6">
                   <ul className="divide-y divide-white/15 text-center">
                     {links.map((link) => (
@@ -100,6 +96,9 @@ function Navbar() {
                         </Link>
                       </li>
                     ))}
+                    <li className="py-6 divide-y divide-white/15 text-center">
+                      <LanguageSwitcher inMobile />
+                    </li>
                   </ul>
                 </nav>
               </div>
@@ -107,7 +106,6 @@ function Navbar() {
             document.body
           )}
       </Box>
-
       <div aria-hidden className="h-16 md:h-19" />
     </>
   );

@@ -1,0 +1,49 @@
+{
+  "home": {
+    "hero": {
+      "title": "Publicidade & Design",
+      "subtitle": "Damos forma à tua marca: da criação de logotipo à impressão em têxteis, grandes formatos e brindes.",
+      "alt": "Logótipo do Hero"
+    },
+    "sections": {
+      "dividerPortfolio": "Destaques do portfólio",
+      "someWorks": "Alguns dos nossos trabalhos",
+      "someWorksDesc": "Explora o carrossel; cada item destaca um projeto real com mais informações."
+    },
+    "video": {
+      "whyChoose": "Por que escolher a Print7?"
+    },
+    "cta": {
+      "title": "Precisas de algo semelhante?",
+      "desc": "Fala-nos do teu projeto: tratamos da criação e melhoria da marca, bem como da produção dos materiais.",
+      "button": "Contacta-nos"
+    }
+  },
+  "navbar": {
+    "home": "Início",
+    "about": "Sobre Nós",
+    "catalogs": "Catálogos",
+    "contact": "Contacto"
+  },
+    "footer": {
+    "company": "Print7 — Publicidade & Design",
+    "address1": "Rua Nossa Senhora do Carmo, 22A",
+    "address2": "2900 - 146 Setúbal",
+    "mobileNote": "Chamada para rede móvel nacional",
+    "rights": "Todos os direitos reservados.",
+    "madeBy": "Feito por Jfscastro"
+  },
+  "catalogs": {
+    "heroTitle": "Catálogos",
+    "heroSubtitle": "Explora as nossas categorias: têxteis e brindes.\nClica num item para abrir o catálogo correspondente numa nova aba.",
+    "textile": "Têxtil",
+    "giveaways": "Brindes"
+  },
+  "contacts": {
+    "heroTitle": "Queremos fazer parte da sua história!",
+    "sectionTitle": "Entre em contacto connosco",
+    "locationTitle": "Nossa Localização",
+    "schedule": "Seg. a Sex.: 9h-13h | 14h-18h"
+  }
+
+}
