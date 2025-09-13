@@ -14,6 +14,7 @@ import homeCarouselRows from '../../assets/data/homeCarouselRows.js';
 import ThreeUpCarouselGrid from '../../assets/components/ThreeUpCarouselGrid.jsx';
 import homeThreeUpSections from '../../assets/data/homeThreeUpSections.js';
 import homeLastThreeUpSection from '../../assets/data/homeLastThreeUpSection.js';
+import { Link } from 'react-router-dom';
 
 
 function ZoomOnScroll({ children }) {
@@ -122,13 +123,20 @@ export default function HomePage() {
         loop/>
       
       <section className="py-16 bg-white">
-      <Container size="lg" className="text-center">
-      <Title order={3} className="mb-3">Do you need something similar?</Title>
-      <Text c="dimmed" className="max-w-2xl mx-auto mb-6">
-      Tell us about your project: we can take care of creating and improving the brand, as well as producing the materials.
-      </Text>
-      <Button component="a" href="/contact" size="md" radius="xl">Contact us</Button>
-      </Container>
+        <Container size="lg" className="text-center">
+          <Title order={3} className="mb-3">Do you need something similar?</Title>
+          <Text c="dimmed" className="max-w-2xl mx-auto mb-6">
+            Tell us about your project: we can take care of creating and improving the brand, as well as producing the materials.
+          </Text>
+
+          <Button 
+            component={Link}
+            to="/contact"
+            size="md"
+            radius="xl">
+            Contact us
+          </Button>
+        </Container>
       </section>
       </>
     );
