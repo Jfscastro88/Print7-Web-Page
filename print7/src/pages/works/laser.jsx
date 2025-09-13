@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgLaser1 from '../../assets/images/carousel/cortelaser/cgl1.jpg';
 import imgLaser2 from '../../assets/images/carousel/cortelaser/cgl2.jpg';
@@ -18,16 +19,17 @@ const IMAGES = [
   ];
 
 function LaserPage() {
-    return (
-      <CategoryPage
-        title="Laser Cutting and Engraving"
-        description="Laser cutting and engraving allow for the precise customization of a wide range of materials, including wood, acrylic, leather, and metal. This technology ensures fine details, clean finishes, and a professional look, ideal for both industrial production and unique, creative pieces."
-        images={IMAGES}
-        cta={{
-          title: 'What we can do for you',
-          text: 'We can create custom engravings for plaques, gadgets, signage, and promotional items, or create custom cuts for prototypes, decorations, and furnishing accessories. We support you from design to delivery of the finished product.',
-        }}
-      />
-    );
-  }
+  const { t } = useTranslation();
+  return (
+    <CategoryPage
+      title={t('categories.laser.title')}
+      description={t('categories.laser.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.laser.ctaTitle'),
+        text: t('categories.laser.ctaText'),
+      }}
+    />
+  );
+}
 export default LaserPage;

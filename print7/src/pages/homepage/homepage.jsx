@@ -30,7 +30,15 @@ function ZoomOnScroll({ children }) {
 }
 
 export default function HomePage() {
+
   const { t } = useTranslation();
+
+  const localizedHeroItems = heroCarouselItems.map(item => ({
+    ...item,
+    title: t(item.titleKey),
+    subtitle: t(item.subtitleKey),
+    alt: t(item.altKey)
+  }));
 
   return (
     <>
@@ -78,7 +86,7 @@ export default function HomePage() {
       <section className="py-12 bg-white overflow-x-hidden">
         <ZoomOnScroll>
           <CarouselHighlight
-            items={heroCarouselItems}
+            items={localizedHeroItems}
             height={420}
             mobileHeight={280}
             slideSize="65%"

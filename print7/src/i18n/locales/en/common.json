@@ -17,6 +17,22 @@
       "title": "Do you need something similar?",
       "desc": "Tell us about your project: we can take care of creating and improving the brand, as well as producing the materials.",
       "button": "Contact us"
+    },
+    "carousel": {
+      "gifts":      { "title": "Branded Gifts", "subtitle": "Custom corporate gadgets and gifts.", "alt": "Branded giveaways with logo" },
+      "laser":      { "title": "Laser Cutting & Engraving", "subtitle": "Cutting and engraving on wood, acrylic, and metal.", "alt": "Laser cutting example" },
+      "logos":      { "title": "Logo Design", "subtitle": "Naming, logo design, and brand guidelines.", "alt": "Logo and identity examples" },
+      "interior":   { "title": "Interior Decoration", "subtitle": "Glass, walls, backlit features, and more.", "alt": "Interior decoration" },
+      "stationery": { "title": "Stationery", "subtitle": "Letterhead, envelopes, cards, and more.", "alt": "Stationery set" },
+      "cars":       { "title": "Vehicle Branding", "subtitle": "Partial/full wraps, lettering, magnets.", "alt": "Vehicle branding" },
+      "uniforms":   { "title": "Workwear & PPE", "subtitle": "Logo-branded workwear and PPE.", "alt": "Workwear and PPE" },
+      "plates":     { "title": "Signs & Banners", "subtitle": "Rigid panels and large-format prints.", "alt": "Signs and banners" },
+      "ad":         { "title": "Illuminated Signs", "subtitle": "Light signs and totems.", "alt": "Illuminated sign" },
+      "stand":      { "title": "Stands & Displays", "subtitle": "Roll-ups, counters, walls, stands.", "alt": "Stands & displays" },
+      "neon":       { "title": "LED Neon", "subtitle": "Custom LED neon décor.", "alt": "LED neon lettering" },
+      "relief":     { "title": "Raised Lettering & 3D", "subtitle": "3D logos for indoor/outdoor.", "alt": "Raised lettering" },
+      "window":     { "title": "Window Decoration", "subtitle": "Decals, perforated films, graphics.", "alt": "Window decoration" },
+      "others":     { "title": "Other Works", "subtitle": "Special projects on request.", "alt": "Other works" }
     }
   },
   "navbar": {
@@ -44,6 +60,91 @@
     "sectionTitle": "Get in touch with us",
     "locationTitle": "Our Location",
     "schedule": "Mon to Fri: 9am-1pm | 2pm-6pm"
+  },
+  "categories": {
+    "ad": {
+      "title": "Advertising",
+      "description": "Advertising signs are essential to increase a business’s visibility. They can be illuminated or non-illuminated, for indoor or outdoor use, helping capture the attention of passersby and strengthening the brand image even from a distance.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We design and manufacture custom LED-lit signs, letters, totems, and weather-resistant advertising panels. We guide you through the whole process, from materials to installation."
+    },
+    "vehicles": {
+      "title": "Vehicle Customization",
+      "description": "Vehicle customization is a powerful mobile advertising tool: turning cars, vans, and fleets into communication media increases brand visibility on every trip.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We provide full or partial wrapping, adhesive and magnetic applications, and lettering for any vehicle type — with durable materials and professional installation."
+    },
+    "gifts": {
+      "title": "Personalized Gifts",
+      "description": "Personalized gifts are an effective way to strengthen your brand identity. Pens, mugs, notebooks or tech gadgets — with your logo they become everyday items that communicate for a long time.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We help you choose the most suitable gadgets, finalize the artwork, and manage production end-to-end, ensuring high-quality items that leave a professional impression."
+    },
+    "interior": {
+      "title": "Interior Decoration",
+      "description": "Interior decoration with custom graphics enhances shops, offices, and showrooms. Glass, walls, and surfaces become design and communication tools that elevate the visual experience.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We create window decals, wall coverings, decorative panels, and tailored solutions to build welcoming, functional spaces that reflect your brand."
+    },
+    "laser": {
+      "title": "Laser Cutting & Engraving",
+      "description": "Laser cutting and engraving precisely customize many materials — wood, acrylic, leather, and metal — delivering fine detail and clean finishes for both industrial runs and unique pieces.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We produce custom engravings for plaques, gadgets, signage, and promo items, and custom cuts for prototypes, décor, and accessories — from design to delivery."
+    },
+    "logos": {
+      "title": "Logo Creation",
+      "description": "A good logo is the heart of a brand’s visual identity. Beyond aesthetics, it must communicate values, personality, and recognizability across all touchpoints — from business cards to digital ads.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We craft original, versatile logos, refresh existing brands, and define style guidelines to keep your visual communication consistent."
+    },
+    "neon": {
+      "title": "Works with LED Neon",
+      "description": "LED neon signs and décor add modernity and visibility to shops, events, and interiors, creating a striking atmosphere day and night.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We design custom, durable, and efficient LED neon signs and shapes — perfect to stand out and decorate with style."
+    },
+    "others": {
+      "title": "Other Work",
+      "description": "Special projects that don’t fit a single category: creative installations and custom requests.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We craft tailored solutions combining design, print, and innovative materials to turn ideas into reality."
+    },
+    "plates": {
+      "title": "Plates and Tarps",
+      "description": "Rigid panels and PVC/fabric banners are versatile indoor/outdoor solutions — great for temporary promotions or permanent communications.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We print and produce signs, boards, banners, and tarps using durable, weather-resistant materials."
+    },
+    "relief": {
+      "title": "Relief Works",
+      "description": "Embossed logos and letters add three-dimensionality and visual impact, enhancing indoor and outdoor spaces.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We create custom 3D relief elements (PVC, acrylic, metal) for signage, walls, and décor."
+    },
+    "stand": {
+      "title": "Stands & Displays",
+      "description": "Essential for fairs, events, and retail: they present products and services clearly and professionally.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We design and manufacture roll-ups, promo counters, backdrop walls, and modular custom solutions that are easy to assemble and transport."
+    },
+    "stationery": {
+      "title": "Stationery",
+      "description": "Custom stationery is a key part of visual identity. Business cards, letterhead, envelopes, and notepads convey professionalism and consistency.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We create coordinated sets (letterhead, envelopes, cards, etc.), handling design and print to ensure quality in every detail."
+    },
+    "uniforms": {
+      "title": "Uniforms & PPE",
+      "description": "Customized workwear and personal protective equipment convey professionalism and consistency while ensuring comfort and safety.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We supply uniforms, jackets, t-shirts, and PPE with printed or embroidered company logos, ensuring fabric quality and functionality."
+    },
+    "window": {
+      "title": "Window Display Decoration",
+      "description": "Window stickers, one-way vision (micro-perforated) and cut vinyl: professional design, print, and application. Boost your store’s visibility and communicate offers, opening hours, and branding with durable, compliant solutions.",
+      "ctaTitle": "What we can do for you",
+      "ctaText": "We design your custom storefront — from graphics to installation."
+    }
   }
-
 }

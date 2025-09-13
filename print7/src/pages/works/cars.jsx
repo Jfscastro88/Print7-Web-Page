@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgcar1 from '../../assets/images/carousel/veiculos/ve1.jpg';
 import imgcar2 from '../../assets/images/carousel/veiculos/ve2.jpg';
@@ -46,16 +47,17 @@ const IMAGES = [
   ];
 
 function CarsPage() {
-    return (
-      <CategoryPage
-        title="Vehicle Customization"
-        description="Vehicle customization is a powerful mobile advertising tool: transforming cars, vans, and company fleets into visual communication tools increases brand visibility on every trip."
-        images={IMAGES}
-        cta={{
-          title: 'What we can do for you',
-          text: 'We offer full or partial wrapping, adhesive and magnetic applications, and lettering on any type of vehicle, guaranteeing durable materials and professional installation.',
-        }}
-      />
-    );
-  }
+  const { t } = useTranslation();
+  return (
+    <CategoryPage
+      title={t('categories.vehicles.title')}
+      description={t('categories.vehicles.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.vehicles.ctaTitle'),
+        text: t('categories.vehicles.ctaText'),
+      }}
+    />
+  );
+}
 export default CarsPage;

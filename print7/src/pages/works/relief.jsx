@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgrelief1 from '../../assets/images/carousel/relevo/rel1.jpg';
 import imgrelief2 from '../../assets/images/carousel/relevo/rel2.jpg';
@@ -51,15 +52,16 @@ const IMAGES = [
 ];
 
 function reliefWorkPage() {
+  const { t } = useTranslation();
   return (
     <CategoryPage
-    title="Relief Works"
-    description="Embossed logos and letters add three-dimensionality and visual impact, enhancing indoor and outdoor spaces with a sleek, professional look."
-    images={IMAGES}
-    cta={{
-      title: 'What we can do for you',
-      text: 'We create custom 3D relief elements in various materials (PVC, acrylic, metal) for signs, walls, and decorations.',
-    }}
+      title={t('categories.relief.title')}
+      description={t('categories.relief.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.relief.ctaTitle'),
+        text: t('categories.relief.ctaText'),
+      }}
     />
   );
 }

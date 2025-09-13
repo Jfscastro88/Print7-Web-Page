@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgVitrin1 from '../../assets/images/carousel/decormontras/mon1.jpg';
 import imgVitrin2 from '../../assets/images/carousel/decormontras/mon2.jpg';
@@ -56,17 +57,17 @@ const IMAGES = [
 ];
 
 function windowPage() {
+  const { t } = useTranslation();
+
   return (
     <CategoryPage
-    title="Window Display Decoration"
-    description="Window stickers, micro-perforated stickers, and window decals: professional design, printing, and application.
-Enhance your store's visibility and communicate offers, opening hours, and branding with durable, regulatory-compliant
-solutions."
-    images={IMAGES}
-    cta={{
-      title: 'What we can do for you',
-      text: 'We can design your custom display case, from the graphics to the installation.',
-    }}
+      title={t('categories.window.title')}
+      description={t('categories.window.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.window.ctaTitle'),
+        text: t('categories.window.ctaText'),
+      }}
     />
   );
 }

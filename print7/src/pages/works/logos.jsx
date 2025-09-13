@@ -1,6 +1,7 @@
 import '@mantine/core/styles.css';
 import { useRef, useState, useEffect } from 'react';
 import CategoryPage from '../../assets/components/categorypage.jsx';
+import { useTranslation } from 'react-i18next';
 
 import imgLogo1 from '../../assets/images/carousel/design/01.png';
 import imgLogo2 from '../../assets/images/carousel/design/02.png';
@@ -35,12 +36,12 @@ const IMAGES = [
 ];
 
 export default function LogosPage() {
+  const { t } = useTranslation();
   const [selected, setSelected] = useState(null);
   const cardRefs = useRef([]);
 
   const handleCardClick = (i) => {
     setSelected((prev) => (prev === i ? null : i));
-    // mobile scroll into view
     if (window.innerWidth < 768) {
       requestAnimationFrame(() => {
         cardRefs.current[i]?.scrollIntoView({
@@ -60,17 +61,17 @@ export default function LogosPage() {
 
   return (
     <CategoryPage
-      title="Logo Creation"
-      description="A good logo is the heart of a brand's visual identity. Its function is not merely aesthetic; it must communicate values, personality, and recognizability in every context: from business cards to digital advertising."
+      title={t('categories.logos.title')}
+      description={t('categories.logos.description')}
       images={IMAGES}
       selected={selected}
       setSelected={setSelected}
       onCardClick={handleCardClick}
       cardRefs={cardRefs}
-      forceContain       // ⬅️ only here: centered, uncropped images
+      forceContain
       cta={{
-        title: 'What we can do for you',
-        text: 'We can create original and versatile logos, redesign existing brands, and define graphic guidelines to ensure consistent imagery across all your communication materials.',
+        title: t('categories.logos.ctaTitle'),
+        text: t('categories.logos.ctaText'),
       }}
     />
   );

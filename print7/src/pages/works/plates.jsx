@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgboards1 from '../../assets/images/carousel/placas/pla1.jpg';
 import imgboards2 from '../../assets/images/carousel/placas/pla2.jpg';
@@ -39,15 +40,16 @@ const IMAGES = [
 ];
 
 function plastesboardsPage() {
+  const { t } = useTranslation();
   return (
     <CategoryPage
-    title="Plates and Tarps"
-    description="Rigid panels and PVC or fabric banners are versatile solutions for indoor and outdoor advertising, ideal for temporary promotions or permanent communications."
-    images={IMAGES}
-    cta={{
-      title: 'What we can do for you',
-      text: 'We print and produce large plaques, signs, banners, and lonas using durable, weather-resistant materials.',
-    }}
+      title={t('categories.plates.title')}
+      description={t('categories.plates.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.plates.ctaTitle'),
+        text: t('categories.plates.ctaText'),
+      }}
     />
   );
 }

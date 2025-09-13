@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgAdvertising1 from '../../assets/images/carousel/reclames/rec1.jpg';
 import imgAdvertising2 from '../../assets/images/carousel/reclames/rec2.jpg';
@@ -35,16 +36,17 @@ const IMAGES = [
   ];
 
 function AdvertisingPage() {
-    return (
-      <CategoryPage
-        title="Advertising"
-        description="Advertising signs (advertisements) are an essential element for increasing the visibility of a business. They can be illuminated or non-illuminated, for indoor or outdoor use, and help capture the attention of passersby, strengthening the brand's image even from a distance."
-        images={IMAGES}
-        cta={{
-          title: 'What we can do for you',
-          text: 'We design and manufacture custom, LED-backlit signs, totems, and weatherproof advertising panels. From material selection to installation, we’ll guide you through the entire process.',
-        }}
-      />
-    );
-  }
+  const { t } = useTranslation();
+  return (
+    <CategoryPage
+      title={t('categories.ad.title')}
+      description={t('categories.ad.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.ad.ctaTitle'),
+        text: t('categories.ad.ctaText'),
+      }}
+    />
+  );
+}
 export default AdvertisingPage;

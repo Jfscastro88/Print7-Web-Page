@@ -14,20 +14,20 @@ import imgMontras       from '../images/carousel/decormontras/mon8.jpg';
 import imgOutros        from '../images/carousel/outros/out4.jpg';
 
 const heroCarouselItems = [
-    { src: imgBrindes, alt: 'Branded giveaways with logo', title: 'Branded Gifts', subtitle: 'Custom corporate gadgets and gifts.', to: '/gifts' },
-    { src: imgLaser, alt: 'Laser cutting example', title: 'Laser Cutting & Engraving', subtitle: 'Cutting and engraving on wood, acrylic, and metal.', to: '/laser' },
-    { src: imgLogos, alt: 'Logo and identity examples', title: 'Logo Design', subtitle: 'Naming, logo design, and brand guidelines.', to: '/logos' },
-    { src: imgDecoracao, alt: 'Interior decoration', title: 'Interior Decoration', subtitle: 'Glass, walls, backlit features, and more.', to: '/interior' },
-    { src: imgEstacionarios, alt: 'Stationery set', title: 'Stationery', subtitle: 'Letterhead, envelopes, cards, and more.', to: '/stationery' },
-    { src: imgViaturas, alt: 'Vehicle branding', title: 'Vehicle Branding', subtitle: 'Partial/full wraps, lettering, magnets.', to: '/cars' },
-    { src: imgEpi, alt: 'Workwear and PPE', title: 'Workwear & PPE', subtitle: 'Logo-branded workwear and PPE.', to: '/uniforms' },
-    { src: imgLonas, alt: 'Signs and banners', title: 'Signs & Banners', subtitle: 'Rigid panels and large-format prints.', to: '/plates' },
-    { src: imgReclames, alt: 'Illuminated sign', title: 'Illuminated Signs', subtitle: 'Light signs and totems.', to: '/ad' },
-    { src: imgExpositores, alt: 'Stands & displays', title: 'Stands & Displays', subtitle: 'Roll-ups, counters, walls, stands.', to: '/stand' },
-    { src: imgNeon, alt: 'LED neon lettering', title: 'LED Neon', subtitle: 'Custom LED neon décor.', to: '/neon' },
-    { src: imgRelevo, alt: 'Raised lettering', title: 'Raised Lettering & 3D', subtitle: '3D logos for indoor/outdoor.', to: '/relief' },
-    { src: imgMontras, alt: 'Window decoration', title: 'Window Decoration', subtitle: 'Decals, perforated films, graphics.', to: '/window' },
-    { src: imgOutros, alt: 'Other works', title: 'Other Works', subtitle: 'Special projects on request.', to: '/others' },
+    { src: imgBrindes,       altKey: 'home.carousel.gifts.alt',       titleKey: 'home.carousel.gifts.title',       subtitleKey: 'home.carousel.gifts.subtitle',       to: '/gifts' },
+    { src: imgLaser,         altKey: 'home.carousel.laser.alt',       titleKey: 'home.carousel.laser.title',       subtitleKey: 'home.carousel.laser.subtitle',       to: '/laser' },
+    { src: imgLogos,         altKey: 'home.carousel.logos.alt',       titleKey: 'home.carousel.logos.title',       subtitleKey: 'home.carousel.logos.subtitle',       to: '/logos' },
+    { src: imgDecoracao,     altKey: 'home.carousel.interior.alt',    titleKey: 'home.carousel.interior.title',    subtitleKey: 'home.carousel.interior.subtitle',    to: '/interior' },
+    { src: imgEstacionarios, altKey: 'home.carousel.stationery.alt',  titleKey: 'home.carousel.stationery.title',  subtitleKey: 'home.carousel.stationery.subtitle',  to: '/stationery' },
+    { src: imgViaturas,      altKey: 'home.carousel.cars.alt',        titleKey: 'home.carousel.cars.title',        subtitleKey: 'home.carousel.cars.subtitle',        to: '/cars' },
+    { src: imgEpi,           altKey: 'home.carousel.uniforms.alt',    titleKey: 'home.carousel.uniforms.title',    subtitleKey: 'home.carousel.uniforms.subtitle',    to: '/uniforms' },
+    { src: imgLonas,         altKey: 'home.carousel.plates.alt',      titleKey: 'home.carousel.plates.title',      subtitleKey: 'home.carousel.plates.subtitle',      to: '/plates' },
+    { src: imgReclames,      altKey: 'home.carousel.ad.alt',          titleKey: 'home.carousel.ad.title',          subtitleKey: 'home.carousel.ad.subtitle',          to: '/ad' },
+    { src: imgExpositores,   altKey: 'home.carousel.stand.alt',       titleKey: 'home.carousel.stand.title',       subtitleKey: 'home.carousel.stand.subtitle',       to: '/stand' },
+    { src: imgNeon,          altKey: 'home.carousel.neon.alt',        titleKey: 'home.carousel.neon.title',        subtitleKey: 'home.carousel.neon.subtitle',        to: '/neon' },
+    { src: imgRelevo,        altKey: 'home.carousel.relief.alt',      titleKey: 'home.carousel.relief.title',      subtitleKey: 'home.carousel.relief.subtitle',      to: '/relief' },
+    { src: imgMontras,       altKey: 'home.carousel.window.alt',      titleKey: 'home.carousel.window.title',      subtitleKey: 'home.carousel.window.subtitle',      to: '/window' },
+    { src: imgOutros,        altKey: 'home.carousel.others.alt',      titleKey: 'home.carousel.others.title',      subtitleKey: 'home.carousel.others.subtitle',      to: '/others' }
 ];
 
 export default heroCarouselItems;

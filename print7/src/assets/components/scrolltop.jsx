@@ -1,18 +1,10 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-/**
- * ScrollToTop — forza lo scroll in alto quando cambia la route.
- *
- * Props:
- * - behavior: 'auto' | 'smooth' (default 'auto')
- * - respectHash: boolean — se true e c'è un #ancora nell'URL, prova a scrollare a quell'elemento invece che in alto (default true)
- */
 export default function ScrollToTop({ behavior = 'auto', respectHash = true }) {
     const location = useLocation();
 
     useEffect(() => {
-    // Rimanda allo step successivo del painting, così il DOM della nuova pagina è pronto
     requestAnimationFrame(() => {
         if (respectHash && location.hash) {
         const id = decodeURIComponent(location.hash.replace('#', ''));

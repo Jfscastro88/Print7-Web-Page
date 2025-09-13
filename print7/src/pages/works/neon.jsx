@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgAD1 from '../../assets/images/carousel/ledneon/neon1.jpg';
 import imgAD2 from '../../assets/images/carousel/ledneon/neon2.jpg';
@@ -20,16 +21,17 @@ const IMAGES = [
   ];
 
 function NeonPage() {
-    return (
-      <CategoryPage
-        title="Works with LED Neon"
-        description="LED neon signs and decorations add modernity and visibility to shops, venues, and interior spaces, creating a distinctive atmosphere both day and night."
-        images={IMAGES}
-        cta={{
-          title: 'What we can do for you',
-          text: 'We design custom, durable, and efficient LED neon signs and shapes, perfect for attracting attention and decorating with style.',
-        }}
-      />
-    );
-  }
+  const { t } = useTranslation();
+  return (
+    <CategoryPage
+      title={t('categories.neon.title')}
+      description={t('categories.neon.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.neon.ctaTitle'),
+        text: t('categories.neon.ctaText'),
+      }}
+    />
+  );
+}
 export default NeonPage;

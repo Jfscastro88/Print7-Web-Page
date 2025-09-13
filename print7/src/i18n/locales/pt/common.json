@@ -17,6 +17,22 @@
       "title": "Precisas de algo semelhante?",
       "desc": "Fala-nos do teu projeto: tratamos da criação e melhoria da marca, bem como da produção dos materiais.",
       "button": "Contacta-nos"
+    },
+    "carousel": {
+      "gifts":      { "title": "Brindes Personalizados", "subtitle": "Gadgets e presentes corporativos personalizados.", "alt": "Brindes com logótipo" },
+      "laser":      { "title": "Corte e Gravação a Laser", "subtitle": "Corte e gravação em madeira, acrílico e metal.", "alt": "Exemplo de corte a laser" },
+      "logos":      { "title": "Design de Logotipo", "subtitle": "Naming, design de logotipo e guia de marca.", "alt": "Exemplos de logotipo e identidade" },
+      "interior":   { "title": "Decoração de Interiores", "subtitle": "Vidros, paredes, elementos retroiluminados e mais.", "alt": "Decoração de interiores" },
+      "stationery": { "title": "Estacionário", "subtitle": "Papel timbrado, envelopes, cartões e mais.", "alt": "Conjunto de estacionário" },
+      "cars":       { "title": "Personalização de Viaturas", "subtitle": "Wrap parcial/total, lettering, magnéticos.", "alt": "Personalização de viaturas" },
+      "uniforms":   { "title": "Fardamentos & EPI", "subtitle": "Fardas e EPI com logótipo.", "alt": "Fardas e equipamentos de proteção" },
+      "plates":     { "title": "Placas & Lonas", "subtitle": "Painéis rígidos e impressão de grande formato.", "alt": "Placas e banners" },
+      "ad":         { "title": "Reclamos Luminosos", "subtitle": "Reclamos luminosos e totens.", "alt": "Reclamo iluminado" },
+      "stand":      { "title": "Stands & Expositores", "subtitle": "Roll-ups, balcões, paredes, stands.", "alt": "Stands e expositores" },
+      "neon":       { "title": "LED Neon", "subtitle": "Decoração em LED neon personalizada.", "alt": "Letreiro LED neon" },
+      "relief":     { "title": "Letras em Relevo & 3D", "subtitle": "Logótipos 3D para interior/exterior.", "alt": "Letras em relevo" },
+      "window":     { "title": "Decoração de Montras", "subtitle": "Vinis, microperfurado e grafismos.", "alt": "Decoração de montras" },
+      "others":     { "title": "Outros Trabalhos", "subtitle": "Projetos especiais sob pedido.", "alt": "Outros trabalhos" }
     }
   },
   "navbar": {
@@ -25,7 +41,7 @@
     "catalogs": "Catálogos",
     "contact": "Contacto"
   },
-    "footer": {
+  "footer": {
     "company": "Print7 — Publicidade & Design",
     "address1": "Rua Nossa Senhora do Carmo, 22A",
     "address2": "2900 - 146 Setúbal",
@@ -44,6 +60,91 @@
     "sectionTitle": "Entre em contacto connosco",
     "locationTitle": "Nossa Localização",
     "schedule": "Seg. a Sex.: 9h-13h | 14h-18h"
+  },
+  "categories": {
+    "ad": {
+      "title": "Publicidade",
+      "description": "Os reclamos publicitários são essenciais para aumentar a visibilidade de um negócio. Podem ser luminosos ou não luminosos, para interior ou exterior, e ajudam a captar a atenção de quem passa, reforçando a imagem da marca mesmo à distância.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Desenhamos e fabricamos reclamos personalizados, letras e caixas luminosas LED, totens e painéis publicitários resistentes às intempéries. Acompanhamos desde a escolha de materiais até à instalação."
+    },
+    "vehicles": {
+      "title": "Personalização de Viaturas",
+      "description": "A personalização de veículos é uma poderosa ferramenta de publicidade móvel: transformar carros, carrinhas e frotas em suportes de comunicação aumenta a visibilidade da marca em cada deslocação.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Fazemos wrapping total ou parcial, aplicações de autocolantes e magnéticos, e lettering em qualquer tipo de viatura, garantindo materiais duráveis e instalação profissional."
+    },
+    "gifts": {
+      "title": "Brindes Personalizados",
+      "description": "Os brindes personalizados são uma ferramenta eficaz para reforçar a identidade da sua marca. Canetas, canecas, cadernos ou gadgets tecnológicos — com o seu logótipo, tornam-se objetos do dia a dia que comunicam por muito tempo.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Ajudamos a escolher os gadgets mais adequados, tratamos da arte final e gerimos todo o processo de produção, garantindo qualidade e um impacto profissional junto dos seus clientes."
+    },
+    "interior": {
+      "title": "Decoração de Interiores",
+      "description": "A decoração de interiores com gráfica personalizada valoriza lojas, escritórios e showrooms. Vidros, paredes e superfícies tornam-se elementos de comunicação e design, melhorando a experiência visual de clientes e colaboradores.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Produzimos vinis para montras, revestimentos de parede, painéis decorativos e soluções à medida, criando espaços acolhedores e funcionais que refletem a imagem da sua marca."
+    },
+    "laser": {
+      "title": "Corte e Gravação a Laser",
+      "description": "O corte e a gravação a laser permitem personalizar com precisão uma grande variedade de materiais — madeira, acrílico, pele e metal. Ideal para produção industrial ou peças únicas com detalhes finos e acabamentos limpos.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Realizamos gravações personalizadas para placas, brindes, sinalética e artigos promocionais, bem como cortes à medida para protótipos, decorações e acessórios. Acompanhamos do design à entrega final."
+    },
+    "logos": {
+      "title": "Criação de Logotipo",
+      "description": "Um bom logotipo é o coração da identidade visual de uma marca. Para além do aspeto estético, deve comunicar valores, personalidade e reconhecimento em todos os suportes — do cartão de visita à publicidade digital.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Criamos logotipos originais e versáteis, redesenhamos marcas existentes e definimos guias de estilo para garantir consistência visual em toda a comunicação."
+    },
+    "neon": {
+      "title": "Trabalhos com LED Neon",
+      "description": "Letreiros e decorações em LED neon acrescentam modernidade e visibilidade a lojas, eventos e interiores, criando um ambiente marcante de dia e de noite.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Desenhamos letreiros e formas em LED neon personalizados, duráveis e eficientes — ideais para destacar e decorar com estilo."
+    },
+    "others": {
+      "title": "Outros Trabalhos",
+      "description": "Projetos especiais que não cabem numa única categoria: instalações criativas, pedidos à medida e soluções fora da caixa.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Criamos soluções personalizadas combinando design, impressão e materiais inovadores para transformar ideias em realidade."
+    },
+    "plates": {
+      "title": "Placas e Lonas",
+      "description": "Placas rígidas e lonas em PVC/tecido são soluções versáteis para interior e exterior — ótimas para promoções temporárias ou comunicação permanente.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Imprimimos e produzimos placas, sinalética, banners e lonas com materiais resistentes às intempéries."
+    },
+    "relief": {
+      "title": "Trabalhos em Relevo",
+      "description": "Logótipos e letras em relevo acrescentam tridimensionalidade e impacto visual, valorizando espaços interiores e exteriores.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Produzimos elementos 3D em PVC, acrílico ou metal para sinalética, paredes e decoração."
+    },
+    "stand": {
+      "title": "Stands & Expositores",
+      "description": "Essenciais para feiras, eventos e pontos de venda: apresentam produtos e serviços de forma clara, profissional e atrativa.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Desenhamos e fabricamos roll-ups, balcões promocionais, paredes expositivas e soluções modulares personalizadas, fáceis de montar e transportar."
+    },
+    "stationery": {
+      "title": "Estacionário",
+      "description": "O estacionário personalizado integra a identidade visual: cartões de visita, papel timbrado, envelopes e blocos passam profissionalismo e consistência.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Criamos conjuntos coordenados (papel timbrado, envelopes, cartões, etc.), cuidando do design e da impressão para garantir qualidade em cada detalhe."
+    },
+    "uniforms": {
+      "title": "Fardamentos & EPI",
+      "description": "Fardas e equipamentos de proteção individual personalizados transmitem profissionalismo e uniformidade, garantindo conforto e segurança para quem usa.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Fornecemos fardas, casacos, t-shirts e EPI com estampa ou bordado do logótipo, assegurando qualidade dos tecidos e funcionalidade."
+    },
+    "window": {
+      "title": "Decoração de Montras",
+      "description": "Autocolantes de montra, microperfurado e vinil recortado: design, impressão e aplicação profissionais. Aumente a visibilidade da sua loja e comunique promoções, horários e branding com soluções duráveis e em conformidade.",
+      "ctaTitle": "O que podemos fazer por si",
+      "ctaText": "Desenhamos a sua montra à medida — da arte final à instalação."
+    }
   }
-
 }

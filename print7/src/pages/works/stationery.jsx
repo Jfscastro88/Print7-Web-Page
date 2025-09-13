@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgVitrin1 from '../../assets/images/carousel/estacionarios/sta1.jpg';
 import imgVitrin2 from '../../assets/images/carousel/estacionarios/sta2.jpg';
@@ -20,15 +21,16 @@ const IMAGES = [
 ];
 
 function stationeryPage() {
+  const { t } = useTranslation();
   return (
     <CategoryPage
-    title="Stationery"
-    description="Custom stationery is an integral part of a company's visual identity. Business cards, letterhead, envelopes, and notepads convey professionalism and consistency to customers and partners."
-    images={IMAGES}
-    cta={{
-      title: 'What we can do for you',
-      text: 'We create coordinated sets of letterhead, envelopes, business cards, and other paper materials, taking care of design and printing to ensure consistency and quality in every detail.',
-    }}
+      title={t('categories.stationery.title')}
+      description={t('categories.stationery.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.stationery.ctaTitle'),
+        text: t('categories.stationery.ctaText'),
+      }}
     />
   );
 }

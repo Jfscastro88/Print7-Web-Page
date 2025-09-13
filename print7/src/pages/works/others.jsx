@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgAD1 from '../../assets/images/carousel/outros/out1.jpg';
 import imgAD2 from '../../assets/images/carousel/outros/out2.jpg';
@@ -32,16 +33,17 @@ const IMAGES = [
   ];
 
 function OthersPage() {
-    return (
-      <CategoryPage
-        title="Other Work"
-        description="There are always special projects that don't fit into a single category: creative works, unique installations, or custom requests."
-        images={IMAGES}
-        cta={{
-          title: 'What we can do for you',
-          text: 'We design and create customized solutions for unique needs, combining design, printing, and innovative materials to turn your ideas into reality.',
-        }}
-      />
-    );
-  }
+  const { t } = useTranslation();
+  return (
+    <CategoryPage
+      title={t('categories.others.title')}
+      description={t('categories.others.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.others.ctaTitle'),
+        text: t('categories.others.ctaText'),
+      }}
+    />
+  );
+}
 export default OthersPage;

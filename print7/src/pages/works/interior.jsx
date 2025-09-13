@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgAD1 from '../../assets/images/carousel/decorinterior/di1.jpg';
 import imgAD2 from '../../assets/images/carousel/decorinterior/di2.jpg';
@@ -14,15 +15,16 @@ const IMAGES = [
 ];
 
 function InterirorPage() {
+  const { t } = useTranslation();
   return (
     <CategoryPage
-    title="Interior Decoration"
-    description="Interior decoration with custom graphics enhances commercial spaces, offices, and showrooms. Glass, walls, and surfaces become communication and design tools, enhancing the visual experience of customers and employees."
-    images={IMAGES}
-    cta={{
-      title: 'What we can do for you',
-      text: 'We design and create window decals, wall coverings, decorative panels, and custom solutions to create functional, welcoming spaces that reflect your brand’s image.',
-    }}
+      title={t('categories.interior.title')}
+      description={t('categories.interior.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.interior.ctaTitle'),
+        text: t('categories.interior.ctaText'),
+      }}
     />
   );
 }

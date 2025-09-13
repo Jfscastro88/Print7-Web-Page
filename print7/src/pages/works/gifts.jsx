@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgGifts1 from '../../assets/images/carousel/brindes/bg1.jpg';
 import imgGifts2 from '../../assets/images/carousel/brindes/bg2.jpg';
@@ -50,20 +51,20 @@ const IMAGES = [
 { src: imgGifts27, alt: 'AD #27'}, { src: imgGifts28, alt: 'AD #28'},
 { src: imgGifts29, alt: 'AD #29'}, { src: imgGifts30, alt: 'AD #30'},
 { src: imgGifts31, alt: 'AD #31'}
-,
   ];
 
 function AdvertisingPage() {
-    return (
-      <CategoryPage
-        title="Personalized Gifts"
-        description="Personalized toasts are an effective marketing tool for strengthening your brand identity. Whether pens, mugs, notepads, or tech gadgets, personalizing them with your company logo transforms everyday objects into lasting communication tools."
-        images={IMAGES}
-        cta={{
-          title: 'What we can do for you',
-          text: 'We can help you choose the most suitable gadgets, curate the graphics, and manage the entire production process, ensuring quality items that leave a positive and professional impression on your customers.',
-        }}
-      />
-    );
-  }
+  const { t } = useTranslation();
+  return (
+    <CategoryPage
+      title={t('categories.gifts.title')}
+      description={t('categories.gifts.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.gifts.ctaTitle'),
+        text: t('categories.gifts.ctaText'),
+      }}
+    />
+  );
+}
 export default AdvertisingPage;

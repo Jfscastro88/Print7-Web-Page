@@ -17,32 +17,133 @@
       "title": "Hai bisogno di qualcosa di simile?",
       "desc": "Raccontaci il tuo progetto: possiamo occuparci della creazione e del miglioramento del brand, oltre alla produzione dei materiali.",
       "button": "Contattaci"
+    },
+    "carousel": {
+      "gifts":      { "title": "Gadget Personalizzati", "subtitle": "Gadget e regali aziendali personalizzati.", "alt": "Gadget con logo" },
+      "laser":      { "title": "Taglio e Incisione Laser", "subtitle": "Taglio e incisione su legno, acrilico e metallo.", "alt": "Esempio di taglio laser" },
+      "logos":      { "title": "Design del Logo", "subtitle": "Naming, design del logo e linee guida di brand.", "alt": "Esempi di logo e identità" },
+      "interior":   { "title": "Decorazione d’Interni", "subtitle": "Vetri, pareti, elementi retroilluminati e altro.", "alt": "Decorazione d’interni" },
+      "stationery": { "title": "Coordinato Cartaceo", "subtitle": "Carta intestata, buste, biglietti e altro.", "alt": "Set di coordinato" },
+      "cars":       { "title": "Personalizzazione Veicoli", "subtitle": "Wrapping parziale/totale, lettering, magneti.", "alt": "Personalizzazione veicoli" },
+      "uniforms":   { "title": "Divise & DPI", "subtitle": "Divise e DPI con logo.", "alt": "Divise e DPI" },
+      "plates":     { "title": "Pannelli & Teli", "subtitle": "Pannelli rigidi e stampa grande formato.", "alt": "Pannelli e banner" },
+      "ad":         { "title": "Insegne Luminose", "subtitle": "Insegne luminose e totem.", "alt": "Insegna luminosa" },
+      "stand":      { "title": "Stand & Espositori", "subtitle": "Roll-up, desk, pareti, stand.", "alt": "Stand ed espositori" },
+      "neon":       { "title": "LED Neon", "subtitle": "Decorazioni LED neon personalizzate.", "alt": "Scritta LED neon" },
+      "relief":     { "title": "Lettere a Rilievo & 3D", "subtitle": "Loghi 3D per interno/esterno.", "alt": "Lettere a rilievo" },
+      "window":     { "title": "Decorazione Vetrine", "subtitle": "Adesivi, microforato, grafiche.", "alt": "Decorazione vetrina" },
+      "others":     { "title": "Altri Lavori", "subtitle": "Progetti speciali su richiesta.", "alt": "Altri lavori" }
     }
   },
-    "navbar": {
+  "navbar": {
     "home": "Home",
     "about": "Chi Siamo",
     "catalogs": "Cataloghi",
     "contact": "Contatti"
-  },"footer": {
-    "company": "Print7 — Pubblicità & Design",
-    "address1": "Rua Nossa Senhora do Carmo, 22A",
-    "address2": "2900 - 146 Setúbal",
-    "mobileNote": "Chiamata alla rete mobile nazionale",
-    "rights": "Tutti i diritti riservati.",
-    "madeBy": "Creato da Jfscastro"
-  },
-  "catalogs": {
-    "heroTitle": "Cataloghi",
-    "heroSubtitle": "Esplora le nostre categorie: tessili e gadget.\nClicca su un elemento per aprire il catalogo corrispondente in una nuova scheda.",
-    "textile": "Tessile",
-    "giveaways": "Gadget"
-  },
-  "contacts": {
-    "heroTitle": "Vogliamo far parte della tua storia!",
-    "sectionTitle": "Contattaci",
-    "locationTitle": "La nostra posizione",
-    "schedule": "Lun a Ven: 9h-13h | 14h-18h"
+    },"footer": {
+      "company": "Print7 — Pubblicità & Design",
+      "address1": "Rua Nossa Senhora do Carmo, 22A",
+      "address2": "2900 - 146 Setúbal",
+      "mobileNote": "Chiamata alla rete mobile nazionale",
+      "rights": "Tutti i diritti riservati.",
+      "madeBy": "Creato da Jfscastro"
+    },
+    "catalogs": {
+      "heroTitle": "Cataloghi",
+      "heroSubtitle": "Esplora le nostre categorie: tessili e gadget.\nClicca su un elemento per aprire il catalogo corrispondente in una nuova scheda.",
+      "textile": "Tessile",
+      "giveaways": "Gadget"
+    },
+    "contacts": {
+      "heroTitle": "Vogliamo far parte della tua storia!",
+      "sectionTitle": "Contattaci",
+      "locationTitle": "La nostra posizione",
+      "schedule": "Lun a Ven: 9h-13h | 14h-18h"
+    },
+    "categories": {
+      "ad": {
+        "title": "Pubblicità",
+        "description": "Le insegne pubblicitarie sono fondamentali per aumentare la visibilità di un’attività. Possono essere luminose o non luminose, per interni o esterni, e aiutano ad attirare l’attenzione dei passanti, rafforzando l’immagine del brand anche a distanza.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Progettiamo e realizziamo insegne personalizzate, lettere e cassonetti luminosi a LED, totem e pannelli resistenti agli agenti atmosferici. Ti seguiamo dalla scelta dei materiali all’installazione."
+      },
+      "vehicles": {
+        "title": "Personalizzazione Veicoli",
+        "description": "La personalizzazione dei veicoli è un potente mezzo di pubblicità in movimento: trasformare auto, furgoni e flotte aziendali in supporti di comunicazione aumenta la visibilità del brand in ogni tragitto.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Offriamo wrapping totale o parziale, applicazioni adesive e magnetiche, e lettering su qualsiasi veicolo, garantendo materiali durevoli e installazione professionale."
+      },
+      "gifts": {
+        "title": "Gadget Personalizzati",
+        "description": "I gadget personalizzati sono uno strumento efficace per rafforzare l’identità del brand. Penne, tazze, quaderni o dispositivi tech: con il tuo logo diventano oggetti quotidiani che comunicano a lungo.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Ti aiutiamo a scegliere i gadget più adatti, curiamo la grafica e gestiamo l’intera produzione, assicurando articoli di qualità e un’impressione professionale."
+      },
+      "interior": {
+        "title": "Decorazione d’Interni",
+        "description": "La decorazione d’interni con grafiche personalizzate valorizza negozi, uffici e showroom. Vetrate, pareti e superfici diventano strumenti di design e comunicazione che migliorano l’esperienza visiva.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Realizziamo vetrofanie, rivestimenti murali, pannelli decorativi e soluzioni su misura per creare spazi accoglienti e funzionali che rispecchiano l’immagine del tuo brand."
+      },
+      "laser": {
+        "title": "Taglio e Incisione Laser",
+        "description": "Il taglio e l’incisione laser permettono di personalizzare con precisione molti materiali — legno, acrilico, pelle e metallo — con dettagli fini e finiture pulite, ideali per produzioni industriali o pezzi unici.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Realizziamo incisioni personalizzate per targhe, gadget, segnaletica e articoli promozionali, oltre a tagli su misura per prototipi, decorazioni e accessori. Dalla progettazione alla consegna."
+      },
+      "logos": {
+        "title": "Creazione di Loghi",
+        "description": "Un buon logo è il cuore dell’identità visiva del brand. Oltre all’estetica, deve comunicare valori, personalità e riconoscibilità su tutti i supporti — dal biglietto da visita alle campagne digitali.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Creiamo loghi originali e versatili, ridisegniamo brand esistenti e definiamo linee guida per garantire coerenza visiva in tutta la comunicazione."
+      },
+      "neon": {
+        "title": "Lavori con LED Neon",
+        "description": "Insegne e decorazioni in LED neon aggiungono modernità e visibilità a negozi, eventi e interni, creando un’atmosfera d’impatto giorno e notte.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Progettiamo insegne e forme in LED neon personalizzate, durevoli ed efficienti — ideali per farsi notare e decorare con stile."
+      },
+      "others": {
+        "title": "Altri Lavori",
+        "description": "Progetti speciali che non rientrano in una sola categoria: installazioni creative e richieste su misura.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Realizziamo soluzioni personalizzate combinando design, stampa e materiali innovativi per trasformare le idee in realtà."
+      },
+      "plates": {
+        "title": "Pannelli e Teli",
+        "description": "Pannelli rigidi e teli in PVC/tessuto sono soluzioni versatili per interno ed esterno — ideali per promo temporanee o comunicazioni permanenti.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Stampiamo e produciamo insegne, pannelli, banner e teli con materiali resistenti agli agenti atmosferici."
+      },
+      "relief": {
+        "title": "Lavori a Rilievo",
+        "description": "Loghi e lettere in rilievo aggiungono tridimensionalità e impatto visivo, valorizzando spazi interni ed esterni.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Creiamo elementi 3D su misura (PVC, acrilico, metallo) per segnaletica, pareti e decorazioni."
+      },
+      "stand": {
+        "title": "Stand & Espositori",
+        "description": "Essenziali per fiere, eventi e retail: presentano prodotti e servizi in modo chiaro e professionale.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Progettiamo e realizziamo roll-up, banchi promo, pareti espositive e soluzioni modulari personalizzate, facili da montare e trasportare."
+      },
+      "stationery": {
+        "title": "Coordinato Cartaceo",
+        "description": "Il coordinato cartaceo personalizzato è parte integrante dell’identità visiva: biglietti da visita, carta intestata, buste e block notes comunicano professionalità e coerenza.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Creiamo set coordinati (carta intestata, buste, biglietti, ecc.), curando grafica e stampa per garantire qualità in ogni dettaglio."
+      },
+      "uniforms": {
+        "title": "Divise & DPI",
+        "description": "Divise e dispositivi di protezione individuale personalizzati trasmettono professionalità e uniformità, garantendo comfort e sicurezza.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Forniamo divise, giacche, t-shirt e DPI con logo ricamato o stampato, assicurando qualità dei tessuti e funzionalità."
+      },
+      "window": {
+        "title": "Decorazione Vetrine",
+        "description": "Adesivi da vetrina, microforato e vinile prespaziato: design, stampa e applicazione professionali. Aumenta la visibilità del negozio e comunica offerte, orari e branding con soluzioni durevoli e conformi.",
+        "ctaTitle": "Cosa possiamo fare per te",
+        "ctaText": "Progettiamo la tua vetrina su misura — dalla grafica all’installazione."
+      }
+    }
   }
-
-}

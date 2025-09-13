@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgVitrin1 from '../../assets/images/carousel/fardamentos/far1.jpg';
 import imgVitrin2 from '../../assets/images/carousel/fardamentos/far2.jpg';
@@ -47,15 +48,17 @@ const IMAGES = [
 ];
 
 function uniformsPage() {
+  const { t } = useTranslation();
+
   return (
     <CategoryPage
-    title="Uniforms & PPE"
-    description="Customized workwear and personal protective equipment (PPE) convey professionalism and uniformity, while ensuring safety and comfort for the wearer."
-    images={IMAGES}
-    cta={{
-      title: 'What we can do for you',
-      text: 'We provide customized uniforms, jackets, t-shirts, and PPE with company logo printing or embroidery, taking care of the quality of the fabrics and functionality.',
-    }}
+      title={t('categories.uniforms.title')}
+      description={t('categories.uniforms.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.uniforms.ctaTitle'),
+        text: t('categories.uniforms.ctaText'),
+      }}
     />
   );
 }

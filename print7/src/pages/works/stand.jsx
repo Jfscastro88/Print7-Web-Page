@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import { useTranslation } from 'react-i18next';
 
 import imgVitrin1 from '../../assets/images/carousel/stand/sta1.jpg';
 import imgVitrin2 from '../../assets/images/carousel/stand/sta2.jpg';
@@ -21,15 +22,16 @@ const IMAGES = [
 ];
 
 function StandsPage() {
+  const { t } = useTranslation();
   return (
     <CategoryPage
-    title="Stand & Expositores"
-    description="Stands and displays are essential for trade shows, events, and points of sale: they help present products and services in a clear, professional, and attractive manner."
-    images={IMAGES}
-    cta={{
-      title: 'What we can do for you',
-      text: 'We design and manufacture roll-ups, promotional desks, display walls, and customized modular solutions that are easy to assemble and transport.',
-    }}
+      title={t('categories.stand.title')}
+      description={t('categories.stand.description')}
+      images={IMAGES}
+      cta={{
+        title: t('categories.stand.ctaTitle'),
+        text: t('categories.stand.ctaText'),
+      }}
     />
   );
 }
