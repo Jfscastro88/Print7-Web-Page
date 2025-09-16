@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Privacy Policy | Print7",
+    "description": "Print7’s privacy policy. We do not use analytics or marketing cookies; only data strictly necessary for site operation and security."
+  },
+  "heading": "Privacy Policy",
+  "updated": "Last updated: {{date}}",
+  "intro": "This Policy explains how Print7 processes personal data when you visit our portfolio website. The site is purely informational and does not use analytics or marketing cookies.",
+  "controller": {
+    "heading": "Data Controller",
+    "body": "<strong>Print7 – Design e Publicidade</strong><br/>Rua Nossa Senhora do Carmo, 22A, 2900-146 Setúbal, Portugal<br/>Email: <a class=\"underline\" href=\"mailto:contact@print7.pt\">geral@print7.pt</a>"
+  },
+  "data": {
+    "heading": "Data we process",
+    "logs": {
+      "title": "Technical access data (server logs):",
+      "text": "IP address, date/time, requested URL, user-agent, referrer. Purpose: security, stability and abuse prevention."
+    },
+    "contact": {
+      "title": "Contact form (if available):",
+      "text": "name, email and message — solely to respond to your enquiry."
+    }
+  },
+  "cookies": {
+    "heading": "Cookies",
+    "text": "We do not use analytics, marketing or profiling cookies. If, in the future, features requiring cookies are introduced (e.g., language preferences), we will inform you and, where applicable, seek prior consent."
+  },
+  "legalBases": {
+    "heading": "Legal bases",
+    "legit": {
+      "title": "Legitimate interests:",
+      "text": "security, operation and abuse prevention (technical logs)."
+    },
+    "contract": {
+      "title": "Pre-contractual steps/contract performance:",
+      "text": "responding to your enquiry via form or email."
+    },
+    "legal": {
+      "title": "Legal obligations:",
+      "text": "where applicable."
+    }
+  },
+  "processors": {
+    "heading": "Sharing and processors",
+    "text": "We may use service providers (hosting) processing data on our behalf under appropriate contracts and safeguards. We do not sell personal data."
+  },
+  "retention": {
+    "heading": "Retention periods",
+    "logs": {
+      "title": "Technical logs:",
+      "text": "retained only as long as necessary for security and diagnostics."
+    },
+    "contacts": {
+      "title": "Contact requests:",
+      "text": "kept as needed to respond and comply with applicable obligations."
+    }
+  },
+  "rights": {
+    "heading": "Your rights",
+    "text": "You have the rights of access, rectification, erasure, restriction, portability and objection under the GDPR. You may exercise them by email. You also have the right to lodge a complaint with the supervisory authority."
+  },
+  "transfers": {
+    "heading": "International transfers",
+    "text": "We do not transfer data outside the EEA unless necessary and with appropriate safeguards."
+  },
+  "security": {
+    "heading": "Security",
+    "text": "We implement technical and organisational measures to protect data against unauthorised access, loss or alteration."
+  },
+  "changes": {
+    "heading": "Changes to this Policy",
+    "text": "We may update this Policy to reflect legal or operational changes. We will publish the updated version on this page, indicating the date."
+  },
+  "contact": {
+    "heading": "Contact",
+    "text": "For privacy queries, email <a class=\"underline\" href=\"mailto:contact@print7.pt\">geral@print7.pt</a>."
+  }
+}

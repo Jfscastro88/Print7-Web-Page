@@ -1,0 +1,78 @@
+{
+  "meta": {
+    "title": "Informativa sulla Privacy | Print7",
+    "description": "Informativa privacy di Print7. Non utilizziamo cookie di analisi o marketing; solo dati strettamente necessari al funzionamento e alla sicurezza del sito."
+  },
+  "heading": "Informativa sulla Privacy",
+  "updated": "Ultimo aggiornamento: {{date}}",
+  "intro": "Questa Informativa spiega come Print7 tratta i dati personali quando visiti il nostro sito portfolio. Il sito è puramente informativo e non utilizza cookie di analisi o marketing.",
+  "controller": {
+    "heading": "Titolare del trattamento",
+    "body": "<strong>Print7 – Design e Publicidade</strong><br/>Rua Nossa Senhora do Carmo, 22A, 2900-146 Setúbal, Portogallo<br/>Email: <a class=\"underline\" href=\"mailto:contact@print7.pt\">geral@print7.pt</a>"
+  },
+  "data": {
+    "heading": "Dati che trattiamo",
+    "logs": {
+      "title": "Dati tecnici di accesso (log del server):",
+      "text": "indirizzo IP, data/ora, URL richiesto, user-agent, referrer. Finalità: sicurezza, stabilità e prevenzione degli abusi."
+    },
+    "contact": {
+      "title": "Modulo di contatto (se presente):",
+      "text": "nome, email e messaggio — esclusivamente per rispondere alla tua richiesta."
+    }
+  },
+  "cookies": {
+    "heading": "Cookie",
+    "text": "Non utilizziamo cookie di analisi, marketing o profilazione. Se in futuro introdurremo funzionalità che richiedono cookie (es. preferenze di lingua), ti informeremo e, se necessario, chiederemo il consenso preventivo."
+  },
+  "legalBases": {
+    "heading": "Basi giuridiche",
+    "legit": {
+      "title": "Interesse legittimo:",
+      "text": "sicurezza, funzionamento e prevenzione degli abusi (log tecnici)."
+    },
+    "contract": {
+      "title": "Misure precontrattuali/esecuzione del contratto:",
+      "text": "risposta alla tua richiesta tramite form o email."
+    },
+    "legal": {
+      "title": "Obblighi di legge:",
+      "text": "ove applicabile."
+    }
+  },
+  "processors": {
+    "heading": "Condivisioni e responsabili del trattamento",
+    "text": "Possiamo avvalerci di fornitori di servizi (hosting) che trattano dati per nostro conto, in base a contratti idonei e misure di sicurezza adeguate. Non vendiamo dati personali."
+  },
+  "retention": {
+    "heading": "Tempi di conservazione",
+    "logs": {
+      "title": "Log tecnici:",
+      "text": "conservati solo per il tempo necessario a sicurezza e diagnostica."
+    },
+    "contacts": {
+      "title": "Richieste di contatto:",
+      "text": "conservate per il tempo necessario a rispondere e adempiere agli obblighi applicabili."
+    }
+  },
+  "rights": {
+    "heading": "I tuoi diritti",
+    "text": "Hai i diritti di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione ai sensi del GDPR. Puoi esercitarli via email. Hai anche il diritto di proporre reclamo all’autorità di controllo."
+  },
+  "transfers": {
+    "heading": "Trasferimenti internazionali",
+    "text": "Non trasferiamo dati al di fuori del SEE salvo necessità e con adeguate garanzie."
+  },
+  "security": {
+    "heading": "Sicurezza",
+    "text": "Adottiamo misure tecniche e organizzative per proteggere i dati da accessi non autorizzati, perdita o alterazione."
+  },
+  "changes": {
+    "heading": "Modifiche alla presente Informativa",
+    "text": "Potremmo aggiornare questa Informativa per riflettere cambiamenti legali o operativi. Pubblicheremo la versione aggiornata in questa pagina, indicando la data."
+  },
+  "contact": {
+    "heading": "Contatti",
+    "text": "Per domande sulla privacy, scrivi a <a class=\"underline\" href=\"mailto:contact@print7.pt\">geral@print7.pt</a>."
+  }
+}

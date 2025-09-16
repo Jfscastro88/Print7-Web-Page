@@ -22,6 +22,8 @@ import Stationery from './pages/works/stationery.jsx';
 import Uniforms from './pages/works/uniforms.jsx';
 import Window from './pages/works/window.jsx';
 import ScrollToTop from '../src/assets/components/scrolltop.jsx';
+import NotFoundPage from './pages/notfoundpage/notfoundpage.jsx';
+import PrivacyPage from "../src/pages/legal/privacypage.jsx";
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
               <Route path="stationery" element={<Stationery/>} />
               <Route path="uniforms" element={<Uniforms/>} />
               <Route path="window" element={<Window/>} />
+              <Route path="/privacy" element={<PrivacyPage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Route>
           </Routes>
         </Box>

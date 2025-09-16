@@ -2,6 +2,7 @@ import { BackgroundImage, Container, Text, Group, Anchor, Divider } from '@manti
 import { InstagramIcon, FacebookIcon, Phone, Mail } from 'lucide-react';
 import footerImage from '../../assets/images/Footer.png';
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const MadeBy = 'https://www.linkedin.com/in/jfscastro88/'; 
 
@@ -52,14 +53,29 @@ function Footer() {
           </div>
 
           <Divider className="my-6 border-white/20" />
-          <div className="text-center">
-            <Text size="xs" className="text-white/25">
-              © {currentYear} Print7. {t("footer.rights")}{" "}
-              <Anchor href={MadeBy} target="_blank" rel="noopener noreferrer" className="text-white/20 hover:text-white transition-colors">
-                {t("footer.madeBy")}
-              </Anchor>
-            </Text>
-          </div>
+<div className="text-center">
+  <Text size="xs" className="text-white/25">
+    © {currentYear} Print7. {t("footer.rights")}
+    <span className="mx-2">•</span>
+    <Anchor
+      component={Link}
+      to="/privacy"
+      className="text-white/20 hover:text-white transition-colors"
+    >
+      {t("footer.privacy")}
+    </Anchor>
+    <span className="mx-2">•</span>
+    <Anchor
+      href={MadeBy}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-white/20 hover:text-white transition-colors"
+      aria-label="Made by (abre numa nova aba)"
+    >
+      {t("footer.madeBy")}
+    </Anchor>
+  </Text>
+</div>
         </Container>
       </BackgroundImage>
     </footer>

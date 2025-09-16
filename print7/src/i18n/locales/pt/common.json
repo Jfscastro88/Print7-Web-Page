@@ -48,7 +48,8 @@
     "address2": "2900 - 146 Setúbal",
     "mobileNote": "Chamada para rede móvel nacional",
     "rights": "Todos os direitos reservados.",
-    "madeBy": "Jfscastro"
+    "madeBy": "Jfscastro",
+    "privacy": "Política de Privacidade"
   },
   "catalogs": {
     "heroTitle": "Catálogos",
@@ -154,5 +155,19 @@
     "p2": "Acreditamos que cada projeto de comunicação visual é uma oportunidade para criar impacto e dar vida a ideias. Por isso, acompanhamos cada etapa – do conceito e design à produção e instalação – com profissionalismo, dedicação e atenção ao detalhe.",
     "p3": "Com uma equipa experiente e tecnologia moderna, garantimos qualidade, rapidez e eficiência em todos os trabalhos. O nosso compromisso é transformar a sua marca em algo memorável, através de materiais gráficos que se destacam e comunicam de forma clara e eficaz.",
     "p4": "Na Print7, não imprimimos apenas projetos: criamos experiências visuais que aproximam as marcas das pessoas."
+  },
+  "notFound": {
+    "oops": "Oops…",
+    "title": "Página não encontrada",
+    "desc": "A rota que tentou aceder não existe. Verifique o URL ou volte à página inicial.",
+    "goHome": "Ir para Início",
+    "goBack": "Voltar",
+    "contact": "Contactos",
+    "quickLinks": "Links rápidos",
+    "links": {
+      "about": "Sobre Nós",
+      "catalogs": "Catálogos",
+      "design": "Design"
+    }
   }
 }

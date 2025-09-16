@@ -48,7 +48,8 @@
     "address2": "2900 - 146 Setúbal",
     "mobileNote": "Call to national mobile network",
     "rights": "All rights reserved.",
-    "madeBy": "Jfscastro"
+    "madeBy": "Jfscastro",
+    "privacy": "Privacy Policy"
   },
   "catalogs": {
     "heroTitle": "Catalogs",
@@ -154,5 +155,19 @@
     "p2": "We believe every visual communication project is a chance to create impact and bring ideas to life. That’s why we support each stage—from concept and design to production and installation—with professionalism, dedication, and attention to detail.",
     "p3": "With an experienced team and modern technology, we ensure quality, speed, and efficiency in every job. Our commitment is to make your brand memorable through graphic materials that stand out and communicate clearly and effectively.",
     "p4": "At Print7, we don’t just print projects: we create visual experiences that bring brands closer to people."
+  },
+  "notFound": {
+    "oops": "Oops…",
+    "title": "Page not found",
+    "desc": "The route you tried to access doesn’t exist. Check the URL or go back to the homepage.",
+    "goHome": "Go to Home",
+    "goBack": "Go back",
+    "contact": "Contacts",
+    "quickLinks": "Quick links",
+    "links": {
+      "about": "About Us",
+      "catalogs": "Catalogs",
+      "design": "Design"
+    }
   }
 }
