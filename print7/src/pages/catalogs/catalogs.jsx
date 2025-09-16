@@ -1,5 +1,6 @@
 import { Container, Title, Text, SimpleGrid, Card, Image, Anchor, Group, Divider, AspectRatio, rem
 } from "@mantine/core";
+import Seo from '../../assets/components/seo.jsx';
 import { useTranslation } from "react-i18next";
 
 import heroImage from "../../assets/images/catalogs/catalogsv2.jpg";
@@ -41,6 +42,7 @@ function CatalogsPage() {
 
   return (
     <div className="min-h-screen bg-white">
+      <Seo title={t('seo.catalogs.title')} description={t('seo.catalogs.desc')} />
       <header
         className="relative flex items-center justify-center h-[400px] bg-gray-100"
         style={{

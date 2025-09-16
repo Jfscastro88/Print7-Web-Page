@@ -1,25 +1,16 @@
-import { Helmet } from "react-helmet-async";
+import Seo from '../../assets/components/seo.jsx';
 import { useTranslation } from "react-i18next";
 
-export default function PrivacyPage() {
+function PrivacyPage() {
     const { t, i18n } = useTranslation("privacy");
     
-    // data da última atualização (ajusta quando precisares)
     const updatedAt = new Date("2025-09-16T00:00:00Z");
     const locale = { pt: "pt-PT", en: "en-GB", it: "it-IT" }[i18n.language] || "en-GB";
-    const dateStr = updatedAt.toLocaleDateString(locale, {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-    });
+    const dateStr = updatedAt.toLocaleDateString(locale, { day: "numeric", month: "long", year: "numeric" });
     
     return (
         <main className="bg-white">
-        <Helmet>
-        <title>{t("meta.title")}</title>
-        <meta name="description" content={t("meta.description")} />
-        <meta name="robots" content="index,follow" />
-        </Helmet>
+        <Seo title={t('meta.title')} description={t('meta.description')} />
         
         <section className="max-w-3xl mx-auto px-6 py-14 text-gray-800 leading-relaxed">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900">{t("heading")}</h1>
@@ -33,12 +24,8 @@ export default function PrivacyPage() {
         
         <h2 className="text-xl font-semibold">{t("data.heading")}</h2>
         <ul className="list-disc pl-6 space-y-2">
-        <li>
-        <strong>{t("data.logs.title")}</strong> {t("data.logs.text")}
-        </li>
-        <li>
-        <strong>{t("data.contact.title")}</strong> {t("data.contact.text")}
-        </li>
+        <li><strong>{t("data.logs.title")}</strong> {t("data.logs.text")}</li>
+        <li><strong>{t("data.contact.title")}</strong> {t("data.contact.text")}</li>
         </ul>
         
         <h2 className="text-xl font-semibold">{t("cookies.heading")}</h2>
@@ -79,3 +66,4 @@ export default function PrivacyPage() {
         </main>
     );
 }
+export default PrivacyPage;

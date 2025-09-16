@@ -1,10 +1,12 @@
 import aboutImage from "../../assets/images/catalogs/catalogs.jpg";
+import Seo from '../../assets/components/seo.jsx';
 import { useTranslation } from "react-i18next";
 
-export default function AboutPage() {
+function AboutPage() {
   const { t } = useTranslation("common");
   return (
     <main className="bg-white">
+    <Seo title={t('seo.about.title')} description={t('seo.about.desc')} />
       <section aria-label="Hero Sobre Nós" className="relative">
         <div className="relative min-h-[35vh] md:min-h-[50vh] w-full overflow-hidden">
           <img
@@ -30,3 +32,4 @@ export default function AboutPage() {
     </main>
   );
 }
+export default AboutPage;

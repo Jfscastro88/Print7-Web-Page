@@ -1,6 +1,7 @@
 import { Container, Title, Paper } from '@mantine/core';
 import { MapPin, Phone, Mail } from 'lucide-react';
 import ContactImage from '../../assets/images/contacts.jpg';
+import Seo from '../../assets/components/seo.jsx';
 import { useTranslation } from "react-i18next";
 
 function ContactPage() {
@@ -8,6 +9,7 @@ function ContactPage() {
 
   return (
     <main className="min-h-screen bg-white text-gray-900">
+      <Seo title={t('seo.contacts.title')} description={t('seo.contacts.desc')} />
       <section
         className="relative h-[320px] sm:h-[380px] md:h-[420px] lg:h-[480px] bg-cover bg-center"
         style={{ backgroundImage: `url(${ContactImage})` }}>

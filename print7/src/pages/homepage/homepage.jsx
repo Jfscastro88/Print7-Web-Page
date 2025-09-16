@@ -5,17 +5,19 @@ import bgImage from '../../assets/images/background.png';
 import { Box, Container, Title, Text, Button, Divider, Space } from '@mantine/core';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import Seo from '../../assets/components/seo.jsx';
 import Youtube from '../../assets/components/youtube.jsx';
 import CarouselHighlight from '../../assets/components/carousel.jsx';
 import SplitCarouselRow from '../../assets/components/SplitCarouselRow.jsx';
 import StackedCarouselRow from '../../assets/components/StackedCarouselRow.jsx';
 import heroCarouselItems from '../../assets/data/homeCarouselItems.js';
-import homeCarouselRows from '../../assets/data/homeCarouselRows.js';
 import ThreeUpCarouselGrid from '../../assets/components/ThreeUpCarouselGrid.jsx';
-import homeThreeUpSections from '../../assets/data/homeThreeUpSections.js';
-import homeLastThreeUpSection from '../../assets/data/homeLastThreeUpSection.js';
-import { Link } from 'react-router-dom';
 import { useTranslation } from "react-i18next";
+import getHomeCarouselRows from '../../assets/data/homeCarouselRows.js';
+import getHomeThreeUpSections from '../../assets/data/homeThreeUpSections.js';
+import getHomeLastThreeUpSection from '../../assets/data/homeLastThreeUpSection.js';
+
 
 function ZoomOnScroll({ children }) {
   const ref = useRef(null);
@@ -29,8 +31,11 @@ function ZoomOnScroll({ children }) {
   );
 }
 
-export default function HomePage() {
-  const { t } = useTranslation();
+function HomePage() {
+  const { t } = useTranslation('common');
+  const rows = getHomeCarouselRows(t);
+  const threeUp = getHomeThreeUpSections(t);
+  const lastThree = getHomeLastThreeUpSection(t);
 
   const localizedHeroItems = heroCarouselItems.map(item => ({
     ...item,
@@ -41,6 +46,7 @@ export default function HomePage() {
 
   return (
     <>
+    <Seo title={t('seo.home.title')} description={t('seo.home.desc')} />
       <Box
         className="relative h-[340px] sm:h-[440px] md:h-[520px] lg:h-[680px] xl:h-[760px] bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}>
@@ -96,17 +102,16 @@ export default function HomePage() {
         </ZoomOnScroll>
       </section>
 
-      <ThreeUpCarouselGrid items={homeThreeUpSections} spacing="py-8" height={320} />
-
-      {homeCarouselRows.map((row, i) =>
+      <ThreeUpCarouselGrid items={threeUp} spacing="py-8" height={320} />
+      {rows.map((row, i) =>
         row.type === 'stacked' ? (
           <StackedCarouselRow key={i} {...row} />
         ) : (
           <SplitCarouselRow key={i} {...row} />
         )
       )}
+      <ThreeUpCarouselGrid items={lastThree} spacing="py-8" height={320} />
 
-      <ThreeUpCarouselGrid items={homeLastThreeUpSection} spacing="py-8" height={320} />
       <Space h="xl" className="w-full bg-white" />
       <Divider />
 
@@ -139,3 +144,4 @@ export default function HomePage() {
     </>
   );
 }
+export default HomePage;

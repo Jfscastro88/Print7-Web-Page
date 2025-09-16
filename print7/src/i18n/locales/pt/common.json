@@ -33,6 +33,37 @@
       "relief":     { "title": "Letras em Relevo & 3D", "subtitle": "Logótipos 3D para interior/exterior.", "alt": "Letras em relevo" },
       "window":     { "title": "Decoração de Montras", "subtitle": "Vinis, microperfurado e grafismos.", "alt": "Decoração de montras" },
       "others":     { "title": "Outros Trabalhos", "subtitle": "Projetos especiais sob pedido.", "alt": "Outros trabalhos" }
+    },"carousel2": {
+      "relief": {
+        "title": "Letras em Relevo & 3D",
+        "subtitle": "Logótipos 3D para interior/exterior.",
+        "alt": "Exemplos de letras em relevo e 3D da Print7 {{index}}"
+      },
+      "cars": {
+        "title": "Personalização de Viaturas",
+        "subtitle": "Wraps parciais/totais, lettering, ímanes.",
+        "alt": "Exemplos de personalização de viaturas da Print7 {{index}}"
+      },
+      "stand": {
+        "title": "Stands & Expositores",
+        "subtitle": "Roll-ups, balcões, paredes, stands.",
+        "alt": "Exemplos de stands e expositores da Print7 {{index}}"
+      }
+    },
+    "lastThreeUp": {
+      "ad":       { "title": "Reclamos Luminosos", "subtitle": "Caixas de luz e totens.", "alt": "Exemplos de letreiros iluminados da Print7 {{index}}" },
+      "others":   { "title": "Outros trabalhos",      "subtitle": "Projetos especiais por pedido.", "alt": "Exemplos de outros trabalhos da Print7 {{index}}" },
+      "plates":   { "title": "Placas & Lonas",        "subtitle": "Painéis rígidos e grandes formatos.", "alt": "Exemplos de placas e lonas da Print7 {{index}}" },
+      "uniforms": { "title": "Fardamento & EPI",      "subtitle": "Fardas personalizadas e EPI.", "alt": "Exemplos de fardamento e EPI da Print7 {{index}}" },
+      "neon":     { "title": "LED Neon",              "subtitle": "Neon LED personalizado.", "alt": "Exemplos de LED neon da Print7 {{index}}" }
+    },
+    "threeUp": {
+      "laser":     { "title": "Corte a Laser",          "subtitle": "Madeira, acrílico e metal.", "alt": "Exemplos de corte/gravura a laser da Print7 {{index}}" },
+      "gifts":     { "title": "Brindes Personalizados", "subtitle": "Gadgets e brindes corporativos.", "alt": "Exemplos de brindes personalizados da Print7 {{index}}" },
+      "logos":     { "title": "Design de Logotipo",     "subtitle": "Naming, logótipo e brand guidelines.", "alt": "Exemplos de logótipos e identidades da Print7 {{index}}" },
+      "interior":  { "title": "Decoração de Interiores","subtitle": "Vidro, paredes, retroiluminação e mais.", "alt": "Exemplos de decoração de interiores da Print7 {{index}}" },
+      "window":    { "title": "Decoração de Montras",   "subtitle": "Autocolantes, perfurados, gráficos.", "alt": "Exemplos de decoração de montras da Print7 {{index}}" },
+      "stationery":{ "title": "Estacionário",           "subtitle": "Papel timbrado, envelopes, cartões e mais.", "alt": "Exemplos de estacionário da Print7 {{index}}" }
     }
   },
   "navbar": {
@@ -169,5 +200,14 @@
       "catalogs": "Catálogos",
       "design": "Design"
     }
+  },
+  "seo": {
+    "home": { "title": "Início", "desc": "Portfólio e soluções de comunicação visual em Setúbal." },
+    "about": { "title": "Sobre Nós", "desc": "Desde 2012, soluções criativas e produção gráfica em Setúbal." },
+    "catalogs": { "title": "Catálogos", "desc": "Explore os nossos catálogos: têxtil e brindes." },
+    "design": { "title": "Design", "desc": "Criação e melhoramento de identidade visual e materiais." },
+    "contacts": { "title": "Contactos", "desc": "Fale connosco para pedidos e orçamentos." },
+    "privacy": { "title": "Política de Privacidade", "desc": "Site vitrine sem cookies de análise/marketing." },
+    "notFound": { "title": "Página não encontrada", "desc": "" }
   }
 }

@@ -1,69 +1,39 @@
-const ad = import.meta.glob('../images/carousel/reclames/*', { eager: true });
-const adSlides = Object.values(ad).map((module, i) => ({
-    src: module.default,
-    alt: `Examples of Iluminated decoration by Print7  ${i + 1}`,
-}));
-
-const other = import.meta.glob('../images/carousel/outros/*', { eager: true });
-const otherSlides = Object.values(other).map((module, i) => ({
-    src: module.default,
-    alt: `Examples of others works by Print7 ${i + 1}`,
-}));
-
-const plastes = import.meta.glob('../images/carousel/placas/*', { eager: true });
-const platesSlides = Object.values(plastes).map((module, i) => ({
-    src: module.default,
-    alt: `Examples of Plates decoration by Print7 ${i + 1}`,
-}));
-
-const PEE = import.meta.glob('../images/carousel/fardamentos/*', { eager: true });
-const PEEslides = Object.values(PEE).map((module, i) => ({
-    src: module.default,
-    alt: `Examples of Workwear and PPE by Print7 ${i + 1}`,
-}));
-
-const neon = import.meta.glob('../images/carousel/ledneon/*', { eager: true });
-const neonSlides = Object.values(neon).map((module, i) => ({
-    src: module.default,
-    alt: `Examples of LED neon lettering by Print7 ${i + 1}`,
-}));    
-
-const homeLastThreeUpSection = [
-    {
-    title: 'Illuminated Signs',
-    subtitle: 'Light signs and totems.',
-    to: '/ad',
-    slides: adSlides,
-    height: 320,
-    },
-    {
-    title: 'Other works',
-    subtitle: 'Special projects on request.',
-    to: '/others',
-    slides: otherSlides,
-    height: 320,
-    },
-    {
-    title: 'Signs & Banners',
-    subtitle: 'Rigid panels and large-format prints.',
-    to: '/plates',  
-    slides: platesSlides,
-    height: 320,
-    },
-    {
-    title: 'Workwear & PPE',
-    subtitle: 'Logo-branded workwear and PPE.',
-    to: '/uniforms',
-    slides: PEEslides,
-    height: 320,
-    },
-    {
-    title: 'LED Neon',
-    subtitle: 'Custom LED neon décor.',
-    to: '/neon',
-    slides: neonSlides,
-    height: 320,
-    },
+export default function getHomeLastThreeUpSection(t) {
+    const ad = import.meta.glob('../images/carousel/reclames/*', { eager: true });
+    const adSlides = Object.values(ad).map((m, i) => ({
+        src: m.default,
+        alt: t('home.lastThreeUp.ad.alt', { index: i + 1 }),
+    }));
+    
+    const other = import.meta.glob('../images/carousel/outros/*', { eager: true });
+    const otherSlides = Object.values(other).map((m, i) => ({
+        src: m.default,
+        alt: t('home.lastThreeUp.others.alt', { index: i + 1 }),
+    }));
+    
+    const plates = import.meta.glob('../images/carousel/placas/*', { eager: true });
+    const platesSlides = Object.values(plates).map((m, i) => ({
+        src: m.default,
+        alt: t('home.lastThreeUp.plates.alt', { index: i + 1 }),
+    }));
+    
+    const PEE = import.meta.glob('../images/carousel/fardamentos/*', { eager: true });
+    const PEEslides = Object.values(PEE).map((m, i) => ({
+        src: m.default,
+        alt: t('home.lastThreeUp.uniforms.alt', { index: i + 1 }),
+    }));
+    
+    const neon = import.meta.glob('../images/carousel/ledneon/*', { eager: true });
+    const neonSlides = Object.values(neon).map((m, i) => ({
+        src: m.default,
+        alt: t('home.lastThreeUp.neon.alt', { index: i + 1 }),
+    }));
+    
+    return [
+        { title: t('home.lastThreeUp.ad.title'),       subtitle: t('home.lastThreeUp.ad.subtitle'),       to: '/ad',       slides: adSlides,      height: 320 },
+        { title: t('home.lastThreeUp.others.title'),   subtitle: t('home.lastThreeUp.others.subtitle'),   to: '/others',   slides: otherSlides,   height: 320 },
+        { title: t('home.lastThreeUp.plates.title'),   subtitle: t('home.lastThreeUp.plates.subtitle'),   to: '/plates',   slides: platesSlides,  height: 320 },
+        { title: t('home.lastThreeUp.uniforms.title'), subtitle: t('home.lastThreeUp.uniforms.subtitle'), to: '/uniforms', slides: PEEslides,     height: 320 },
+        { title: t('home.lastThreeUp.neon.title'),     subtitle: t('home.lastThreeUp.neon.subtitle'),     to: '/neon',     slides: neonSlides,    height: 320 },
     ];
-
-export default  homeLastThreeUpSection ;
+}

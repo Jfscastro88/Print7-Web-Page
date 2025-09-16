@@ -33,6 +33,26 @@
       "relief":     { "title": "Lettere a Rilievo & 3D", "subtitle": "Loghi 3D per interno/esterno.", "alt": "Lettere a rilievo" },
       "window":     { "title": "Decorazione Vetrine", "subtitle": "Adesivi, microforato, grafiche.", "alt": "Decorazione vetrina" },
       "others":     { "title": "Altri Lavori", "subtitle": "Progetti speciali su richiesta.", "alt": "Altri lavori" }
+    },
+    "carousel2": {
+      "relief":  { "title": "Lettere in Rilievo & 3D", "subtitle": "Loghi 3D per interni/esterni.", "alt": "Esempi di lettere in rilievo e 3D di Print7 {{index}}" },
+      "cars":    { "title": "Personalizzazione Veicoli", "subtitle": "Wrap parziale/totale, lettering, magneti.", "alt": "Esempi di personalizzazione veicoli di Print7 {{index}}" },
+      "stand":   { "title": "Stand & Display", "subtitle": "Roll-up, banconi, pareti, stand.", "alt": "Esempi di stand e display di Print7 {{index}}" }
+    },
+    "lastThreeUp": {
+      "ad":       { "title": "Insegne Luminose", "subtitle": "Insegne a luce e totem.", "alt": "Esempi di insegne luminose di Print7 {{index}}" },
+      "others":   { "title": "Altri lavori", "subtitle": "Progetti speciali su richiesta.", "alt": "Esempi di altri lavori di Print7 {{index}}" },
+      "plates":   { "title": "Insegne & Banners", "subtitle": "Pannelli rigidi e grande formato.", "alt": "Esempi di insegne e banner di Print7 {{index}}" },
+      "uniforms": { "title": "Abbigliamento da Lavoro & DPI", "subtitle": "Abbigliamento personalizzato e DPI.", "alt": "Esempi di abbigliamento & DPI di Print7 {{index}}" },
+      "neon":     { "title": "LED Neon", "subtitle": "Neon LED personalizzato.", "alt": "Esempi di LED neon di Print7 {{index}}" }
+    },
+    "threeUp": {
+      "laser":     { "title": "Taglio Laser", "subtitle": "Legno, acrilico e metallo.", "alt": "Esempi di taglio e incisione laser di Print7 {{index}}" },
+      "gifts":     { "title": "Gadget Personalizzati", "subtitle": "Gadget e regali aziendali.", "alt": "Esempi di gadget personalizzati di Print7 {{index}}" },
+      "logos":     { "title": "Logo Design", "subtitle": "Naming, logo e brand guidelines.", "alt": "Esempi di loghi e identità visive di Print7 {{index}}" },
+      "interior":  { "title": "Decorazione d’Interni", "subtitle": "Vetri, pareti, retroilluminati e altro.", "alt": "Esempi di decorazione d’interni di Print7 {{index}}" },
+      "window":    { "title": "Decorazione Vetrine", "subtitle": "Adesivi, microforato, grafiche.", "alt": "Esempi di decorazione vetrine di Print7 {{index}}" },
+      "stationery":{ "title": "Cartoleria", "subtitle": "Carta intestata, buste, biglietti e altro.", "alt": "Esempi di cartoleria di Print7 {{index}}" }
     }
   },
   "navbar": {
@@ -169,5 +189,14 @@
       "catalogs": "Cataloghi",
       "design": "Design"
     }
+  },
+  "seo": {
+    "home": { "title": "Home", "desc": "Portfolio e soluzioni di comunicazione visiva a Setúbal." },
+    "about": { "title": "Chi Siamo", "desc": "Dal 2012, soluzioni creative e produzione grafica a Setúbal." },
+    "catalogs": { "title": "Cataloghi", "desc": "Esplora i nostri cataloghi: tessile e gadget." },
+    "design": { "title": "Design", "desc": "Creazione logo, brand e materiali di comunicazione." },
+    "contacts": { "title": "Contatti", "desc": "Scrivici per richieste e preventivi." },
+    "privacy": { "title": "Informativa Privacy", "desc": "Sito vetrina senza cookie di analisi/marketing." },
+    "notFound": { "title": "Pagina non trovata", "desc": "" }
   }
   }
