@@ -147,5 +147,12 @@
       "ctaTitle": "What we can do for you",
       "ctaText": "We design your custom storefront — from graphics to installation."
     }
+  },
+  "about": {
+    "title": "About Us",
+    "p1": "Since 2012, Print7 has operated in the advertising and graphic production market in Setúbal, offering creative and tailored solutions for businesses.",
+    "p2": "We believe every visual communication project is a chance to create impact and bring ideas to life. That’s why we support each stage—from concept and design to production and installation—with professionalism, dedication, and attention to detail.",
+    "p3": "With an experienced team and modern technology, we ensure quality, speed, and efficiency in every job. Our commitment is to make your brand memorable through graphic materials that stand out and communicate clearly and effectively.",
+    "p4": "At Print7, we don’t just print projects: we create visual experiences that bring brands closer to people."
   }
 }
