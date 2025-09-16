@@ -1,4 +1,4 @@
-import Seo from './Seo.jsx';
+import Seo from '../components/seo.jsx';
 import { useTranslation } from 'react-i18next';
 
 export default function ServiceSeo({ slug, image }) {
