@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgVitrin1 from '../../assets/images/carousel/stand/sta1.jpg';
@@ -24,15 +25,18 @@ const IMAGES = [
 function StandsPage() {
   const { t } = useTranslation();
   return (
+    <main>
+    <ServiceSeo slug="stand" />
     <CategoryPage
-      title={t('categories.stand.title')}
-      description={t('categories.stand.description')}
-      images={IMAGES}
-      cta={{
-        title: t('categories.stand.ctaTitle'),
-        text: t('categories.stand.ctaText'),
-      }}
+    title={t('categories.stand.title')}
+    description={t('categories.stand.description')}
+    images={IMAGES}
+    cta={{
+      title: t('categories.stand.ctaTitle'),
+      text: t('categories.stand.ctaText'),
+    }}
     />
+    </main>
   );
 }
 export default StandsPage;

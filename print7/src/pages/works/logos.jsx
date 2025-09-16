@@ -1,6 +1,7 @@
 import '@mantine/core/styles.css';
 import { useRef, useState, useEffect } from 'react';
 import CategoryPage from '../../assets/components/categorypage.jsx';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgLogo1 from '../../assets/images/carousel/design/01.png';
@@ -60,7 +61,9 @@ export default function LogosPage() {
   }, []);
 
   return (
-    <CategoryPage
+    <main>
+      <ServiceSeo slug="logos" />
+      <CategoryPage
       title={t('categories.logos.title')}
       description={t('categories.logos.description')}
       images={IMAGES}
@@ -74,5 +77,6 @@ export default function LogosPage() {
         text: t('categories.logos.ctaText'),
       }}
     />
+    </main>
   );
 }

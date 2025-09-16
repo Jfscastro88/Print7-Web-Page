@@ -96,7 +96,7 @@
   },
   "categories": {
     "ad": {
-      "title": "Publicidade",
+      "title": "Reclamos Luminosos",
       "description": "Os reclamos publicitários são essenciais para aumentar a visibilidade de um negócio. Podem ser luminosos ou não luminosos, para interior ou exterior, e ajudam a captar a atenção de quem passa, reforçando a imagem da marca mesmo à distância.",
       "ctaTitle": "O que podemos fazer por si",
       "ctaText": "Desenhamos e fabricamos reclamos personalizados, letras e caixas luminosas LED, totens e painéis publicitários resistentes às intempéries. Acompanhamos desde a escolha de materiais até à instalação."
@@ -209,5 +209,24 @@
     "contacts": { "title": "Contactos", "desc": "Fale connosco para pedidos e orçamentos." },
     "privacy": { "title": "Política de Privacidade", "desc": "Site vitrine sem cookies de análise/marketing." },
     "notFound": { "title": "Página não encontrada", "desc": "" }
+  },
+  "seo2": {
+    "services": {
+      "gifts":     { "title": "Brindes Personalizados",        "desc": "Brindes personalizados com impressão/gravura para empresas. Catálogo amplo, prazos rápidos e qualidade Print7 em Setúbal." },
+      "laser":     { "title": "Corte e Gravação a Laser",      "desc": "Corte e gravação a laser em madeira, acrílico e metal. Precisão, acabamentos limpos e projetos por medida em Setúbal." },
+      "logos":     { "title": "Criação de Logotipo",            "desc": "Criação de logótipo e identidade visual: naming, redesign e guia de marca. Entregáveis prontos para impressão e digital." },
+      "interior":  { "title": "Decoração de Interiores",       "desc": "Decoração de interiores: vinil, vidro fosco, lettering e painéis iluminados. Produção e instalação em Setúbal." },
+      "stationery":{ "title": "Estacionário",                  "desc": "Estacionário: cartões, papel timbrado, envelopes e mais. Design e produção com acabamentos premium." },
+      "cars":      { "title": "Personalização de Viaturas",    "desc": "Personalização de viaturas: wraps, lettering e ímanes. Materiais duráveis e instalação profissional em Setúbal." },
+      "uniforms":  { "title": "Fardamentos & EPI",             "desc": "Fardamentos & EPI com o seu logótipo: bordado, DTF e serigrafia. Linhas completas para equipas." },
+      "plates":    { "title": "Placas & Lonas",                "desc": "Placas e lonas em grande formato: PVC, ACM e têxteis. Impressão resistente para exterior e interior." },
+      "ad":        { "title": "Reclamos Luminosos",            "desc": "Reclamos luminosos e caixas de luz LED. Design, produção e montagem com alta visibilidade." },
+      "stand":     { "title": "Stands & Expositores",          "desc": "Stands e expositores: roll-ups, balcões e paredes modulares. Soluções portáteis e personalizadas." },
+      "neon":      { "title": "LED Neon",                      "desc": "LED Neon personalizado para lojas, eventos e decoração. Cores intensas e baixo consumo." },
+      "relief":    { "title": "Letras em Relevo & 3D",         "desc": "Letras em relevo e 3D em PVC, acrílico ou metal. Efeito premium para fachadas e interiores." },
+      "window":    { "title": "Decoração de Montras",          "desc": "Decoração de montras: vinil recortado, microperfurado e impressões. Instalação limpa e rápida." },
+      "others":    { "title": "Outros Trabalhos",              "desc": "Outros trabalhos por medida: projetos especiais, prototipagem e soluções criativas para a sua marca." }
+    }
   }
+  
 }

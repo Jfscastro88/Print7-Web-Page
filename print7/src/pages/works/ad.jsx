@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgAdvertising1 from '../../assets/images/carousel/reclames/rec1.jpg';
@@ -38,15 +39,18 @@ const IMAGES = [
 function AdvertisingPage() {
   const { t } = useTranslation();
   return (
-    <CategoryPage
-      title={t('categories.ad.title')}
-      description={t('categories.ad.description')}
-      images={IMAGES}
-      cta={{
-        title: t('categories.ad.ctaTitle'),
-        text: t('categories.ad.ctaText'),
-      }}
-    />
+<main>
+      <ServiceSeo slug="ad" />
+      <CategoryPage
+        title={t('categories.ad.title')}
+        description={t('categories.ad.description')}
+        images={IMAGES}
+        cta={{
+          title: t('categories.ad.ctaTitle'),
+          text: t('categories.ad.ctaText'),
+        }}
+      />
+    </main>
   );
 }
 export default AdvertisingPage;

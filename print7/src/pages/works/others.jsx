@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgAD1 from '../../assets/images/carousel/outros/out1.jpg';
@@ -35,7 +36,9 @@ const IMAGES = [
 function OthersPage() {
   const { t } = useTranslation();
   return (
-    <CategoryPage
+    <main>
+      <ServiceSeo slug="others" />
+      <CategoryPage
       title={t('categories.others.title')}
       description={t('categories.others.description')}
       images={IMAGES}
@@ -44,6 +47,7 @@ function OthersPage() {
         text: t('categories.others.ctaText'),
       }}
     />
+    </main>
   );
 }
 export default OthersPage;

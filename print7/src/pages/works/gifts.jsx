@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgGifts1 from '../../assets/images/carousel/brindes/bg1.jpg';
@@ -35,36 +36,39 @@ import imgGifts30 from '../../assets/images/carousel/brindes/bg30.jpg';
 import imgGifts31 from '../../assets/images/carousel/brindes/bg31.jpg';
 
 const IMAGES = [
-{ src: imgGifts1, alt: 'AD #1'}, { src: imgGifts2, alt: 'AD #2'},
-{ src: imgGifts3, alt: 'AD #3'}, { src: imgGifts4, alt: 'AD #4'},
-{ src: imgGifts5, alt: 'AD #5'}, { src: imgGifts6, alt: 'AD #6'},
-{ src: imgGifts7, alt: 'AD #7'}, { src: imgGifts8, alt: 'AD #8'},
-{ src: imgGifts9, alt: 'AD #9'}, { src: imgGifts10, alt: 'AD #10'},
-{ src: imgGifts11, alt: 'AD #11'}, { src: imgGifts12, alt: 'AD #12'},
-{ src: imgGifts13, alt: 'AD #13'}, { src: imgGifts14, alt: 'AD #14'},
-{ src: imgGifts15, alt: 'AD #15'}, { src: imgGifts16, alt: 'AD #16'},
-{ src: imgGifts17, alt: 'AD #17'}, { src: imgGifts18, alt: 'AD #18'},
-{ src: imgGifts19, alt: 'AD #19'}, { src: imgGifts20, alt: 'AD #20'},
-{ src: imgGifts21, alt: 'AD #21'}, { src: imgGifts22, alt: 'AD #22'},
-{ src: imgGifts23, alt: 'AD #23'}, { src: imgGifts24, alt: 'AD #24'},
-{ src: imgGifts25, alt: 'AD #25'}, { src: imgGifts26, alt: 'AD #26'},
-{ src: imgGifts27, alt: 'AD #27'}, { src: imgGifts28, alt: 'AD #28'},
-{ src: imgGifts29, alt: 'AD #29'}, { src: imgGifts30, alt: 'AD #30'},
-{ src: imgGifts31, alt: 'AD #31'}
-  ];
+  { src: imgGifts1, alt: 'AD #1'}, { src: imgGifts2, alt: 'AD #2'},
+  { src: imgGifts3, alt: 'AD #3'}, { src: imgGifts4, alt: 'AD #4'},
+  { src: imgGifts5, alt: 'AD #5'}, { src: imgGifts6, alt: 'AD #6'},
+  { src: imgGifts7, alt: 'AD #7'}, { src: imgGifts8, alt: 'AD #8'},
+  { src: imgGifts9, alt: 'AD #9'}, { src: imgGifts10, alt: 'AD #10'},
+  { src: imgGifts11, alt: 'AD #11'}, { src: imgGifts12, alt: 'AD #12'},
+  { src: imgGifts13, alt: 'AD #13'}, { src: imgGifts14, alt: 'AD #14'},
+  { src: imgGifts15, alt: 'AD #15'}, { src: imgGifts16, alt: 'AD #16'},
+  { src: imgGifts17, alt: 'AD #17'}, { src: imgGifts18, alt: 'AD #18'},
+  { src: imgGifts19, alt: 'AD #19'}, { src: imgGifts20, alt: 'AD #20'},
+  { src: imgGifts21, alt: 'AD #21'}, { src: imgGifts22, alt: 'AD #22'},
+  { src: imgGifts23, alt: 'AD #23'}, { src: imgGifts24, alt: 'AD #24'},
+  { src: imgGifts25, alt: 'AD #25'}, { src: imgGifts26, alt: 'AD #26'},
+  { src: imgGifts27, alt: 'AD #27'}, { src: imgGifts28, alt: 'AD #28'},
+  { src: imgGifts29, alt: 'AD #29'}, { src: imgGifts30, alt: 'AD #30'},
+  { src: imgGifts31, alt: 'AD #31'}
+];
 
 function AdvertisingPage() {
   const { t } = useTranslation();
   return (
+    <main>
+    <ServiceSeo slug="gifts" />
     <CategoryPage
-      title={t('categories.gifts.title')}
-      description={t('categories.gifts.description')}
-      images={IMAGES}
-      cta={{
-        title: t('categories.gifts.ctaTitle'),
-        text: t('categories.gifts.ctaText'),
-      }}
+    title={t('categories.gifts.title')}
+    description={t('categories.gifts.description')}
+    images={IMAGES}
+    cta={{
+      title: t('categories.gifts.ctaTitle'),
+      text: t('categories.gifts.ctaText'),
+    }}
     />
+    </main>
   );
 }
 export default AdvertisingPage;

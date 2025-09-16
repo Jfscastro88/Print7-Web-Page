@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgVitrin1 from '../../assets/images/carousel/decormontras/mon1.jpg';
@@ -58,17 +59,20 @@ const IMAGES = [
 
 function windowPage() {
   const { t } = useTranslation();
-
+  
   return (
+    <main>
+    <ServiceSeo slug="window" />
     <CategoryPage
-      title={t('categories.window.title')}
-      description={t('categories.window.description')}
-      images={IMAGES}
-      cta={{
-        title: t('categories.window.ctaTitle'),
-        text: t('categories.window.ctaText'),
-      }}
+    title={t('categories.window.title')}
+    description={t('categories.window.description')}
+    images={IMAGES}
+    cta={{
+      title: t('categories.window.ctaTitle'),
+      text: t('categories.window.ctaText'),
+    }}
     />
+    </main>
   );
 }
 export default windowPage;

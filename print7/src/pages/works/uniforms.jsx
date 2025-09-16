@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgVitrin1 from '../../assets/images/carousel/fardamentos/far1.jpg';
@@ -49,17 +50,20 @@ const IMAGES = [
 
 function uniformsPage() {
   const { t } = useTranslation();
-
+  
   return (
+    <main>
+    <ServiceSeo slug="uniforms" />
     <CategoryPage
-      title={t('categories.uniforms.title')}
-      description={t('categories.uniforms.description')}
-      images={IMAGES}
-      cta={{
-        title: t('categories.uniforms.ctaTitle'),
-        text: t('categories.uniforms.ctaText'),
-      }}
+    title={t('categories.uniforms.title')}
+    description={t('categories.uniforms.description')}
+    images={IMAGES}
+    cta={{
+      title: t('categories.uniforms.ctaTitle'),
+      text: t('categories.uniforms.ctaText'),
+    }}
     />
+    </main>
   );
 }
 export default uniformsPage;

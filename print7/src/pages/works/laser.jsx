@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgLaser1 from '../../assets/images/carousel/cortelaser/cgl1.jpg';
@@ -21,7 +22,9 @@ const IMAGES = [
 function LaserPage() {
   const { t } = useTranslation();
   return (
-    <CategoryPage
+    <main>
+      <ServiceSeo slug="laser" />
+      <CategoryPage
       title={t('categories.laser.title')}
       description={t('categories.laser.description')}
       images={IMAGES}
@@ -30,6 +33,7 @@ function LaserPage() {
         text: t('categories.laser.ctaText'),
       }}
     />
+    </main>
   );
 }
 export default LaserPage;

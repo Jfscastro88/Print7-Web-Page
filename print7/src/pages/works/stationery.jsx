@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgVitrin1 from '../../assets/images/carousel/estacionarios/sta1.jpg';
@@ -23,15 +24,18 @@ const IMAGES = [
 function stationeryPage() {
   const { t } = useTranslation();
   return (
+    <main>
+    <ServiceSeo slug="stationery" />
     <CategoryPage
-      title={t('categories.stationery.title')}
-      description={t('categories.stationery.description')}
-      images={IMAGES}
-      cta={{
-        title: t('categories.stationery.ctaTitle'),
-        text: t('categories.stationery.ctaText'),
-      }}
+    title={t('categories.stationery.title')}
+    description={t('categories.stationery.description')}
+    images={IMAGES}
+    cta={{
+      title: t('categories.stationery.ctaTitle'),
+      text: t('categories.stationery.ctaText'),
+    }}
     />
+    </main>
   );
 }
 export default stationeryPage;

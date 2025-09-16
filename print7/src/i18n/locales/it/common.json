@@ -198,5 +198,23 @@
     "contacts": { "title": "Contatti", "desc": "Scrivici per richieste e preventivi." },
     "privacy": { "title": "Informativa Privacy", "desc": "Sito vetrina senza cookie di analisi/marketing." },
     "notFound": { "title": "Pagina non trovata", "desc": "" }
+  },
+   "seo2": {
+    "services": {
+      "gifts":     { "title": "Gadget Personalizzati",         "desc": "Gadget personalizzati con stampa/incisione per aziende. Ampio catalogo, tempi rapidi, qualità Print7 a Setúbal." },
+      "laser":     { "title": "Taglio e Incisione Laser",      "desc": "Taglio e incisione laser su legno, acrilico e metallo. Finiture pulite e progetti su misura a Setúbal." },
+      "logos":     { "title": "Logo Design",                   "desc": "Logo e identità visiva: naming, redesign e brand guidelines. File pronti per stampa e web." },
+      "interior":  { "title": "Decorazione d’Interni",         "desc": "Decorazione d’interni: vinile, vetro satinato, lettering e pannelli retroilluminati. Produzione e installazione a Setúbal." },
+      "stationery":{ "title": "Cartoleria",                    "desc": "Cartoleria: biglietti da visita, carta intestata, buste e altro. Design e produzione con finiture premium." },
+      "cars":      { "title": "Personalizzazione Veicoli",     "desc": "Personalizzazione veicoli: wrap, lettering e magneti. Materiali durevoli e installazione professionale a Setúbal." },
+      "uniforms":  { "title": "Abbigliamento da Lavoro & DPI", "desc": "Abbigliamento e DPI con il tuo logo: ricamo, DTF e serigrafia. Linee complete per i team." },
+      "plates":    { "title": "Insegne & Striscioni",          "desc": "Insegne e striscioni in grande formato: PVC, ACM e tessuti. Stampa resistente per interno/esterno." },
+      "ad":        { "title": "Insegne Luminose",              "desc": "Insegne luminose e lightbox LED. Design, produzione e montaggio ad alta visibilità." },
+      "stand":     { "title": "Stand & Display",               "desc": "Stand e display: roll-up, banconi e pareti modulari. Soluzioni portatili e personalizzate." },
+      "neon":      { "title": "LED Neon",                      "desc": "LED neon personalizzato per negozi, eventi e décor. Colori intensi a basso consumo." },
+      "relief":    { "title": "Lettere in Rilievo & 3D",       "desc": "Lettere in rilievo e 3D in PVC, acrilico o metallo. Effetto premium per facciate e interni." },
+      "window":    { "title": "Decorazione Vetrine",           "desc": "Decorazione vetrine: vinile prespaziato, microforato e stampe. Installazione pulita e rapida." },
+      "others":    { "title": "Altri Lavori",                  "desc": "Progetti su misura: realizzazioni speciali, prototipi e soluzioni creative per il tuo brand." }
+    }
   }
   }

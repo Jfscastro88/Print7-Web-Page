@@ -198,5 +198,23 @@
     "contacts": { "title": "Contacts", "desc": "Get in touch for inquiries and quotes." },
     "privacy": { "title": "Privacy Policy", "desc": "Showcase site with no analytics/marketing cookies." },
     "notFound": { "title": "Page not found", "desc": "" }
+  },
+  "seo2": {
+    "services": {
+      "gifts":     { "title": "Branded Gifts",                 "desc": "Branded gifts with printing/engraving for businesses. Wide catalog, fast turnaround, Print7 quality in Setúbal." },
+      "laser":     { "title": "Laser Cutting & Engraving",     "desc": "Laser cutting and engraving on wood, acrylic and metal. Clean finishes and custom projects in Setúbal." },
+      "logos":     { "title": "Logo Design",                   "desc": "Logo and visual identity: naming, redesign and brand guidelines. Print- and web-ready deliverables." },
+      "interior":  { "title": "Interior Decoration",           "desc": "Interior decoration: vinyl, frosted glass, lettering and backlit panels. Production and installation in Setúbal." },
+      "stationery":{ "title": "Stationery",                    "desc": "Stationery: business cards, letterhead, envelopes and more. Design and production with premium finishes." },
+      "cars":      { "title": "Vehicle Branding",              "desc": "Vehicle branding: wraps, lettering and magnets. Durable materials and professional installation in Setúbal." },
+      "uniforms":  { "title": "Workwear & PPE",                "desc": "Workwear & PPE with your logo: embroidery, DTF and screen printing. Full lines for teams." },
+      "plates":    { "title": "Signs & Banners",               "desc": "Signs and large-format banners: PVC, ACM and textiles. Weather-resistant prints for indoor/outdoor." },
+      "ad":        { "title": "Illuminated Signs",             "desc": "Illuminated signs and LED lightboxes. Design, production and installation for high visibility." },
+      "stand":     { "title": "Stands & Displays",             "desc": "Stands and displays: roll-ups, counters and modular walls. Portable, customized solutions." },
+      "neon":      { "title": "LED Neon",                      "desc": "Custom LED neon for shops, events and décor. Bold colors with low power consumption." },
+      "relief":    { "title": "Raised Lettering & 3D",         "desc": "Raised lettering and 3D in PVC, acrylic or metal. Premium effect for façades and interiors." },
+      "window":    { "title": "Window Decoration",             "desc": "Window decoration: cut vinyl, perforated films and prints. Clean, quick installation." },
+      "others":    { "title": "Other Works",                   "desc": "Bespoke projects: special builds, prototyping and creative solutions for your brand." }
+    }
   }
 }

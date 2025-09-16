@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgboards1 from '../../assets/images/carousel/placas/pla1.jpg';
@@ -42,15 +43,18 @@ const IMAGES = [
 function plastesboardsPage() {
   const { t } = useTranslation();
   return (
+    <main>
+    <ServiceSeo slug="plates" />
     <CategoryPage
-      title={t('categories.plates.title')}
-      description={t('categories.plates.description')}
-      images={IMAGES}
-      cta={{
-        title: t('categories.plates.ctaTitle'),
-        text: t('categories.plates.ctaText'),
-      }}
+    title={t('categories.plates.title')}
+    description={t('categories.plates.description')}
+    images={IMAGES}
+    cta={{
+      title: t('categories.plates.ctaTitle'),
+      text: t('categories.plates.ctaText'),
+    }}
     />
+    </main>
   );
 }
 export default plastesboardsPage;

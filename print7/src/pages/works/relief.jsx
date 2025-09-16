@@ -1,5 +1,6 @@
 import '@mantine/core/styles.css';
 import CategoryPage from '../../assets/components/categorypage';
+import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
 import { useTranslation } from 'react-i18next';
 
 import imgrelief1 from '../../assets/images/carousel/relevo/rel1.jpg';
@@ -54,15 +55,18 @@ const IMAGES = [
 function reliefWorkPage() {
   const { t } = useTranslation();
   return (
+    <main>
+    <ServiceSeo slug="relief" />
     <CategoryPage
-      title={t('categories.relief.title')}
-      description={t('categories.relief.description')}
-      images={IMAGES}
-      cta={{
-        title: t('categories.relief.ctaTitle'),
-        text: t('categories.relief.ctaText'),
-      }}
+    title={t('categories.relief.title')}
+    description={t('categories.relief.description')}
+    images={IMAGES}
+    cta={{
+      title: t('categories.relief.ctaTitle'),
+      text: t('categories.relief.ctaText'),
+    }}
     />
+    </main>
   );
 }
 export default reliefWorkPage;
