@@ -39,7 +39,8 @@
     "home": "Homepage",
     "about": "About Us",
     "catalogs": "Catalogs",
-    "contact": "Contact"
+    "contact": "Contact",
+    "categories": "Categories"
   },
   "footer": {
     "company": "Print7 — Advertising & Design",
@@ -47,7 +48,7 @@
     "address2": "2900 - 146 Setúbal",
     "mobileNote": "Call to national mobile network",
     "rights": "All rights reserved.",
-    "madeBy": "Made by Jfscastro"
+    "madeBy": "Jfscastro"
   },
   "catalogs": {
     "heroTitle": "Catalogs",

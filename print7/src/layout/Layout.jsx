@@ -5,7 +5,6 @@ import { Outlet } from 'react-router-dom';
 import Navbar from '../assets/components/navbar.jsx';
 import Footer from '../assets/components/footer.jsx';
 
-// Esporta direttamente la funzione
 function Layout() {
   return (
     <>

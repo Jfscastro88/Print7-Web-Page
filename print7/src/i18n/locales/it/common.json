@@ -39,14 +39,16 @@
     "home": "Home",
     "about": "Chi Siamo",
     "catalogs": "Cataloghi",
-    "contact": "Contatti"
+    "contact": "Contatti",
+    "categories": "Categorie"
+
     },"footer": {
       "company": "Print7 — Pubblicità & Design",
       "address1": "Rua Nossa Senhora do Carmo, 22A",
       "address2": "2900 - 146 Setúbal",
       "mobileNote": "Chiamata alla rete mobile nazionale",
       "rights": "Tutti i diritti riservati.",
-      "madeBy": "Creato da Jfscastro"
+      "madeBy": "Jfscastro"
     },
     "catalogs": {
       "heroTitle": "Cataloghi",

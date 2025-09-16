@@ -30,7 +30,6 @@ function ZoomOnScroll({ children }) {
 }
 
 export default function HomePage() {
-
   const { t } = useTranslation();
 
   const localizedHeroItems = heroCarouselItems.map(item => ({
@@ -44,9 +43,8 @@ export default function HomePage() {
     <>
       <Box
         className="relative h-[340px] sm:h-[440px] md:h-[520px] lg:h-[680px] xl:h-[760px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${bgImage})` }}
-      >
-        <div className="absolute inset-0 bg-black/15 sm:bg-black/10 md:bg-black/15" />
+        style={{ backgroundImage: `url(${bgImage})` }}>
+        <div className="absolute inset-0 bg-black/5 sm:bg-black/5 md:bg-black/5" />
         <Container
           size="lg"
           className="relative z-10 flex h-full flex-col items-center justify-center text-center px-6">

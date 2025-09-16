@@ -14,7 +14,7 @@ function Footer() {
       <BackgroundImage
         src={footerImage}
         sx={{ minHeight: 220, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-black/10" />
 
         <Container size="lg" className="relative z-10 py-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center text-white">

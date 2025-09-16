@@ -39,7 +39,8 @@
     "home": "Início",
     "about": "Sobre Nós",
     "catalogs": "Catálogos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "categories": "Categorias"
   },
   "footer": {
     "company": "Print7 — Publicidade & Design",
@@ -47,7 +48,7 @@
     "address2": "2900 - 146 Setúbal",
     "mobileNote": "Chamada para rede móvel nacional",
     "rights": "Todos os direitos reservados.",
-    "madeBy": "Feito por Jfscastro"
+    "madeBy": "Jfscastro"
   },
   "catalogs": {
     "heroTitle": "Catálogos",
