@@ -1,7 +1,7 @@
 import '@mantine/core/styles.css';
 import '@mantine/carousel/styles.css';
 import heroImage from '../../assets/images/LogoTextBlack.png';
-import bgImage from '../../assets/images/background.png';
+import bgImage from '../../assets/images/background.jpg';
 import { Box, Container, Title, Text, Button, Divider, Space } from '@mantine/core';
 import { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
