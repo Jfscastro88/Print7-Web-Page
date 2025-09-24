@@ -1,7 +1,7 @@
-import { Container, Title, Paper } from '@mantine/core';
-import { MapPin, Phone, Mail } from 'lucide-react';
-import ContactImage from '../../assets/images/contacts.jpg';
-import Seo from '../../assets/components/seo.jsx';
+import { Container, Title, Paper } from "@mantine/core";
+import { MapPin, Phone, Mail } from "lucide-react";
+import ContactImage from "../../assets/images/contacts.jpg";
+import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
 
 function ContactPage() {
@@ -9,13 +9,20 @@ function ContactPage() {
 
   return (
     <main className="min-h-screen bg-white text-gray-900">
-      <Seo title={t('seo.contacts.title')} description={t('seo.contacts.desc')} />
+      <Seo title={t("seo.contacts.title")} description={t("seo.contacts.desc")} />
       <section
         className="relative h-[320px] sm:h-[380px] md:h-[420px] lg:h-[480px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${ContactImage})` }}>
+        style={{ backgroundImage: `url(${ContactImage})` }}
+      >
         <div className="absolute inset-0 bg-black/40 pointer-events-none" />
-        <Container size="lg" className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-6">
-          <Title order={1} className="mb-4 max-w-[780px] leading-tight tracking-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl drop-shadow">
+        <Container
+          size="lg"
+          className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-6"
+        >
+          <Title
+            order={1}
+            className="mb-4 max-w-[780px] leading-tight tracking-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl drop-shadow"
+          >
             {t("contacts.heroTitle")}
           </Title>
         </Container>
@@ -55,7 +62,8 @@ function ContactPage() {
               style={{ border: 0 }}
               allowFullScreen
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"/>
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
         </Paper>
       </Container>

@@ -1,4 +1,4 @@
-import { Container, Title } from '@mantine/core';
+import { Container, Title } from "@mantine/core";
 
 // Helper: parse seconds from values like "90", "1m30s", "2h3m", etc.
 function parseTimeToSeconds(value) {
@@ -6,9 +6,9 @@ function parseTimeToSeconds(value) {
   if (/^\d+$/.test(value)) return parseInt(value, 10);
   const m = String(value).match(/(?:(\d+)h)?(?:(\d+)m)?(?:(\d+)s)?/i);
   if (!m) return 0;
-  const h = parseInt(m[1] || '0', 10);
-  const mm = parseInt(m[2] || '0', 10);
-  const s = parseInt(m[3] || '0', 10);
+  const h = parseInt(m[1] || "0", 10);
+  const mm = parseInt(m[2] || "0", 10);
+  const s = parseInt(m[3] || "0", 10);
   return h * 3600 + mm * 60 + s;
 }
 
@@ -22,17 +22,17 @@ function extractFromInput(input) {
   try {
     const url = new URL(input);
     // Standard watch URL
-    const v = url.searchParams.get('v');
+    const v = url.searchParams.get("v");
     // shorts or embed or youtu.be formats
     const shortId = url.pathname.match(/\/shorts\/([A-Za-z0-9_-]{6,})/i)?.[1];
     const embedId = url.pathname.match(/\/embed\/([A-Za-z0-9_-]{6,})/i)?.[1];
-    const beId = url.hostname.includes('youtu.be') ? url.pathname.slice(1) : undefined;
+    const beId = url.hostname.includes("youtu.be") ? url.pathname.slice(1) : undefined;
     const id = v || shortId || embedId || beId;
 
     // start time can be "t" or "start"
     let start = 0;
-    const t = url.searchParams.get('t') || url.hash.replace('#', '').split('=')[1];
-    const startParam = url.searchParams.get('start');
+    const t = url.searchParams.get("t") || url.hash.replace("#", "").split("=")[1];
+    const startParam = url.searchParams.get("start");
     if (t) start = parseTimeToSeconds(t);
     if (startParam) start = parseInt(startParam, 10) || start;
     return { id, start };
@@ -61,33 +61,33 @@ export default function Youtube({
   url,
   videoId,
   start,
-  title = 'Guarda il nostro lavoro in 30 secondi',
+  title = "Guarda il nostro lavoro in 30 secondi",
   heightVh = 30,
   autoplay = true,
   muted = true,
   loop = true,
   controls = false,
-  className = '',
+  className = "",
 }) {
   const extracted = extractFromInput(url || videoId);
   const id = extracted.id;
-  const startSeconds = typeof start === 'number' ? start : extracted.start || 0;
+  const startSeconds = typeof start === "number" ? start : extracted.start || 0;
 
   if (!id) return null; // niente da mostrare
 
   const params = new URLSearchParams({
-    autoplay: autoplay ? '1' : '0',
-    mute: muted ? '1' : '0',
-    controls: controls ? '1' : '0',
-    playsinline: '1',
-    rel: '0',
-    modestbranding: '1',
+    autoplay: autoplay ? "1" : "0",
+    mute: muted ? "1" : "0",
+    controls: controls ? "1" : "0",
+    playsinline: "1",
+    rel: "0",
+    modestbranding: "1",
   });
   if (loop) {
-    params.set('loop', '1');
-    params.set('playlist', id);
+    params.set("loop", "1");
+    params.set("playlist", id);
   }
-  if (startSeconds > 0) params.set('start', String(startSeconds));
+  if (startSeconds > 0) params.set("start", String(startSeconds));
 
   const src = `https://www.youtube-nocookie.com/embed/${id}?${params.toString()}`;
 

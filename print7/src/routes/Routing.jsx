@@ -6,19 +6,19 @@ import Contact from "../pages/contacts/contacts.jsx";
 import Catalogs from "../pages/catalogs/catalogs.jsx";
 
 function Routing() {
-    return (
+  return (
     <BrowserRouter>
-        <Routes>
+      <Routes>
         <Route element={<Layout />}>
-            <Route path="/" element={<Homepage />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/catalogs" element={<Catalogs />} />
-            {/* Catch-all: mostra 404 em vez de redirecionar */}
-            <Route path="*" element={<NotFoundPage />} />
+          <Route path="/" element={<Homepage />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/catalogs" element={<Catalogs />} />
+          {/* Catch-all: mostra 404 em vez de redirecionar */}
+          <Route path="*" element={<NotFoundPage />} />
         </Route>
-        </Routes>
+      </Routes>
     </BrowserRouter>
-    );
+  );
 }
 export default Routing;

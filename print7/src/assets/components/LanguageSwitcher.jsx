@@ -27,8 +27,8 @@ export default function LanguageSwitcher({ inMobile = false }) {
   };
 
   const menuProps = inMobile
-    ? { withinPortal: false, position: "bottom", zIndex: 1100 } 
-    : { withinPortal: true, position: "bottom-end", zIndex: 3000 }; 
+    ? { withinPortal: false, position: "bottom", zIndex: 1100 }
+    : { withinPortal: true, position: "bottom-end", zIndex: 3000 };
 
   return (
     <Menu width={140} withArrow={!inMobile} {...menuProps}>

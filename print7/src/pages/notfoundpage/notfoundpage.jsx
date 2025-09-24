@@ -1,5 +1,5 @@
 import { Link, useNavigate } from "react-router-dom";
-import Seo from '../../assets/components/seo.jsx';
+import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
 
 function NotFoundPage() {
@@ -8,7 +8,7 @@ function NotFoundPage() {
 
   return (
     <main className="min-h-[60vh] grid place-items-center px-6 py-16 text-center">
-      <Seo title={t('seo.notFound.title')}/>
+      <Seo title={t("seo.notFound.title")} />
       <div className="max-w-xl">
         <p className="text-sm text-gray-500">{t("notFound.oops")}</p>
         <h1 className="text-5xl font-bold mt-2">404</h1>
@@ -24,7 +24,10 @@ function NotFoundPage() {
           <Link to="/" className="rounded-xl px-4 py-2 bg-black text-white hover:opacity-90">
             {t("notFound.goHome")}
           </Link>
-          <Link to="/contact" className="rounded-xl px-4 py-2 border border-gray-300 hover:bg-gray-50">
+          <Link
+            to="/contact"
+            className="rounded-xl px-4 py-2 border border-gray-300 hover:bg-gray-50"
+          >
             {t("notFound.contact")}
           </Link>
         </div>

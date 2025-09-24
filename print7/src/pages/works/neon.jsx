@@ -1,40 +1,44 @@
-import '@mantine/core/styles.css';
-import CategoryPage from '../../assets/components/categorypage';
-import ServiceSeo from '../../assets/components/ServiceSeo.jsx';
-import { useTranslation } from 'react-i18next';
+import "@mantine/core/styles.css";
+import CategoryPage from "../../assets/components/categorypage";
+import ServiceSeo from "../../assets/components/ServiceSeo.jsx";
+import { useTranslation } from "react-i18next";
 
-import imgAD1 from '../../assets/images/carousel/ledneon/neon1.jpg';
-import imgAD2 from '../../assets/images/carousel/ledneon/neon2.jpg';
-import imgAD3 from '../../assets/images/carousel/ledneon/neon3.jpg';
-import imgAD4 from '../../assets/images/carousel/ledneon/neon4.jpg';
-import imgAD5 from '../../assets/images/carousel/ledneon/neon5.jpg';
-import imgAD6 from '../../assets/images/carousel/ledneon/neon6.jpg';
-import imgAD7 from '../../assets/images/carousel/ledneon/neon7.jpg';
-import imgAD8 from '../../assets/images/carousel/ledneon/neon8.jpg';
-import imgAD9 from '../../assets/images/carousel/ledneon/neon9.jpg';
+import imgAD1 from "../../assets/images/carousel/ledneon/neon1.jpg";
+import imgAD2 from "../../assets/images/carousel/ledneon/neon2.jpg";
+import imgAD3 from "../../assets/images/carousel/ledneon/neon3.jpg";
+import imgAD4 from "../../assets/images/carousel/ledneon/neon4.jpg";
+import imgAD5 from "../../assets/images/carousel/ledneon/neon5.jpg";
+import imgAD6 from "../../assets/images/carousel/ledneon/neon6.jpg";
+import imgAD7 from "../../assets/images/carousel/ledneon/neon7.jpg";
+import imgAD8 from "../../assets/images/carousel/ledneon/neon8.jpg";
+import imgAD9 from "../../assets/images/carousel/ledneon/neon9.jpg";
 
 const IMAGES = [
-  { src: imgAD1, alt: 'AD #1'}, { src: imgAD2, alt: 'AD #2'},
-  { src: imgAD3, alt: 'AD #3'}, { src: imgAD4, alt: 'AD #4'},
-  { src: imgAD5, alt: 'AD #5'}, { src: imgAD6, alt: 'AD #6'},
-  { src: imgAD7, alt: 'AD #7'}, { src: imgAD8, alt: 'AD #8'},
-  { src: imgAD9, alt: 'AD #9'}, 
+  { src: imgAD1, alt: "AD #1" },
+  { src: imgAD2, alt: "AD #2" },
+  { src: imgAD3, alt: "AD #3" },
+  { src: imgAD4, alt: "AD #4" },
+  { src: imgAD5, alt: "AD #5" },
+  { src: imgAD6, alt: "AD #6" },
+  { src: imgAD7, alt: "AD #7" },
+  { src: imgAD8, alt: "AD #8" },
+  { src: imgAD9, alt: "AD #9" },
 ];
 
 function NeonPage() {
   const { t } = useTranslation();
   return (
     <main>
-    <ServiceSeo slug="neon" />
-    <CategoryPage
-    title={t('categories.neon.title')}
-    description={t('categories.neon.description')}
-    images={IMAGES}
-    cta={{
-      title: t('categories.neon.ctaTitle'),
-      text: t('categories.neon.ctaText'),
-    }}
-    />
+      <ServiceSeo slug="neon" />
+      <CategoryPage
+        title={t("categories.neon.title")}
+        description={t("categories.neon.description")}
+        images={IMAGES}
+        cta={{
+          title: t("categories.neon.ctaTitle"),
+          text: t("categories.neon.ctaText"),
+        }}
+      />
     </main>
   );
 }

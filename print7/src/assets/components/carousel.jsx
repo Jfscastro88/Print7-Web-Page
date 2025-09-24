@@ -1,27 +1,27 @@
-import { useRef, useState, useEffect } from 'react';
-import { Container, Text, Title } from '@mantine/core';
-import { Carousel } from '@mantine/carousel';
-import Autoplay from 'embla-carousel-autoplay';
-import { motion } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-import '@mantine/carousel/styles.css';
+import { useRef, useState, useEffect } from "react";
+import { Container, Text, Title } from "@mantine/core";
+import { Carousel } from "@mantine/carousel";
+import Autoplay from "embla-carousel-autoplay";
+import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
+import "@mantine/carousel/styles.css";
 
 function CarouselHighlight({
   items = [],
   height = 420,
-  mobileHeight,              
-  slideSize = '60%',
+  mobileHeight,
+  slideSize = "60%",
   loop = true,
   autoplayDelay = 3000,
-  align = 'center',
+  align = "center",
   showIndicators = true,
-  indicatorsClass = '',
-  className = '',
+  indicatorsClass = "",
+  className = "",
   title,
   subtitle,
-  headerAlign = 'center',
-  containerSize = 'lg',
-  containerClassName = 'px-4',
+  headerAlign = "center",
+  containerSize = "lg",
+  containerClassName = "px-4",
 }) {
   const [active, setActive] = useState(0);
   const autoplay = useRef(Autoplay({ delay: autoplayDelay }));
@@ -29,20 +29,16 @@ function CarouselHighlight({
 
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
-    const mq = window.matchMedia('(max-width: 640px)');
+    const mq = window.matchMedia("(max-width: 640px)");
     const onChange = (e) => setIsMobile(e.matches);
     onChange(mq);
-    mq.addEventListener('change', onChange);
-    return () => mq.removeEventListener('change', onChange);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
   }, []);
   const effectiveHeight = isMobile && mobileHeight ? mobileHeight : height;
 
   const headerAlignClass =
-    headerAlign === ''
-      ? 'text-left'
-      : headerAlign === 'right'
-      ? 'text-right'
-      : 'text-center';
+    headerAlign === "" ? "text-left" : headerAlign === "right" ? "text-right" : "text-center";
 
   return (
     <Container size={containerSize} className={`${containerClassName} mx-auto`}>
@@ -73,10 +69,11 @@ function CarouselHighlight({
         onSlideChange={setActive}
         className={className}
         classNames={{
-          viewport: 'overflow-hidden',
+          viewport: "overflow-hidden",
           indicators: indicatorsClass,
-          control: 'rounded-full shadow-lg',
-        }}>
+          control: "rounded-full shadow-lg",
+        }}
+      >
         {items.map((it, idx) => {
           const content = (
             <motion.div
@@ -85,13 +82,15 @@ function CarouselHighlight({
                 scale: active === idx ? 1 : 0.9,
                 opacity: active === idx ? 1 : 0.85,
               }}
-              transition={{ type: 'spring', stiffness: 180, damping: 18 }}
-              className="relative overflow-hidden rounded-2xl shadow-[0_16px_40px_rgba(0,0,0,0.18)] group">
+              transition={{ type: "spring", stiffness: 180, damping: 18 }}
+              className="relative overflow-hidden rounded-2xl shadow-[0_16px_40px_rgba(0,0,0,0.18)] group"
+            >
               <div
                 className="w-full bg-cover bg-center transition-transform duration-500 group-hover:scale-[1.02]"
                 style={{ backgroundImage: `url(${it.src})`, height: effectiveHeight }}
                 role="img"
-                aria-label={it.alt || it.title || 'carousel image'}/>
+                aria-label={it.alt || it.title || "carousel image"}
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/0 to-transparent" />
               {(it.title || it.subtitle) && (
                 <div className="absolute bottom-4 left-4 right-4">
@@ -114,15 +113,16 @@ function CarouselHighlight({
                 <div
                   role="link"
                   tabIndex={0}
-                  aria-label={it.title || 'carousel link'}
+                  aria-label={it.title || "carousel link"}
                   className="block focus:outline-none cursor-pointer"
                   onClick={() => navigate(it.to)}
                   onKeyDown={(e) => {
-                    if (e.key === 'Enter' || e.key === ' ') {
+                    if (e.key === "Enter" || e.key === " ") {
                       e.preventDefault();
                       navigate(it.to);
                     }
-                  }}>
+                  }}
+                >
                   {content}
                 </div>
               ) : (

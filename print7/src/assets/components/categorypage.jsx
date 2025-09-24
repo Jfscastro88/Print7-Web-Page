@@ -1,7 +1,7 @@
-import '@mantine/core/styles.css';
-import { Container, Title, Text, SimpleGrid } from '@mantine/core';
-import { motion, AnimatePresence } from 'framer-motion';
-import React, { useState, useEffect, forwardRef, useRef } from 'react';
+import "@mantine/core/styles.css";
+import { Container, Title, Text, SimpleGrid } from "@mantine/core";
+import { motion, AnimatePresence } from "framer-motion";
+import React, { useState, useEffect, forwardRef, useRef } from "react";
 
 // --- single card ------------------------------------------------------------
 const CategoryCard = forwardRef(function CategoryCard(
@@ -14,12 +14,12 @@ const CategoryCard = forwardRef(function CategoryCard(
       onClick={onClick}
       role="button"
       tabIndex={0}
-      onKeyDown={(e) => (e.key === 'Enter' || e.key === ' ') && onClick()}
+      onKeyDown={(e) => (e.key === "Enter" || e.key === " ") && onClick()}
       animate={{ scale: isActive ? 1.08 : 1, zIndex: isActive ? 2 : 1 }}
       whileHover={{ scale: isActive ? 1.07 : 1.02 }}
-      transition={{ type: 'spring', stiffness: 220, damping: 18 }}
+      transition={{ type: "spring", stiffness: 220, damping: 18 }}
       className={`origin-center scroll-mt-24 group relative overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5 cursor-pointer ${
-        isActive ? 'ring-2 ring-blue-300 shadow-[0_12px_28px_rgba(0,0,0,0.18)]' : ''
+        isActive ? "ring-2 ring-blue-300 shadow-[0_12px_28px_rgba(0,0,0,0.18)]" : ""
       }`}
       aria-pressed={isActive}
     >
@@ -28,8 +28,8 @@ const CategoryCard = forwardRef(function CategoryCard(
         alt={alt}
         loading="lazy"
         className={`h-[240px] w-full ${
-          fitContain ? 'object-contain bg-gray-50 p-4' : 'object-cover'
-        } transition duration-500 ${isDimmed ? 'blur-[1px] opacity-60' : 'opacity-100'}`}
+          fitContain ? "object-contain bg-gray-50 p-4" : "object-cover"
+        } transition duration-500 ${isDimmed ? "blur-[1px] opacity-60" : "opacity-100"}`}
       />
     </motion.div>
   );
@@ -39,7 +39,7 @@ const CategoryCard = forwardRef(function CategoryCard(
 function CategoryPage({
   title,
   description,
-  images,                  
+  images,
   cta,
   selected: selectedProp,
   setSelected: setSelectedProp,
@@ -55,31 +55,30 @@ function CategoryPage({
   const getItem = (i) => {
     if (i == null) return null;
     const item = images?.[i];
-    return typeof item === 'string' ? { src: item, alt: `Immagine ${i + 1}` } : item;
+    return typeof item === "string" ? { src: item, alt: `Immagine ${i + 1}` } : item;
   };
   const activeItem = getItem(selected);
 
   const goPrev = () =>
     setSelected((i) => (i == null ? 0 : (i - 1 + images.length) % images.length));
-  const goNext = () =>
-    setSelected((i) => (i == null ? 0 : (i + 1) % images.length));
+  const goNext = () => setSelected((i) => (i == null ? 0 : (i + 1) % images.length));
 
   // --- Keyboard navigation -----------------------------------------------------
   useEffect(() => {
     const onKey = (e) => {
-      if (e.key === 'Escape') setSelected(null);
+      if (e.key === "Escape") setSelected(null);
       if (selected != null) {
-        if (e.key === 'ArrowLeft') goPrev();
-        if (e.key === 'ArrowRight') goNext();
+        if (e.key === "ArrowLeft") goPrev();
+        if (e.key === "ArrowRight") goNext();
       }
     };
-    window.addEventListener('keydown', onKey);
-    if (selected !== null) document.body.classList.add('overflow-hidden');
-    else document.body.classList.remove('overflow-hidden');
+    window.addEventListener("keydown", onKey);
+    if (selected !== null) document.body.classList.add("overflow-hidden");
+    else document.body.classList.remove("overflow-hidden");
 
     return () => {
-      window.removeEventListener('keydown', onKey);
-      document.body.classList.remove('overflow-hidden');
+      window.removeEventListener("keydown", onKey);
+      document.body.classList.remove("overflow-hidden");
     };
   }, [selected]);
 
@@ -113,7 +112,7 @@ function CategoryPage({
 
     if (Math.abs(dx) > SWIPE_THRESHOLD) {
       if (dx < 0) goNext(); // swipe right -> next
-      else goPrev();        // swipe left -> prev
+      else goPrev(); // swipe left -> prev
     }
     touchActive.current = false;
   };
@@ -139,12 +138,12 @@ function CategoryPage({
             cols={3}
             spacing="md"
             breakpoints={[
-              { maxWidth: 'md', cols: 2 },
-              { maxWidth: 'sm', cols: 1 },
+              { maxWidth: "md", cols: 2 },
+              { maxWidth: "sm", cols: 1 },
             ]}
           >
             {images.map((img, i) => {
-              const item = typeof img === 'string' ? { src: img, alt: `Immagine ${i + 1}` } : img;
+              const item = typeof img === "string" ? { src: img, alt: `Immagine ${i + 1}` } : img;
               return (
                 <CategoryCard
                   key={i}
@@ -183,10 +182,11 @@ function CategoryPage({
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
-            onClick={() => setSelected(null)}>
+            onClick={() => setSelected(null)}
+          >
             <div
               className="absolute inset-0 flex items-center justify-center p-4"
-              onClick={(e) => e.stopPropagation()}    // stop propagation 
+              onClick={(e) => e.stopPropagation()} // stop propagation
               onTouchStart={onTouchStart}
               onTouchMove={onTouchMove}
               onTouchEnd={onTouchEnd}
@@ -194,7 +194,8 @@ function CategoryPage({
               <button
                 onClick={() => setSelected(null)}
                 className="absolute top-12 right-6 sm:right-12  text-white/90 hover:text-white text-4xl leading-none"
-                aria-label="Close image viewer">
+                aria-label="Close image viewer"
+              >
                 ×
               </button>
 
@@ -204,7 +205,8 @@ function CategoryPage({
                             h-12 w-12 md:h-14 md:w-14 rounded-full bg-white/15 hover:bg-white/25
                             text-white text-xl md:text-2xl grid place-items-center
                             backdrop-blur-sm border border-white/10"
-                aria-label="Previous image">
+                aria-label="Previous image"
+              >
                 ‹
               </button>
 
@@ -214,14 +216,15 @@ function CategoryPage({
                             h-12 w-12 md:h-14 md:w-14 rounded-full bg-white/15 hover:bg-white/25
                             text-white text-xl md:text-2xl grid place-items-center
                             backdrop-blur-sm border border-white/10"
-                aria-label="Next image">
+                aria-label="Next image"
+              >
                 ›
               </button>
 
               {/* mobile fullscreen, desktop 50% */}
               <motion.img
                 src={activeItem.src}
-                alt={activeItem.alt || 'Image'}
+                alt={activeItem.alt || "Image"}
                 className="
                   object-contain
                   w-[92vw] max-h-[92vh]
@@ -231,7 +234,7 @@ function CategoryPage({
                 initial={{ scale: 0.92, opacity: 0.8 }}
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.92, opacity: 0 }}
-                transition={{ type: 'spring', stiffness: 200, damping: 20 }}
+                transition={{ type: "spring", stiffness: 200, damping: 20 }}
               />
             </div>
           </motion.div>

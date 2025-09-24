@@ -1,22 +1,22 @@
-import '@mantine/carousel/styles.css';
-import { Container, Title, Text } from '@mantine/core';
-import { Link } from 'react-router-dom';
-import CarouselHighlight from './carousel.jsx';
+import "@mantine/carousel/styles.css";
+import { Container, Title, Text } from "@mantine/core";
+import { Link } from "react-router-dom";
+import CarouselHighlight from "./carousel.jsx";
 
 export default function StackedCarouselRow({
   title,
   subtitle,
-  to = '#',
+  to = "#",
   slides = [],
   height = 380,
-  spacing = 'py-16',
-  className = '',
+  spacing = "py-16",
+  className = "",
 }) {
   const items = slides.map((s) => ({
     src: s.src,
-    alt: s.alt || title || 'slide',
-    title: s.title ?? '',
-    subtitle: s.subtitle ?? '',
+    alt: s.alt || title || "slide",
+    title: s.title ?? "",
+    subtitle: s.subtitle ?? "",
     to: s.to ?? to,
   }));
 
@@ -42,7 +42,7 @@ export default function StackedCarouselRow({
             subtitle=""
             headerAlign="center"
             indicatorsClass="hidden"
-            showIndicators={false} 
+            showIndicators={false}
           />
         </div>
       </Container>
