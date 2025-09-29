@@ -83,7 +83,7 @@ function HomePage() {
         <Divider label={t("home.sections.dividerPortfolio")} labelPosition="center" />
         <Space h="xl" />
         <Container size="lg" className="text-center">
-          <Title order={2} className="mb-3">
+          <Title order={2} className="mb-3 text-black">
             {t("home.sections.someWorks")}
           </Title>
           <Text c="dimmed" className="max-w-2xl mx-auto">
@@ -102,7 +102,7 @@ function HomePage() {
             title=""
             subtitle=""
             headerAlign="center"
-            indicatorsClass="bottom-2 [&>button]:bg-white-400 [&>button]:opacity-0"
+            showIndicators={false}
           />
         </ZoomOnScroll>
       </section>
@@ -131,7 +131,7 @@ function HomePage() {
 
       <section className="py-16 bg-white">
         <Container size="lg" className="text-center">
-          <Title order={3} className="mb-3">
+          <Title order={3} className="mb-3 text-black">
             {t("home.cta.title")}
           </Title>
           <Text c="dimmed" className="max-w-2xl mx-auto mb-6">
