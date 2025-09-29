@@ -96,10 +96,10 @@
         "subtitle": "Loghi 3D per interni/esterni.",
         "alt": "Esempi di lettere in rilievo e 3D di Print7 {{index}}"
       },
-      "cars": {
-        "title": "Personalizzazione Veicoli",
-        "subtitle": "Wrap parziale/totale, lettering, magneti.",
-        "alt": "Esempi di personalizzazione veicoli di Print7 {{index}}"
+      "laser": {
+        "title": "Taglio e Incisione Laser",
+        "subtitle": "Taglio e incisione su legno, acrilico e metallo.",
+        "alt": "Esempi di taglio laser di Print7 {{index}}"
       },
       "stand": {
         "title": "Stand & Display",
@@ -123,10 +123,10 @@
         "subtitle": "Pannelli rigidi e grande formato.",
         "alt": "Esempi di insegne e banner di Print7 {{index}}"
       },
-      "uniforms": {
-        "title": "Abbigliamento da Lavoro & DPI",
-        "subtitle": "Abbigliamento personalizzato e DPI.",
-        "alt": "Esempi di abbigliamento & DPI di Print7 {{index}}"
+      "logos": {
+        "title": "Logo Design",
+        "subtitle": "Naming, logo e brand guidelines.",
+        "alt": "Esempi di loghi e identità visive di Print7 {{index}}"
       },
       "neon": {
         "title": "LED Neon",
@@ -135,20 +135,20 @@
       }
     },
     "threeUp": {
-      "laser": {
-        "title": "Taglio Laser",
-        "subtitle": "Legno, acrilico e metallo.",
-        "alt": "Esempi di taglio e incisione laser di Print7 {{index}}"
+      "cars": {
+        "title": "Personalizzazione Veicoli",
+        "subtitle": "Wrapping parziale/totale, lettering, magneti.",
+        "alt": "Esempi di personalizzazione veicoli di Print7 {{index}}"
+      },
+      "uniforms": {
+        "title": "Abbigliamento da Lavoro & DPI",
+        "subtitle": "Abbigliamento personalizzato e DPI.",
+        "alt": "Esempi di abbigliamento e DPI di Print7 {{index}}"
       },
       "gifts": {
         "title": "Gadget Personalizzati",
         "subtitle": "Gadget e regali aziendali.",
         "alt": "Esempi di gadget personalizzati di Print7 {{index}}"
-      },
-      "logos": {
-        "title": "Logo Design",
-        "subtitle": "Naming, logo e brand guidelines.",
-        "alt": "Esempi di loghi e identità visive di Print7 {{index}}"
       },
       "interior": {
         "title": "Decorazione d’Interni",

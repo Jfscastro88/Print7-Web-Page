@@ -5,10 +5,10 @@ export default function getHomeCarouselRows(t) {
     alt: t("home.carousel.relief.alt", { index: i + 1 }),
   }));
 
-  const cars = import.meta.glob("../images/carousel/veiculos/*", { eager: true });
-  const carSlides = Object.values(cars).map((m, i) => ({
+  const laser = import.meta.glob("../images/carousel/cortelaser/*", { eager: true });
+  const laserSlides = Object.values(laser).map((m, i) => ({
     src: m.default,
-    alt: t("home.carousel.cars.alt", { index: i + 1 }),
+    alt: t("home.carousel.laser.alt", { index: i + 1 }),
   }));
 
   const stand = import.meta.glob("../images/carousel/stand/*", { eager: true });
@@ -30,10 +30,10 @@ export default function getHomeCarouselRows(t) {
     {
       type: "split",
       side: "left",
-      title: t("home.carousel2.cars.title"),
-      subtitle: t("home.carousel.cars.subtitle"),
-      to: "/cars",
-      slides: carSlides,
+      title: t("home.carousel2.laser.title"),
+      subtitle: t("home.carousel.laser.subtitle"),
+      to: "/laser",
+      slides: laserSlides,
       height: 400,
       spacing: "py-8",
     },

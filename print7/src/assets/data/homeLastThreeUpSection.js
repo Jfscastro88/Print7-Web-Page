@@ -17,10 +17,10 @@ export default function getHomeLastThreeUpSection(t) {
     alt: t("home.lastThreeUp.plates.alt", { index: i + 1 }),
   }));
 
-  const PEE = import.meta.glob("../images/carousel/fardamentos/*", { eager: true });
-  const PEEslides = Object.values(PEE).map((m, i) => ({
+  const logos = import.meta.glob("../images/carousel/design/*", { eager: true });
+  const logoSlides = Object.values(logos).map((m, i) => ({
     src: m.default,
-    alt: t("home.lastThreeUp.uniforms.alt", { index: i + 1 }),
+    alt: t("home.lastThreeUp.logos.alt", { index: i + 1 }),
   }));
 
   const neon = import.meta.glob("../images/carousel/ledneon/*", { eager: true });
@@ -52,10 +52,10 @@ export default function getHomeLastThreeUpSection(t) {
       height: 320,
     },
     {
-      title: t("home.lastThreeUp.uniforms.title"),
-      subtitle: t("home.lastThreeUp.uniforms.subtitle"),
-      to: "/uniforms",
-      slides: PEEslides,
+      title: t("home.lastThreeUp.logos.title"),
+      subtitle: t("home.lastThreeUp.logos.subtitle"),
+      to: "/logos",
+      slides: logoSlides,
       height: 320,
     },
     {

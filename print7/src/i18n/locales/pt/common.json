@@ -96,10 +96,10 @@
         "subtitle": "Logótipos 3D para interior/exterior.",
         "alt": "Exemplos de letras em relevo e 3D da Print7 {{index}}"
       },
-      "cars": {
-        "title": "Personalização de Viaturas",
-        "subtitle": "Wraps parciais/totais, lettering, ímanes.",
-        "alt": "Exemplos de personalização de viaturas da Print7 {{index}}"
+      "laser": {
+        "title": "Corte e Gravação a Laser",
+        "subtitle": "Corte e gravação em madeira, acrílico e metal.",
+        "alt": "Exemplos de corte a laser da Print7 {{index}}"
       },
       "stand": {
         "title": "Stands & Expositores",
@@ -123,10 +123,10 @@
         "subtitle": "Painéis rígidos e grandes formatos.",
         "alt": "Exemplos de placas e lonas da Print7 {{index}}"
       },
-      "uniforms": {
-        "title": "Fardamento & EPI",
-        "subtitle": "Fardas personalizadas e EPI.",
-        "alt": "Exemplos de fardamento e EPI da Print7 {{index}}"
+      "logos": {
+        "title": "Design de Logotipo",
+        "subtitle": "Naming, logótipo e brand guidelines.",
+        "alt": "Exemplos de logótipos e identidades da Print7 {{index}}"
       },
       "neon": {
         "title": "LED Neon",
@@ -135,6 +135,16 @@
       }
     },
     "threeUp": {
+      "cars": {
+        "title": "Personalização de Viaturas",
+        "subtitle": "Wraps parciais/totais, lettering, ímanes.",
+        "alt": "Exemplos de personalização de viaturas da Print7 {{index}}"
+      },
+      "uniforms": {
+        "title": "Fardamento & EPI",
+        "subtitle": "Fardas personalizadas e EPI.",
+        "alt": "Exemplos de fardamento e EPI da Print7 {{index}}"
+      },
       "laser": {
         "title": "Corte a Laser",
         "subtitle": "Madeira, acrílico e metal.",
@@ -192,7 +202,7 @@
   "contacts": {
     "heroTitle": "Queremos fazer parte da sua história!",
     "sectionTitle": "Entre em contacto connosco",
-    "locationTitle": "Nossa Localização",
+    "locationTitle": "A Nossa Localização",
     "schedule": "Seg. a Sex.: 9h-13h | 14h-18h"
   },
   "categories": {

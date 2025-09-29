@@ -96,10 +96,10 @@
         "subtitle": "3D logos for indoor/outdoor.",
         "alt": "Examples of raised lettering and 3D by Print7 {{index}}"
       },
-      "cars": {
-        "title": "Vehicle Branding",
-        "subtitle": "Partial/full wraps, lettering, magnets.",
-        "alt": "Examples of vehicle branding by Print7 {{index}}"
+      "laser": {
+        "title": "Laser Cutting & Engraving",
+        "subtitle": "Cutting and engraving on wood, acrylic, and metal.",
+        "alt": "Examples of laser cutting by Print7 {{index}}"
       },
       "stand": {
         "title": "Stands & Displays",
@@ -123,10 +123,10 @@
         "subtitle": "Rigid panels and large-format prints.",
         "alt": "Examples of signs and banners by Print7 {{index}}"
       },
-      "uniforms": {
-        "title": "Workwear & PPE",
-        "subtitle": "Logo-branded workwear and PPE.",
-        "alt": "Examples of workwear and PPE by Print7 {{index}}"
+      "logos": {
+        "title": "Logo Design",
+        "subtitle": "Naming, logo design, and brand guidelines.",
+        "alt": "Examples of logos and visual identities by Print7 {{index}}"
       },
       "neon": {
         "title": "LED Neon",
@@ -135,20 +135,20 @@
       }
     },
     "threeUp": {
-      "laser": {
-        "title": "Laser Cutting",
-        "subtitle": "Wood, acrylic, and metal.",
-        "alt": "Examples of laser cutting and engraving by Print7 {{index}}"
+      "cars": {
+        "title": "Vehicle Branding",
+        "subtitle": "Partial/full wraps, lettering, magnets.",
+        "alt": "Examples of vehicle branding by Print7 {{index}}"
+      },
+      "uniforms": {
+        "title": "Workwear & PPE",
+        "subtitle": "Logo-branded workwear and PPE.",
+        "alt": "Examples of workwear and PPE by Print7 {{index}}"
       },
       "gifts": {
         "title": "Branded Gifts",
         "subtitle": "Corporate gadgets and gifts.",
         "alt": "Examples of branded gifts by Print7 {{index}}"
-      },
-      "logos": {
-        "title": "Logo Design",
-        "subtitle": "Naming, logo design, and brand guidelines.",
-        "alt": "Examples of logos and visual identities by Print7 {{index}}"
       },
       "interior": {
         "title": "Interior Decoration",

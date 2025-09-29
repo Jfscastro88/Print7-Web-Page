@@ -1,14 +1,20 @@
 export default function getHomeThreeUpSections(t) {
-  const logos = import.meta.glob("../images/carousel/design/*", { eager: true });
-  const logoSlides = Object.values(logos).map((m, i) => ({
+  const PEE = import.meta.glob("../images/carousel/fardamentos/*", { eager: true });
+  const PEESlides = Object.values(PEE).map((m, i) => ({
     src: m.default,
-    alt: t("home.threeUp.logos.alt", { index: i + 1 }),
+    alt: t("home.threeUp.uniforms.alt", { index: i + 1 }),
   }));
 
   const brindes = import.meta.glob("../images/carousel/brindes/*", { eager: true });
   const brindesSlides = Object.values(brindes).map((m, i) => ({
     src: m.default,
     alt: t("home.threeUp.gifts.alt", { index: i + 1 }),
+  }));
+
+  const cars = import.meta.glob("../images/carousel/veiculos/*", { eager: true });
+  const carSlides = Object.values(cars).map((m, i) => ({
+    src: m.default,
+    alt: t("home.threeUp.cars.alt", { index: i + 1 }),
   }));
 
   const laser = import.meta.glob("../images/carousel/cortelaser/*", { eager: true });
@@ -37,10 +43,24 @@ export default function getHomeThreeUpSections(t) {
 
   return [
     {
-      title: t("home.threeUp.laser.title"),
-      subtitle: t("home.threeUp.laser.subtitle"),
-      to: "/laser",
-      slides: laserSlides,
+      title: t("home.threeUp.cars.title"),
+      subtitle: t("home.threeUp.cars.subtitle"),
+      to: "/cars",
+      slides: carSlides,
+      height: 320,
+    },
+    {
+      title: t("home.threeUp.window.title"),
+      subtitle: t("home.threeUp.window.subtitle"),
+      to: "/window",
+      slides: exteriorSlides,
+      height: 320,
+    },
+    {
+      title: t("home.threeUp.uniforms.title"),
+      subtitle: t("home.threeUp.uniforms.subtitle"),
+      to: "/uniforms",
+      slides: PEESlides,
       height: 320,
     },
     {
@@ -51,24 +71,10 @@ export default function getHomeThreeUpSections(t) {
       height: 320,
     },
     {
-      title: t("home.threeUp.logos.title"),
-      subtitle: t("home.threeUp.logos.subtitle"),
-      to: "/logos",
-      slides: logoSlides,
-      height: 320,
-    },
-    {
       title: t("home.threeUp.interior.title"),
       subtitle: t("home.threeUp.interior.subtitle"),
       to: "/interior",
       slides: interiorSlides,
-      height: 320,
-    },
-    {
-      title: t("home.threeUp.window.title"),
-      subtitle: t("home.threeUp.window.subtitle"),
-      to: "/window",
-      slides: exteriorSlides,
       height: 320,
     },
     {
