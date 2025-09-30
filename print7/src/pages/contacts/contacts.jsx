@@ -1,6 +1,6 @@
 import { Container, Title, Paper } from "@mantine/core";
 import { MapPin, Phone, Mail } from "lucide-react";
-import ContactImage from "../../assets/images/contacts.jpg";
+import ContactImage from "../../assets/images/contact.jpeg";
 import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
 import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";

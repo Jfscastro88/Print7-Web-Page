@@ -1,4 +1,4 @@
-import aboutImage from "../../assets/images/about.jpg";
+import aboutImage from "../../assets/images/aboutworker.jpeg";
 import lojapic from "../../assets/images/loja.jpg";
 import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
