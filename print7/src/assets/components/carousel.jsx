@@ -165,9 +165,9 @@ function CarouselHighlight({
                         }
                       : {}
                   }
-                  className={`relative overflow-hidden rounded-2xl shadow-[0_16px_40px_rgba(0,0,0,0.18)] group cursor-pointer ${
-                    isMobile ? "rounded-xl" : "rounded-2xl"
-                  }`}
+                  className={`relative overflow-hidden rounded-2xl shadow-[0_16px_40px_rgba(0,0,0,0.18)] group ${
+                    it.to ? "cursor-pointer" : "cursor-default"
+                  } ${isMobile ? "rounded-xl" : "rounded-2xl"}`}
                   style={{
                     transformStyle: "preserve-3d",
                     perspective: isMobile ? "800px" : "1000px",

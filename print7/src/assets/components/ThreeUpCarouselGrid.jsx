@@ -85,7 +85,7 @@ export default function ThreeUpCarouselGrid({
                   <Link
                     to={it.to || "#"}
                     aria-label={it.title}
-                    className={`group block focus:outline-none ${
+                    className={`group block focus:outline-none cursor-pointer ${
                       isMobile ? "mb-2" : "mb-4"
                     } text-center`}
                   >
@@ -121,35 +121,34 @@ export default function ThreeUpCarouselGrid({
                   whileHover={!isMobile ? { scale: 1.02 } : {}}
                   transition={{ duration: 0.3 }}
                 >
-                  <Link to={it.to || "#"} aria-label={`${it.title} gallery`} className="block">
-                    <motion.div
-                      className={`overflow-hidden ${
-                        isMobile ? "rounded-xl" : "rounded-2xl"
-                      } ring-1 ring-black/5 shadow-lg ${
-                        !isMobile ? "hover:shadow-xl" : ""
-                      } transition-shadow duration-300`}
-                      whileHover={
-                        !isMobile
-                          ? {
-                              boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
-                              transition: { duration: 0.3 },
-                            }
-                          : {}
-                      }
-                    >
-                      <CarouselHighlight
-                        items={slides}
-                        height={it.height ?? height}
-                        slideSize="100%"
-                        title=""
-                        subtitle=""
-                        headerAlign="center"
-                        indicatorsClass="hidden"
-                        autoplay={false}
-                        showIndicators={false}
-                      />
-                    </motion.div>
-                  </Link>
+                  <motion.div
+                    className={`overflow-hidden ${
+                      isMobile ? "rounded-xl" : "rounded-2xl"
+                    } ring-1 ring-black/5 shadow-lg ${
+                      !isMobile ? "hover:shadow-xl" : ""
+                    } transition-shadow duration-300`}
+                    whileHover={
+                      !isMobile
+                        ? {
+                            boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
+                            transition: { duration: 0.3 },
+                          }
+                        : {}
+                    }
+                  >
+                    <CarouselHighlight
+                      items={slides}
+                      height={it.height ?? height}
+                      mobileHeight={260}
+                      slideSize="100%"
+                      title=""
+                      subtitle=""
+                      headerAlign="center"
+                      indicatorsClass="hidden"
+                      autoplay={false}
+                      showIndicators={false}
+                    />
+                  </motion.div>
                 </motion.div>
               </motion.div>
             );

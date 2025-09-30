@@ -19,21 +19,21 @@ export default function getHomeCarouselRows(t) {
 
   return [
     {
-      type: "stacked",
-      title: t("home.carousel2.relief.title"),
-      subtitle: t("home.carousel.relief.subtitle"),
-      to: "/relief",
-      slides: reliefSlides,
-      height: 400,
-      spacing: "py-8",
-    },
-    {
       type: "split",
       side: "left",
       title: t("home.carousel2.laser.title"),
       subtitle: t("home.carousel.laser.subtitle"),
       to: "/laser",
       slides: laserSlides,
+      height: 400,
+      spacing: "py-8",
+    },
+    {
+      type: "stacked",
+      title: t("home.carousel2.relief.title"),
+      subtitle: t("home.carousel.relief.subtitle"),
+      to: "/relief",
+      slides: reliefSlides,
       height: 400,
       spacing: "py-8",
     },
