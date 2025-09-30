@@ -2,6 +2,7 @@ import "@mantine/core/styles.css";
 import CategoryPage from "../../assets/components/categorypage";
 import ServiceSeo from "../../assets/components/ServiceSeo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 import imgAD1 from "../../assets/images/carousel/decorinterior/di1.jpg";
 import imgAD2 from "../../assets/images/carousel/decorinterior/di2.jpg";
@@ -19,6 +20,10 @@ const IMAGES = [
 
 function InterirorPage() {
   const { t } = useTranslation();
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
+
   return (
     <main>
       <ServiceSeo slug="interior" />

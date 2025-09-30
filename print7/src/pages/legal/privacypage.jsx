@@ -1,8 +1,12 @@
 import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 function PrivacyPage() {
   const { t, i18n } = useTranslation("privacy");
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
 
   const updatedAt = new Date("2025-09-16T00:00:00Z");
   const locale = { pt: "pt-PT", en: "en-GB", it: "it-IT" }[i18n.language] || "en-GB";

@@ -13,6 +13,7 @@ import {
 } from "@mantine/core";
 import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 import heroImage from "../../assets/images/catalogs/catalogsv2.jpg";
 import textil1 from "../../assets/images/catalogs/textil/mukua.jpg";
@@ -49,6 +50,9 @@ const brindeCatalogs = [
 
 function CatalogsPage() {
   const { t } = useTranslation();
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
 
   return (
     <div className="min-h-screen bg-white">

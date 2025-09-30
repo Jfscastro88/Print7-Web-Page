@@ -2,9 +2,14 @@ import aboutImage from "../../assets/images/about.jpg";
 import lojapic from "../../assets/images/loja.jpg";
 import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 function AboutPage() {
   const { t } = useTranslation("common");
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
+
   return (
     <main className="bg-white">
       <Seo title={t("seo.about.title")} description={t("seo.about.desc")} />

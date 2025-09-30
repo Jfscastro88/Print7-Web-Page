@@ -17,6 +17,7 @@ import { useTranslation } from "react-i18next";
 import getHomeCarouselRows from "../../assets/data/homeCarouselRows.js";
 import getHomeThreeUpSections from "../../assets/data/homeThreeUpSections.js";
 import getHomeLastThreeUpSection from "../../assets/data/homeLastThreeUpSection.js";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 function ZoomOnScroll({ children }) {
   const ref = useRef(null);
@@ -35,6 +36,9 @@ function HomePage() {
   const rows = getHomeCarouselRows(t);
   const threeUp = getHomeThreeUpSections(t);
   const lastThree = getHomeLastThreeUpSection(t);
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
 
   const localizedHeroItems = heroCarouselItems.map((item) => ({
     ...item,

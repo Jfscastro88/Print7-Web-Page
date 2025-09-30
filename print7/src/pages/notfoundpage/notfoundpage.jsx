@@ -1,10 +1,14 @@
 import { Link, useNavigate } from "react-router-dom";
 import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 function NotFoundPage() {
   const { t } = useTranslation("common");
   const navigate = useNavigate();
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
 
   return (
     <main className="min-h-[60vh] grid place-items-center px-6 py-16 text-center">

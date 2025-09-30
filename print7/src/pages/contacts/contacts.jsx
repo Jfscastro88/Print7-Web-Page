@@ -3,9 +3,13 @@ import { MapPin, Phone, Mail } from "lucide-react";
 import ContactImage from "../../assets/images/contacts.jpg";
 import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 function ContactPage() {
   const { t } = useTranslation();
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
 
   return (
     <main className="min-h-screen bg-white text-gray-900">

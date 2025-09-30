@@ -3,6 +3,7 @@ import { useRef, useState, useEffect } from "react";
 import CategoryPage from "../../assets/components/categorypage.jsx";
 import ServiceSeo from "../../assets/components/ServiceSeo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 import imgLogo1 from "../../assets/images/carousel/design/01.png";
 import imgLogo2 from "../../assets/images/carousel/design/02.png";
@@ -39,6 +40,9 @@ const IMAGES = [
 export default function LogosPage() {
   const { t } = useTranslation();
   const [selected, setSelected] = useState(null);
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
   const cardRefs = useRef([]);
 
   const handleCardClick = (i) => {

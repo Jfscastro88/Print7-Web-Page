@@ -2,7 +2,7 @@ import { useRef, useState, useEffect, useMemo } from "react";
 import { Container, Text, Title, Loader } from "@mantine/core";
 import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
-import { motion, useScroll, useTransform, AnimatePresence } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { CAROUSEL_CONFIG } from "../../config/carousel";
 import "@mantine/carousel/styles.css";
@@ -41,12 +41,25 @@ function EnhancedCarousel({
   const scale = useTransform(scrollYProgress, [0, 0.5, 1], [0.8, 1, 0.8]);
 
   const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
   useEffect(() => {
-    const mq = window.matchMedia("(max-width: 640px)");
-    const onChange = (e) => setIsMobile(e.matches);
-    onChange(mq);
-    mq.addEventListener("change", onChange);
-    return () => mq.removeEventListener("change", onChange);
+    const mobileQuery = window.matchMedia("(max-width: 640px)");
+    const tabletQuery = window.matchMedia("(max-width: 1024px) and (min-width: 641px)");
+
+    const handleMobileChange = (e) => setIsMobile(e.matches);
+    const handleTabletChange = (e) => setIsTablet(e.matches);
+
+    handleMobileChange(mobileQuery);
+    handleTabletChange(tabletQuery);
+
+    mobileQuery.addEventListener("change", handleMobileChange);
+    tabletQuery.addEventListener("change", handleTabletChange);
+
+    return () => {
+      mobileQuery.removeEventListener("change", handleMobileChange);
+      tabletQuery.removeEventListener("change", handleTabletChange);
+    };
   }, []);
 
   const effectiveHeight = isMobile && mobileHeight ? mobileHeight : height;
@@ -84,6 +97,8 @@ function EnhancedCarousel({
   const headerAlignClass =
     headerAlign === "" ? "text-left" : headerAlign === "right" ? "text-right" : "text-center";
 
+  const indicatorsClass = "hidden";
+
   const slideVariants = useMemo(
     () => ({
       initial: { scale: 0.9, opacity: 0.85, rotateY: 15 },
@@ -96,18 +111,6 @@ function EnhancedCarousel({
       hover: {
         scale: 1.02,
         rotateY: -5,
-      },
-    }),
-    []
-  );
-
-  const containerVariants = useMemo(
-    () => ({
-      hidden: { opacity: 0, y: 30 },
-      visible: {
-        opacity: 1,
-        y: 0,
-        transition: { duration: 0.6, ease: "easeOut" },
       },
     }),
     []
@@ -136,45 +139,49 @@ function EnhancedCarousel({
   return (
     <motion.div ref={containerRef} style={{ y, opacity, scale }} className="relative">
       <Container size={containerSize} className={`${containerClassName} mx-auto`}>
-        <AnimatePresence>
-          {(title || subtitle) && (
-            <motion.div
-              className={`mb-6 ${headerAlignClass}`}
-              variants={containerVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              {title && (
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.1 }}
-                  viewport={{ once: true }}
+        {(title || subtitle) && (
+          <motion.div
+            className={`mb-6 ${headerAlignClass}`}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
+            {title && (
+              <motion.div
+                initial={{ opacity: 0, scale: 0.9 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                viewport={{ once: true }}
+              >
+                <Title
+                  order={2}
+                  className={`${
+                    isMobile
+                      ? "text-xl sm:text-2xl"
+                      : isTablet
+                      ? "text-2xl md:text-3xl"
+                      : "text-2xl md:text-3xl"
+                  } font-bold tracking-tight text-black`}
                 >
-                  <Title
-                    order={2}
-                    className="text-2xl md:text-3xl font-bold tracking-tight bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
-                  >
-                    {title}
-                  </Title>
-                </motion.div>
-              )}
-              {subtitle && (
-                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: 0.2 }}
-                  viewport={{ once: true }}
-                >
-                  <Text size="md" className="text-gray-1000 mt-1">
-                    {subtitle}
-                  </Text>
-                </motion.div>
-              )}
-            </motion.div>
-          )}
-        </AnimatePresence>
+                  {title}
+                </Title>
+              </motion.div>
+            )}
+            {subtitle && (
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
+                <Text size="md" className="text-gray-1000 mt-1">
+                  {subtitle}
+                </Text>
+              </motion.div>
+            )}
+          </motion.div>
+        )}
 
         <motion.div
           onMouseEnter={() => setIsHovered(true)}

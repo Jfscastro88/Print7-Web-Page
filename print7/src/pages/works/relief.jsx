@@ -2,6 +2,7 @@ import "@mantine/core/styles.css";
 import CategoryPage from "../../assets/components/categorypage";
 import ServiceSeo from "../../assets/components/ServiceSeo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 import imgrelief1 from "../../assets/images/carousel/relevo/rel1.jpg";
 import imgrelief2 from "../../assets/images/carousel/relevo/rel2.jpg";
@@ -67,6 +68,10 @@ const IMAGES = [
 
 function reliefWorkPage() {
   const { t } = useTranslation();
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
+
   return (
     <main>
       <ServiceSeo slug="relief" />

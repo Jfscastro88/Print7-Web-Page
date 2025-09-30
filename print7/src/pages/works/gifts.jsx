@@ -2,6 +2,7 @@ import "@mantine/core/styles.css";
 import CategoryPage from "../../assets/components/categorypage";
 import ServiceSeo from "../../assets/components/ServiceSeo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 import imgGifts1 from "../../assets/images/carousel/brindes/bg1.jpg";
 import imgGifts2 from "../../assets/images/carousel/brindes/bg2.jpg";
@@ -71,6 +72,10 @@ const IMAGES = [
 
 function AdvertisingPage() {
   const { t } = useTranslation();
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
+
   return (
     <main>
       <ServiceSeo slug="gifts" />

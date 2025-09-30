@@ -1,6 +1,6 @@
 import "@mantine/core/styles.css";
 import "./index.css";
-import { MantineProvider, Box } from "@mantine/core";
+import { Box } from "@mantine/core";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "../src/layout/Layout.jsx";
 import HomePage from "../src/pages/homepage/homepage.jsx";
@@ -27,37 +27,35 @@ import PrivacyPage from "../src/pages/legal/privacypage.jsx";
 
 function App() {
   return (
-    <MantineProvider withGlobalStyles withNormalizeCSS>
-      <BrowserRouter>
-        <ScrollToTop behavior="smooth" />
-        <Box className="min-h-screen bg-gray-100 flex flex-col">
-          <Routes>
-            <Route element={<Layout />}>
-              <Route index element={<HomePage />} />
-              <Route path="about" element={<AboutPage />} />
-              <Route path="contact" element={<ContactPage />} />
-              <Route path="catalogs" element={<Catalogs />} />
-              <Route path="ad" element={<Advertisements />} />
-              <Route path="cars" element={<Cars />} />
-              <Route path="gifts" element={<Gifts />} />
-              <Route path="interior" element={<Interior />} />
-              <Route path="laser" element={<Laser />} />
-              <Route path="logos" element={<Logos />} />
-              <Route path="neon" element={<Neon />} />
-              <Route path="others" element={<Others />} />
-              <Route path="plates" element={<Plates />} />
-              <Route path="relief" element={<Relief />} />
-              <Route path="stand" element={<Stand />} />
-              <Route path="stationery" element={<Stationery />} />
-              <Route path="uniforms" element={<Uniforms />} />
-              <Route path="window" element={<Window />} />
-              <Route path="/privacy" element={<PrivacyPage />} />
-              <Route path="*" element={<NotFoundPage />} />
-            </Route>
-          </Routes>
-        </Box>
-      </BrowserRouter>
-    </MantineProvider>
+    <BrowserRouter>
+      <ScrollToTop behavior="smooth" />
+      <Box className="min-h-screen bg-gray-100 flex flex-col">
+        <Routes>
+          <Route element={<Layout />}>
+            <Route index element={<HomePage />} />
+            <Route path="about" element={<AboutPage />} />
+            <Route path="contact" element={<ContactPage />} />
+            <Route path="catalogs" element={<Catalogs />} />
+            <Route path="ad" element={<Advertisements />} />
+            <Route path="cars" element={<Cars />} />
+            <Route path="gifts" element={<Gifts />} />
+            <Route path="interior" element={<Interior />} />
+            <Route path="laser" element={<Laser />} />
+            <Route path="logos" element={<Logos />} />
+            <Route path="neon" element={<Neon />} />
+            <Route path="others" element={<Others />} />
+            <Route path="plates" element={<Plates />} />
+            <Route path="relief" element={<Relief />} />
+            <Route path="stand" element={<Stand />} />
+            <Route path="stationery" element={<Stationery />} />
+            <Route path="uniforms" element={<Uniforms />} />
+            <Route path="window" element={<Window />} />
+            <Route path="/privacy" element={<PrivacyPage />} />
+            <Route path="*" element={<NotFoundPage />} />
+          </Route>
+        </Routes>
+      </Box>
+    </BrowserRouter>
   );
 }
 export default App;

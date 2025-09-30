@@ -2,6 +2,7 @@ import "@mantine/core/styles.css";
 import CategoryPage from "../../assets/components/categorypage";
 import ServiceSeo from "../../assets/components/ServiceSeo.jsx";
 import { useTranslation } from "react-i18next";
+import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
 
 import imgLaser1 from "../../assets/images/carousel/cortelaser/cgl1.jpg";
 import imgLaser2 from "../../assets/images/carousel/cortelaser/cgl2.jpg";
@@ -25,6 +26,10 @@ const IMAGES = [
 
 function LaserPage() {
   const { t } = useTranslation();
+
+  // Ensure scroll to top when component mounts
+  useScrollToTop("smooth");
+
   return (
     <main>
       <ServiceSeo slug="laser" />
