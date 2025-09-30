@@ -330,6 +330,9 @@
     },
     "notFound": { "title": "Página não encontrada", "desc": "" }
   },
+  "common": {
+    "explore": "Explorar"
+  },
   "seo2": {
     "services": {
       "gifts": {

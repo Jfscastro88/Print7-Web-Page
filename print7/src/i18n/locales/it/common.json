@@ -317,6 +317,9 @@
     },
     "notFound": { "title": "Pagina non trovata", "desc": "" }
   },
+  "common": {
+    "explore": "Esplora"
+  },
   "seo2": {
     "services": {
       "gifts": {

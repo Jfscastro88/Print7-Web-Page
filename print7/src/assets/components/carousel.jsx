@@ -4,6 +4,7 @@ import { Carousel } from "@mantine/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { CAROUSEL_CONFIG } from "../../config/carousel";
 import "@mantine/carousel/styles.css";
 
 function CarouselHighlight({
@@ -12,7 +13,7 @@ function CarouselHighlight({
   mobileHeight,
   slideSize = "60%",
   loop = true,
-  autoplayDelay = 3000,
+  autoplayDelay = CAROUSEL_CONFIG.AUTOPLAY_DELAY,
   align = "center",
   showIndicators = true,
   className = "",

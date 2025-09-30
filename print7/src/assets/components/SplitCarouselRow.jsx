@@ -1,6 +1,7 @@
 import "@mantine/carousel/styles.css";
 import { Container, Title, Text } from "@mantine/core";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import CarouselHighlight from "./carousel.jsx";
 
 export default function SplitCarouselRow({
@@ -13,6 +14,7 @@ export default function SplitCarouselRow({
   spacing = "py-16",
   className = "",
 }) {
+  const { t } = useTranslation("common");
   const items = slides.map((s) => ({
     src: s.src,
     alt: s.alt || title || "slide",
@@ -41,11 +43,15 @@ export default function SplitCarouselRow({
           >
             <path fill="currentColor" d="M11 19l-7-7 7-7v4h9v6h-9v4z" />
           </svg>
-          <span className="group-hover:-translate-x-0.5 transition-transform">Explore</span>
+          <span className="group-hover:-translate-x-0.5 transition-transform">
+            {t("common.explore")}
+          </span>
         </>
       ) : (
         <>
-          <span className="group-hover:translate-x-0.5 transition-transform">Explore</span>
+          <span className="group-hover:translate-x-0.5 transition-transform">
+            {t("common.explore")}
+          </span>
           <svg
             width="18"
             height="18"
