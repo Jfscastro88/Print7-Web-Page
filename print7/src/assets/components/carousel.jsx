@@ -190,17 +190,6 @@ function CarouselHighlight({
                     transition={{ duration: 0.5 }}
                   />
 
-                  <motion.div
-                    className={`absolute inset-0 border-2 border-white/20 ${
-                      isMobile ? "rounded-xl" : "rounded-2xl"
-                    }`}
-                    animate={{
-                      borderColor:
-                        active === idx ? "rgba(255,255,255,0.4)" : "rgba(255,255,255,0.2)",
-                    }}
-                    transition={{ duration: 0.3 }}
-                  />
-
                   {(it.title || it.subtitle) && (
                     <motion.div
                       className={`absolute ${
@@ -219,12 +208,7 @@ function CarouselHighlight({
                         }}
                         transition={{ duration: 0.3 }}
                       >
-                        <Text
-                          c="white"
-                          fw={700}
-                          size={isMobile ? "md" : "lg"}
-                          className="drop-shadow-lg underline-offset-4"
-                        >
+                        <Text c="white" fw={700} size={isMobile ? "md" : "lg"} className="">
                           {it.title}
                         </Text>
                         {it.subtitle && (

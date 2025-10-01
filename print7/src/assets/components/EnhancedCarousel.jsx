@@ -240,15 +240,6 @@ function EnhancedCarousel({
                     transition={{ duration: 0.5 }}
                   />
 
-                  <motion.div
-                    className="absolute inset-0 rounded-2xl border-2 border-white/20"
-                    animate={{
-                      borderColor:
-                        active === idx ? "rgba(255,255,255,0.4)" : "rgba(255,255,255,0.2)",
-                    }}
-                    transition={{ duration: 0.3 }}
-                  />
-
                   {(it.title || it.subtitle) && (
                     <motion.div
                       className="absolute bottom-4 left-4 right-4"
@@ -265,12 +256,7 @@ function EnhancedCarousel({
                         }}
                         transition={{ duration: 0.3 }}
                       >
-                        <Text
-                          c="white"
-                          fw={700}
-                          size="lg"
-                          className="drop-shadow-lg underline-offset-4"
-                        >
+                        <Text c="white" fw={700} size="lg" className="">
                           {it.title}
                         </Text>
                         {it.subtitle && (
