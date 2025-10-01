@@ -21,7 +21,6 @@ function AboutPage() {
             className="absolute inset-0 h-full w-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-black/5 to-transparent" />
           {/* Fade */}
           <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-white via-white/10 to-transparent" />
         </div>
