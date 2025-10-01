@@ -1,6 +1,7 @@
 import { Container, Title, Paper } from "@mantine/core";
 import { MapPin, Phone, Mail } from "lucide-react";
-import ContactImage from "../../assets/images/contact.jpeg";
+import ContactImage from "../../assets/images/contactDesk.jpeg";
+import ContactImageMobile from "../../assets/images/contactDesk.jpeg";
 import Seo from "../../assets/components/seo.jsx";
 import { useTranslation } from "react-i18next";
 import { useScrollToTop } from "../../assets/hooks/useScrollToTop.js";
@@ -16,8 +17,23 @@ function ContactPage() {
       <Seo title={t("seo.contacts.title")} description={t("seo.contacts.desc")} />
       <section
         className="relative h-[320px] sm:h-[380px] md:h-[420px] lg:h-[480px] bg-cover bg-center"
-        style={{ backgroundImage: `url(${ContactImage})` }}
+        style={{
+          backgroundImage: `url(${ContactImageMobile})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+        }}
       >
+        {/* Desktop background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center hidden md:block"
+          style={{
+            backgroundImage: `url(${ContactImage})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
+        />
         <div className="absolute inset-0 bg-black/10pointer-events-none" />
         <Container
           size="lg"
