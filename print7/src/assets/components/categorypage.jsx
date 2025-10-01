@@ -134,14 +134,7 @@ function CategoryPage({
 
       <section className="py-10 md:py-14">
         <Container size="lg" className="text-center">
-          <SimpleGrid
-            cols={3}
-            spacing="md"
-            breakpoints={[
-              { maxWidth: "md", cols: 2 },
-              { maxWidth: "sm", cols: 1 },
-            ]}
-          >
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {images.map((img, i) => {
               const item = typeof img === "string" ? { src: img, alt: `Immagine ${i + 1}` } : img;
               return (
@@ -157,7 +150,7 @@ function CategoryPage({
                 />
               );
             })}
-          </SimpleGrid>
+          </div>
         </Container>
       </section>
 
