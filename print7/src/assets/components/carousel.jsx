@@ -136,9 +136,12 @@ function CarouselHighlight({
             className={className}
             classNames={{
               viewport: "overflow-hidden",
-              control: `rounded-full shadow-lg transition-all duration-300 hover:scale-110 ${
-                isMobile ? "w-8 h-8" : "w-10 h-10"
-              }`,
+              control: `h-8 w-8 md:h-10 md:w-10 rounded-full bg-white/100 hover:bg-white/15
+                        text-white text-sm md:text-lg grid place-items-center
+                        backdrop-blur-sm border border-white/3
+                        transition-all duration-300 hover:scale-110
+                        opacity-5 hover:opacity-100
+                        data-[data-inactive]:opacity-5`,
             }}
           >
             {items.map((it, idx) => {

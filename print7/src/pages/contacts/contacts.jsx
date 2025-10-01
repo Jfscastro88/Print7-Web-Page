@@ -18,22 +18,21 @@ function ContactPage() {
         className="relative h-[320px] sm:h-[380px] md:h-[420px] lg:h-[480px] bg-cover bg-center"
         style={{ backgroundImage: `url(${ContactImage})` }}
       >
-        <div className="absolute inset-0 bg-black/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-black/10pointer-events-none" />
         <Container
           size="lg"
           className="relative z-10 h-full flex flex-col justify-center items-center text-center text-white px-6"
-        >
-          <Title
-            order={1}
-            className="mb-4 max-w-[780px] leading-tight tracking-tight text-2xl sm:text-3xl md:text-4xl lg:text-5xl drop-shadow"
-          >
-            {t("contacts.heroTitle")}
-          </Title>
-        </Container>
+        ></Container>
       </section>
 
-      <Container size="lg" className="py-16 px-6 text-center">
-        <Title order={2} className="text-2xl font-semibold mb-6">
+      <Container size="lg" className="py-10 px-6 text-center">
+        <Title
+          order={1}
+          className="mb-4 max-w-[780px] text-2xl sm:text-3xl md:text-4xl lg:text-5xl mx-auto text-center pb-4"
+        >
+          {t("contacts.heroTitle")}
+        </Title>
+        <Title order={2} className="text-2xl font-semibold mb-6 text-center">
           {t("contacts.sectionTitle")}
         </Title>
 
@@ -52,10 +51,10 @@ function ContactPage() {
           </span>
         </div>
 
-        <Title order={3} className="text-xl font-semibold mt-10 mb-2">
+        <Title order={3} className="text-xl font-semibold mt-10 mb-2 text-center">
           {t("contacts.locationTitle")}
         </Title>
-        <div className="mb-4 font-medium">Plus Code: G3HW+5W Setúbal, Portugal</div>
+        <div className="mb-4 font-medium text-center">Plus Code: G3HW+5W Setúbal, Portugal</div>
 
         <Paper shadow="sm" radius="lg" className="overflow-hidden">
           <div className="w-full h-64 md:h-80 lg:h-[450px]">
