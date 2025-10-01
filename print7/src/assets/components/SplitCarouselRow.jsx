@@ -49,8 +49,8 @@ export default function SplitCarouselRow({
 
   const textAlignClass =
     side === "right"
-      ? "text-right items-end md:text-right md:items-end"
-      : "text-left items-start md:text-left md:items-start";
+      ? "text-center items-center md:text-right md:items-end"
+      : "text-center items-center md:text-left md:items-start";
 
   const ExploreCTA = () => (
     <span className="hidden md:inline-flex items-center gap-2 font-medium">

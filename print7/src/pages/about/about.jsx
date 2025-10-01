@@ -21,13 +21,13 @@ function AboutPage() {
             className="absolute inset-0 h-full w-full object-cover"
             loading="eager"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/30 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-black/5 to-transparent" />
           {/* Fade */}
-          <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-white to-transparent" />
+          <div className="absolute inset-x-0 bottom-0 h-10 bg-gradient-to-t from-white via-white/10 to-transparent" />
         </div>
       </section>
       <section className="relative">
-        <div className="max-w-6xl mx-auto px-6 py-12 md:py-16 text-gray-700 leading-relaxed">
+        <div className="max-w-6xl mx-auto px-6 py-12 md:py-16 text-black leading-relaxed">
           <h1 className="text-left text-3xl sm:text-4xl md:text-6xl font-bold mb-12">
             {t("about.title")}
           </h1>
