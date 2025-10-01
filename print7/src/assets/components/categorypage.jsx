@@ -18,7 +18,7 @@ const CategoryCard = forwardRef(function CategoryCard(
       animate={{ scale: isActive ? 1.08 : 1, zIndex: isActive ? 2 : 1 }}
       whileHover={{ scale: isActive ? 1.07 : 1.02 }}
       transition={{ type: "spring", stiffness: 220, damping: 18 }}
-      className={`origin-center scroll-mt-24 group relative overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-black/5 cursor-pointer ${
+      className={`origin-center scroll-mt-24 group relative overflow-hidden rounded-2xl bg-white cursor-pointer ${
         isActive ? "ring-2 ring-blue-300 shadow-[0_12px_28px_rgba(0,0,0,0.18)]" : ""
       }`}
       aria-pressed={isActive}

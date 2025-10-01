@@ -117,7 +117,7 @@ export default function SplitCarouselRow({
             </Link>
           </div>
 
-          <div className="overflow-hidden rounded-2xl ring-1 ring-black/5 w-full sm:basis-1/2 sm:flex-1 sm:min-w-0">
+          <div className="overflow-hidden rounded-2xl w-full sm:basis-1/2 sm:flex-1 sm:min-w-0">
             <CarouselHighlight
               items={items}
               height={height}

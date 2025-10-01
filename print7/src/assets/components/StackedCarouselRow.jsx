@@ -64,7 +64,7 @@ export default function StackedCarouselRow({
           </Link>
         </div>
 
-        <div className="w-full overflow-hidden rounded-2xl ring-1 ring-black/5">
+        <div className="w-full overflow-hidden">
           <CarouselHighlight
             items={items}
             height={height}

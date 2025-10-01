@@ -122,19 +122,7 @@ export default function ThreeUpCarouselGrid({
                   transition={{ duration: 0.3 }}
                 >
                   <motion.div
-                    className={`overflow-hidden ${
-                      isMobile ? "rounded-xl" : "rounded-2xl"
-                    } ring-1 ring-black/5 shadow-lg ${
-                      !isMobile ? "hover:shadow-xl" : ""
-                    } transition-shadow duration-300`}
-                    whileHover={
-                      !isMobile
-                        ? {
-                            boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
-                            transition: { duration: 0.3 },
-                          }
-                        : {}
-                    }
+                    className={`overflow-hidden ${isMobile ? "rounded-xl" : "rounded-2xl"}`}
                   >
                     <CarouselHighlight
                       items={slides}

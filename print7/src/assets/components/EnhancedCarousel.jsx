@@ -200,7 +200,7 @@ function EnhancedCarousel({
             onSlideChange={setActive}
             className={className}
             classNames={{
-              viewport: "overflow-hidden",
+              viewport: "overflow-hidden bg-white",
               indicators: indicatorsClass,
               control: `h-8 w-8 md:h-10 md:w-10 rounded-full bg-white/100 hover:bg-white/15
                         text-white text-sm md:text-lg grid place-items-center
@@ -223,7 +223,7 @@ function EnhancedCarousel({
                     damping: 18,
                     duration: 0.6,
                   }}
-                  className="relative overflow-hidden rounded-2xl shadow-[0_16px_40px_rgba(0,0,0,0.18)] group cursor-pointer"
+                  className="relative overflow-hidden rounded-2xl group cursor-pointer"
                   style={{
                     transformStyle: "preserve-3d",
                     perspective: "1000px",

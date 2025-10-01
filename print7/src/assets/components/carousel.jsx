@@ -135,7 +135,7 @@ function CarouselHighlight({
             onSlideChange={setActive}
             className={className}
             classNames={{
-              viewport: "overflow-hidden",
+              viewport: "overflow-hidden bg-white",
               control: `h-8 w-8 md:h-10 md:w-10 rounded-full bg-white/100 hover:bg-white/15
                         text-white text-sm md:text-lg grid place-items-center
                         backdrop-blur-sm border border-white/3
@@ -169,7 +169,7 @@ function CarouselHighlight({
                         }
                       : {}
                   }
-                  className={`relative overflow-hidden rounded-2xl shadow-[0_16px_40px_rgba(0,0,0,0.18)] group ${
+                  className={`relative overflow-hidden rounded-2xl group ${
                     it.to ? "cursor-pointer" : "cursor-default"
                   } ${isMobile ? "rounded-xl" : "rounded-2xl"}`}
                   style={{
