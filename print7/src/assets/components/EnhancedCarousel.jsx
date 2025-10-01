@@ -241,14 +241,6 @@ function EnhancedCarousel({
                   />
 
                   <motion.div
-                    className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"
-                    animate={{
-                      opacity: active === idx ? 1 : 0.7,
-                    }}
-                    transition={{ duration: 0.3 }}
-                  />
-
-                  <motion.div
                     className="absolute inset-0 rounded-2xl border-2 border-white/20"
                     animate={{
                       borderColor:
