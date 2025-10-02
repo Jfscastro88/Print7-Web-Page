@@ -49,44 +49,10 @@ export default function SplitCarouselRow({
 
   const textAlignClass =
     side === "right"
-      ? "text-center items-center md:text-right md:items-end"
-      : "text-center items-center md:text-left md:items-start";
+      ? "text-center items-center md:text-right md:items-center"
+      : "text-center items-center md:text-left md:items-center";
 
-  const ExploreCTA = () => (
-    <span className="hidden md:inline-flex items-center gap-2 font-medium">
-      {side === "right" ? (
-        <>
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            className="opacity-70 group-hover:opacity-100 transition-opacity"
-            aria-hidden="true"
-          >
-            <path fill="currentColor" d="M11 19l-7-7 7-7v4h9v6h-9v4z" />
-          </svg>
-          <span className="group-hover:-translate-x-0.5 transition-transform">
-            {t("common.explore")}
-          </span>
-        </>
-      ) : (
-        <>
-          <span className="group-hover:translate-x-0.5 transition-transform">
-            {t("common.explore")}
-          </span>
-          <svg
-            width="18"
-            height="18"
-            viewBox="0 0 24 24"
-            className="opacity-70 group-hover:opacity-100 transition-opacity"
-            aria-hidden="true"
-          >
-            <path fill="currentColor" d="M13 5l7 7-7 7v-4H4v-6h9V5z" />
-          </svg>
-        </>
-      )}
-    </span>
-  );
+  const ExploreCTA = () => null;
 
   return (
     <section className={`${spacing} bg-white ${className}`}>
