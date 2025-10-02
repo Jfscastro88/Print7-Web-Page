@@ -175,7 +175,7 @@ export function WebsiteSchema() {
     alternateName: "Print7",
     url: BASE_URL,
     description:
-      "Empresa de publicidade e design gráfico em Setúbal especializada em soluções de comunicação visual.",
+      "Empresa de Publicidade e Design Gráfico em Setúbal especializada em soluções de comunicação visual.",
     publisher: {
       "@type": "LocalBusiness",
       "@id": `${BASE_URL}#business`,
