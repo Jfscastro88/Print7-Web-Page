@@ -28,28 +28,88 @@ import imgboards21 from "../../assets/images/carousel/placas/pla21.jpg";
 import imgboards22 from "../../assets/images/carousel/placas/pla22.jpg";
 
 const IMAGES = [
-  { src: imgboards1, alt: "AD #1" },
-  { src: imgboards2, alt: "AD #2" },
-  { src: imgboards3, alt: "AD #3" },
-  { src: imgboards4, alt: "AD #4" },
-  { src: imgboards5, alt: "AD #5" },
-  { src: imgboards6, alt: "AD #6" },
-  { src: imgboards7, alt: "AD #7" },
-  { src: imgboards8, alt: "AD #8" },
-  { src: imgboards9, alt: "AD #9" },
-  { src: imgboards10, alt: "AD #10" },
-  { src: imgboards11, alt: "AD #11" },
-  { src: imgboards12, alt: "AD #12" },
-  { src: imgboards13, alt: "AD #13" },
-  { src: imgboards14, alt: "AD #14" },
-  { src: imgboards15, alt: "AD #15" },
-  { src: imgboards16, alt: "AD #16" },
-  { src: imgboards17, alt: "AD #17" },
-  { src: imgboards18, alt: "AD #18" },
-  { src: imgboards19, alt: "AD #19" },
-  { src: imgboards20, alt: "AD #20" },
-  { src: imgboards21, alt: "AD #21" },
-  { src: imgboards22, alt: "AD #22" },
+  {
+    src: imgboards1,
+    alt: "Placas publicitárias Print7 - Sinalética exterior em PVC resistente às intempéries",
+  },
+  {
+    src: imgboards2,
+    alt: "Lonas impressas Print7 - Grande formato para eventos e promoções temporárias",
+  },
+  {
+    src: imgboards3,
+    alt: "Sinalética Print7 - Placas informativas com impressão de alta qualidade",
+  },
+  {
+    src: imgboards4,
+    alt: "Painéis publicitários Print7 - Suportes rígidos para comunicação exterior",
+  },
+  {
+    src: imgboards5,
+    alt: "Impressão grande formato Print7 - Materiais duráveis para uso prolongado",
+  },
+  {
+    src: imgboards6,
+    alt: "Placas de obra Print7 - Sinalização profissional para construção civil",
+  },
+  {
+    src: imgboards7,
+    alt: "Banners exteriores Print7 - Comunicação visual impactante e resistente",
+  },
+  {
+    src: imgboards8,
+    alt: "Sinalética comercial Print7 - Placas que identificam e promovem negócios",
+  },
+  {
+    src: imgboards9,
+    alt: "Lonas publicitárias Print7 - Flexibilidade e durabilidade em grande formato",
+  },
+  { src: imgboards10, alt: "Placas ACM Print7 - Alumínio composto para sinalização premium" },
+  {
+    src: imgboards11,
+    alt: "Impressão exterior Print7 - Tintas UV resistentes para máxima durabilidade",
+  },
+  {
+    src: imgboards12,
+    alt: "Sinalização urbana Print7 - Placas que respeitam regulamentação municipal",
+  },
+  { src: imgboards13, alt: "Painéis informativos Print7 - Comunicação clara e profissional" },
+  {
+    src: imgboards14,
+    alt: "Placas direcionais Print7 - Sinalética que orienta e informa visitantes",
+  },
+  {
+    src: imgboards15,
+    alt: "Grande formato Print7 - Impressão de qualidade fotográfica em dimensões amplas",
+  },
+  {
+    src: imgboards16,
+    alt: "Sinalética empresarial Print7 - Placas que reforçam a identidade corporativa",
+  },
+  {
+    src: imgboards17,
+    alt: "Lonas técnicas Print7 - Materiais especializados para condições extremas",
+  },
+  {
+    src: imgboards18,
+    alt: "Placas promocionais Print7 - Comunicação eficaz para campanhas de marketing",
+  },
+  {
+    src: imgboards19,
+    alt: "Sinalização exterior Print7 - Visibilidade garantida em qualquer condição",
+  },
+  {
+    src: imgboards20,
+    alt: "Impressão profissional Print7 - Qualidade superior em todos os formatos",
+  },
+  {
+    src: imgboards21,
+    alt: "Placas personalizadas Print7 - Soluções à medida para cada necessidade",
+  },
+  {
+    src: imgboards22,
+    alt: "Sinalética durável Print7 - Investimento de longo prazo em comunicação visual",
+  },
 ];
 
 function plastesboardsPage() {

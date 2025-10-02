@@ -1,0 +1,21 @@
+{
+  "name": "Print7 - Publicidade & Design",
+  "short_name": "Print7",
+  "description": "Empresa de publicidade e design gráfico em Setúbal. Especialistas em impressão, sinalética, brindes personalizados e soluções de comunicação visual.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#1f2937",
+  "orientation": "portrait-primary",
+  "categories": ["business", "productivity"],
+  "lang": "pt-PT",
+  "icons": [
+    {
+      "src": "/print7.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
+

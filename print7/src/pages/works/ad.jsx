@@ -25,25 +25,76 @@ import imgAdvertising18 from "../../assets/images/carousel/reclames/rec18.jpg";
 import imgAdvertising19 from "../../assets/images/carousel/reclames/rec19.jpg";
 
 const IMAGES = [
-  { src: imgAdvertising1, alt: "AD #1" },
-  { src: imgAdvertising2, alt: "AD #2" },
-  { src: imgAdvertising3, alt: "AD #3" },
-  { src: imgAdvertising4, alt: "AD #4" },
-  { src: imgAdvertising5, alt: "AD #5" },
-  { src: imgAdvertising6, alt: "AD #6" },
-  { src: imgAdvertising7, alt: "AD #7" },
-  { src: imgAdvertising8, alt: "AD #8" },
-  { src: imgAdvertising9, alt: "AD #9" },
-  { src: imgAdvertising10, alt: "AD #10" },
-  { src: imgAdvertising11, alt: "AD #11" },
-  { src: imgAdvertising12, alt: "AD #12" },
-  { src: imgAdvertising13, alt: "AD #13" },
-  { src: imgAdvertising14, alt: "AD #14" },
-  { src: imgAdvertising15, alt: "AD #15" },
-  { src: imgAdvertising16, alt: "AD #16" },
-  { src: imgAdvertising17, alt: "AD #17" },
-  { src: imgAdvertising18, alt: "AD #18" },
-  { src: imgAdvertising19, alt: "AD #19" },
+  {
+    src: imgAdvertising1,
+    alt: "Reclamos luminosos Print7 - Caixas de luz LED para máxima visibilidade noturna",
+  },
+  {
+    src: imgAdvertising2,
+    alt: "Letreiros iluminados Print7 - Sinalização que se destaca dia e noite",
+  },
+  { src: imgAdvertising3, alt: "Caixas de luz Print7 - Tecnologia LED eficiente e durável" },
+  {
+    src: imgAdvertising4,
+    alt: "Sinalética luminosa Print7 - Impacto visual garantido em qualquer hora",
+  },
+  { src: imgAdvertising5, alt: "Reclamos LED Print7 - Economia energética com máximo brilho" },
+  {
+    src: imgAdvertising6,
+    alt: "Totens publicitários Print7 - Estruturas imponentes para comunicação exterior",
+  },
+  {
+    src: imgAdvertising7,
+    alt: "Iluminação comercial Print7 - Destaque para estabelecimentos e marcas",
+  },
+  {
+    src: imgAdvertising8,
+    alt: "Letreiros corporativos Print7 - Identidade visual luminosa e profissional",
+  },
+  {
+    src: imgAdvertising9,
+    alt: "Sinalização LED Print7 - Tecnologia avançada para comunicação eficaz",
+  },
+  {
+    src: imgAdvertising10,
+    alt: "Reclamos exteriores Print7 - Resistência e visibilidade em condições adversas",
+  },
+  {
+    src: imgAdvertising11,
+    alt: "Caixas luminosas Print7 - Uniformidade de luz com acabamentos premium",
+  },
+  {
+    src: imgAdvertising12,
+    alt: "Publicidade luminosa Print7 - Atração de clientes 24 horas por dia",
+  },
+  {
+    src: imgAdvertising13,
+    alt: "Letreiros modernos Print7 - Design contemporâneo com iluminação eficiente",
+  },
+  {
+    src: imgAdvertising14,
+    alt: "Sinalética noturna Print7 - Visibilidade garantida após o pôr do sol",
+  },
+  {
+    src: imgAdvertising15,
+    alt: "Reclamos personalizados Print7 - Soluções únicas para cada negócio",
+  },
+  {
+    src: imgAdvertising16,
+    alt: "Iluminação arquitetónica Print7 - Valorização de fachadas e edifícios",
+  },
+  {
+    src: imgAdvertising17,
+    alt: "Totens luminosos Print7 - Marcos visuais para orientação e publicidade",
+  },
+  {
+    src: imgAdvertising18,
+    alt: "Letreiros eficientes Print7 - Baixo consumo energético com alto impacto",
+  },
+  {
+    src: imgAdvertising19,
+    alt: "Sinalização premium Print7 - Qualidade superior em reclamos luminosos",
+  },
 ];
 
 function AdvertisingPage() {

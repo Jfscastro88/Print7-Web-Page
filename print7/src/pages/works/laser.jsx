@@ -14,14 +14,32 @@ import imgLaser7 from "../../assets/images/carousel/cortelaser/cgl7.jpg";
 import imgLaser8 from "../../assets/images/carousel/cortelaser/cgl8.jpg";
 
 const IMAGES = [
-  { src: imgLaser1, alt: "AD #1" },
-  { src: imgLaser2, alt: "AD #2" },
-  { src: imgLaser3, alt: "AD #3" },
-  { src: imgLaser4, alt: "AD #4" },
-  { src: imgLaser5, alt: "AD #5" },
-  { src: imgLaser6, alt: "AD #6" },
-  { src: imgLaser7, alt: "AD #7" },
-  { src: imgLaser8, alt: "AD #8" },
+  {
+    src: imgLaser1,
+    alt: "Corte a laser Print7 - Gravação em madeira com precisão e acabamento profissional",
+  },
+  {
+    src: imgLaser2,
+    alt: "Gravação a laser Print7 - Personalização em acrílico transparente com detalhes finos",
+  },
+  {
+    src: imgLaser3,
+    alt: "Corte laser madeira Print7 - Peças decorativas cortadas com tecnologia avançada",
+  },
+  {
+    src: imgLaser4,
+    alt: "Gravação laser metal Print7 - Marcação permanente em superfícies metálicas",
+  },
+  { src: imgLaser5, alt: "Corte a laser acrílico Print7 - Formas geométricas com bordas polidas" },
+  {
+    src: imgLaser6,
+    alt: "Personalização laser Print7 - Gravação de logótipos em materiais diversos",
+  },
+  { src: imgLaser7, alt: "Trabalhos laser Print7 - Corte e gravação de protótipos e peças únicas" },
+  {
+    src: imgLaser8,
+    alt: "Serviços laser Print7 - Acabamentos de precisão em madeira, acrílico e metal",
+  },
 ];
 
 function LaserPage() {

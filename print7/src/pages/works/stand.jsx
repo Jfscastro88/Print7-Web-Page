@@ -16,16 +16,37 @@ import imgVitrin9 from "../../assets/images/carousel/stand/sta9.jpg";
 import imgVitrin10 from "../../assets/images/carousel/stand/sta10.jpg";
 
 const IMAGES = [
-  { src: imgVitrin1, alt: "AD #1" },
-  { src: imgVitrin2, alt: "AD #2" },
-  { src: imgVitrin3, alt: "AD #3" },
-  { src: imgVitrin4, alt: "AD #4" },
-  { src: imgVitrin5, alt: "AD #5" },
-  { src: imgVitrin6, alt: "AD #6" },
-  { src: imgVitrin7, alt: "AD #7" },
-  { src: imgVitrin8, alt: "AD #8" },
-  { src: imgVitrin9, alt: "AD #9" },
-  { src: imgVitrin10, alt: "AD #10" },
+  {
+    src: imgVitrin1,
+    alt: "Stands Print7 - Roll-ups profissionais para feiras e eventos corporativos",
+  },
+  {
+    src: imgVitrin2,
+    alt: "Expositores Print7 - Estruturas modulares para apresentação de produtos",
+  },
+  { src: imgVitrin3, alt: "Material de feira Print7 - Soluções portáteis e de fácil montagem" },
+  {
+    src: imgVitrin4,
+    alt: "Balcões promocionais Print7 - Pontos de contacto elegantes para eventos",
+  },
+  {
+    src: imgVitrin5,
+    alt: "Paredes expositivas Print7 - Divisórias gráficas para espaços comerciais",
+  },
+  { src: imgVitrin6, alt: "Stands modulares Print7 - Flexibilidade total para diferentes eventos" },
+  {
+    src: imgVitrin7,
+    alt: "Displays promocionais Print7 - Apresentação impactante de marca e produtos",
+  },
+  { src: imgVitrin8, alt: "Estruturas de feira Print7 - Montagem rápida e transporte facilitado" },
+  {
+    src: imgVitrin9,
+    alt: "Expositores personalizados Print7 - Design único para cada necessidade",
+  },
+  {
+    src: imgVitrin10,
+    alt: "Material congressos Print7 - Soluções profissionais para eventos de grande escala",
+  },
 ];
 
 function StandsPage() {

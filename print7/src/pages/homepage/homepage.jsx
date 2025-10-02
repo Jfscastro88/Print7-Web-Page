@@ -7,6 +7,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { Link } from "react-router-dom";
 import Seo from "../../assets/components/seo.jsx";
+import { BusinessSchema, WebsiteSchema } from "../../assets/components/StructuredData.jsx";
 import Youtube from "../../assets/components/youtube.jsx";
 import CarouselHighlight from "../../assets/components/carousel.jsx";
 import SplitCarouselRow from "../../assets/components/SplitCarouselRow.jsx";
@@ -49,7 +50,14 @@ function HomePage() {
 
   return (
     <>
-      <Seo title={t("seo.home.title")} description={t("seo.home.desc")} />
+      <Seo
+        title={t("seo.home.title")}
+        description={t("seo.home.desc")}
+        keywords="publicidade, design gráfico, impressão, sinalética, brindes personalizados, fardamentos, Setúbal, Print7"
+        type="website"
+      />
+      <BusinessSchema />
+      <WebsiteSchema />
       <Box
         className="relative h-[340px] sm:h-[440px] md:h-[520px] lg:h-[680px] xl:h-[760px] bg-cover bg-center"
         style={{ backgroundImage: `url(${bgImage})` }}

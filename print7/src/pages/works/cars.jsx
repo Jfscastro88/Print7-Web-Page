@@ -36,36 +36,87 @@ import imgcar29 from "../../assets/images/carousel/veiculos/ve29.jpg";
 import imgcar30 from "../../assets/images/carousel/veiculos/ve30.jpg";
 
 const IMAGES = [
-  { src: imgcar1, alt: "CAR #1" },
-  { src: imgcar2, alt: "CAR #2" },
-  { src: imgcar3, alt: "CAR3 #" },
-  { src: imgcar4, alt: "CAR #4" },
-  { src: imgcar5, alt: "CAR #5" },
-  { src: imgcar6, alt: "CAR #6" },
-  { src: imgcar7, alt: "CAR #7" },
-  { src: imgcar8, alt: "CAR #8" },
-  { src: imgcar9, alt: "CAR #9" },
-  { src: imgcar10, alt: "CAR #10" },
-  { src: imgcar11, alt: "CAR #11" },
-  { src: imgcar12, alt: "CAR #12" },
-  { src: imgcar13, alt: "CAR #13" },
-  { src: imgcar14, alt: "CAR #14" },
-  { src: imgcar15, alt: "CAR #15" },
-  { src: imgcar16, alt: "CAR #16" },
-  { src: imgcar17, alt: "CAR #17" },
-  { src: imgcar18, alt: "CAR #18" },
-  { src: imgcar19, alt: "CAR #19" },
-  { src: imgcar20, alt: "CAR #20" },
-  { src: imgcar21, alt: "CAR #21" },
-  { src: imgcar22, alt: "CAR #22" },
-  { src: imgcar23, alt: "CAR #23" },
-  { src: imgcar24, alt: "CAR #24" },
-  { src: imgcar25, alt: "CAR #25" },
-  { src: imgcar26, alt: "CAR #26" },
-  { src: imgcar27, alt: "CAR #27" },
-  { src: imgcar28, alt: "CAR #28" },
-  { src: imgcar29, alt: "CAR #29" },
-  { src: imgcar30, alt: "CAR #30" },
+  {
+    src: imgcar1,
+    alt: "Personalização de viaturas Print7 - Wrapping completo de carrinha comercial com design corporativo",
+  },
+  { src: imgcar2, alt: "Publicidade móvel Print7 - Lettering profissional em veículo comercial" },
+  { src: imgcar3, alt: "Decoração de carros Print7 - Aplicação de vinil com logótipo da empresa" },
+  {
+    src: imgcar4,
+    alt: "Wrapping de viaturas Print7 - Transformação visual completa de frota comercial",
+  },
+  { src: imgcar5, alt: "Autocolantes para carros Print7 - Sinalização móvel resistente e durável" },
+  {
+    src: imgcar6,
+    alt: "Personalização frota Print7 - Identidade visual uniforme em veículos empresariais",
+  },
+  {
+    src: imgcar7,
+    alt: "Vinil para carros Print7 - Aplicação profissional de materiais de alta qualidade",
+  },
+  { src: imgcar8, alt: "Lettering veículos Print7 - Rotulação elegante e impactante" },
+  {
+    src: imgcar9,
+    alt: "Decoração automóvel Print7 - Design personalizado para veículos comerciais",
+  },
+  {
+    src: imgcar10,
+    alt: "Wrapping parcial Print7 - Intervenção estratégica com máximo impacto visual",
+  },
+  { src: imgcar11, alt: "Publicidade em viaturas Print7 - Comunicação eficaz em movimento" },
+  {
+    src: imgcar12,
+    alt: "Personalização de carrinhas Print7 - Soluções criativas para transporte comercial",
+  },
+  {
+    src: imgcar13,
+    alt: "Vinil decorativo carros Print7 - Materiais premium com instalação profissional",
+  },
+  { src: imgcar14, alt: "Branding veículos Print7 - Extensão da identidade corporativa à frota" },
+  { src: imgcar15, alt: "Rotulação de carros Print7 - Visibilidade garantida com design atrativo" },
+  {
+    src: imgcar16,
+    alt: "Decoração de frotas Print7 - Uniformização visual de veículos empresariais",
+  },
+  {
+    src: imgcar17,
+    alt: "Wrapping criativo Print7 - Transformação artística de viaturas comerciais",
+  },
+  { src: imgcar18, alt: "Autocolantes magnéticos Print7 - Solução removível para veículos" },
+  {
+    src: imgcar19,
+    alt: "Personalização total Print7 - Cobertura completa com vinil de alta performance",
+  },
+  { src: imgcar20, alt: "Sinalização móvel Print7 - Publicidade eficiente em deslocação" },
+  {
+    src: imgcar21,
+    alt: "Decoração profissional Print7 - Acabamentos perfeitos em personalização automóvel",
+  },
+  { src: imgcar22, alt: "Vinil para frotas Print7 - Materiais certificados para uso exterior" },
+  { src: imgcar23, alt: "Wrapping empresarial Print7 - Veículos como ferramenta de marketing" },
+  {
+    src: imgcar24,
+    alt: "Lettering de qualidade Print7 - Tipografia impecável em superfícies curvas",
+  },
+  {
+    src: imgcar25,
+    alt: "Personalização inovadora Print7 - Soluções criativas para cada tipo de veículo",
+  },
+  {
+    src: imgcar26,
+    alt: "Decoração resistente Print7 - Materiais testados para condições adversas",
+  },
+  { src: imgcar27, alt: "Branding móvel Print7 - Marca sempre presente onde quer que vá" },
+  {
+    src: imgcar28,
+    alt: "Wrapping técnico Print7 - Aplicação especializada com garantia de qualidade",
+  },
+  {
+    src: imgcar29,
+    alt: "Publicidade veicular Print7 - Impacto visual máximo em qualquer contexto",
+  },
+  { src: imgcar30, alt: "Personalização premium Print7 - Excelência em decoração automóvel" },
 ];
 
 function CarsPage() {

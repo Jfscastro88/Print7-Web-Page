@@ -1,12 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-PT">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="theme-color" content="#1f2937" />
+
+    <!-- Favicon and app icons -->
     <link rel="icon" type="image/svg+xml" href="/print7.svg" />
-    <title>Print7</title>
+    <link rel="apple-touch-icon" href="/print7.svg" />
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="/src/main.jsx" as="script" />
+
+    <!-- Default meta (will be overridden by React Helmet) -->
+    <title>Print7 - Publicidade & Design em Setúbal</title>
+    <meta
+      name="description"
+      content="Print7: empresa de publicidade e design gráfico em Setúbal desde 2012. Especialistas em impressão, sinalética, brindes personalizados e soluções de comunicação visual."
+    />
+
+    <!-- Structured data for organization -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Print7",
+        "url": "https://print7.pt",
+        "logo": "https://print7.pt/print7.svg",
+        "sameAs": [
+          "https://www.facebook.com/print7setubal",
+          "https://www.instagram.com/print7_setubal"
+        ]
+      }
+    </script>
   </head>
   <body>
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif">
+        <h1>JavaScript Necessário</h1>
+        <p>
+          Este site requer JavaScript para funcionar corretamente. Por favor, ative o JavaScript no
+          seu navegador.
+        </p>
+        <p>
+          Para mais informações, contacte-nos através do telefone
+          <a href="tel:+351265098462">265 098 462</a>
+        </p>
+      </div>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>

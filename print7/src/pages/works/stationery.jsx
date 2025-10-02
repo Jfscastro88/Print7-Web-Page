@@ -15,15 +15,33 @@ import imgVitrin8 from "../../assets/images/carousel/estacionarios/sta8.jpg";
 import imgVitrin9 from "../../assets/images/carousel/estacionarios/sta9.jpg";
 
 const IMAGES = [
-  { src: imgVitrin1, alt: "AD #1" },
-  { src: imgVitrin2, alt: "AD #2" },
-  { src: imgVitrin3, alt: "AD #3" },
-  { src: imgVitrin4, alt: "AD #4" },
-  { src: imgVitrin5, alt: "AD #5" },
-  { src: imgVitrin6, alt: "AD #6" },
-  { src: imgVitrin7, alt: "AD #7" },
-  { src: imgVitrin8, alt: "AD #8" },
-  { src: imgVitrin9, alt: "AD #9" },
+  {
+    src: imgVitrin1,
+    alt: "Estacionário Print7 - Papel timbrado elegante com logótipo corporativo",
+  },
+  {
+    src: imgVitrin2,
+    alt: "Cartões de visita Print7 - Design profissional com acabamentos premium",
+  },
+  {
+    src: imgVitrin3,
+    alt: "Envelopes personalizados Print7 - Correspondência com identidade visual",
+  },
+  { src: imgVitrin4, alt: "Blocos de notas Print7 - Papelaria corporativa funcional e atrativa" },
+  {
+    src: imgVitrin5,
+    alt: "Pastas empresariais Print7 - Organização com estilo e profissionalismo",
+  },
+  {
+    src: imgVitrin6,
+    alt: "Cadernos corporativos Print7 - Branding aplicado a material de escritório",
+  },
+  {
+    src: imgVitrin7,
+    alt: "Conjunto estacionário Print7 - Coordenação visual em todos os materiais",
+  },
+  { src: imgVitrin8, alt: "Impressão offset Print7 - Qualidade superior em papelaria empresarial" },
+  { src: imgVitrin9, alt: "Material corporativo Print7 - Identidade consistente em cada detalhe" },
 ];
 
 function stationeryPage() {

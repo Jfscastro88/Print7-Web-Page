@@ -15,15 +15,15 @@ import imgAD8 from "../../assets/images/carousel/ledneon/neon8.jpg";
 import imgAD9 from "../../assets/images/carousel/ledneon/neon9.jpg";
 
 const IMAGES = [
-  { src: imgAD1, alt: "AD #1" },
-  { src: imgAD2, alt: "AD #2" },
-  { src: imgAD3, alt: "AD #3" },
-  { src: imgAD4, alt: "AD #4" },
-  { src: imgAD5, alt: "AD #5" },
-  { src: imgAD6, alt: "AD #6" },
-  { src: imgAD7, alt: "AD #7" },
-  { src: imgAD8, alt: "AD #8" },
-  { src: imgAD9, alt: "AD #9" },
+  { src: imgAD1, alt: "LED Neon Print7 - Letreiro luminoso moderno com tecnologia LED eficiente" },
+  { src: imgAD2, alt: "Neon personalizado Print7 - Formas criativas em LED neon flexível" },
+  { src: imgAD3, alt: "Decoração LED Print7 - Ambientação com neon de baixo consumo" },
+  { src: imgAD4, alt: "Letreiros neon Print7 - Sinalização atrativa com cores vibrantes" },
+  { src: imgAD5, alt: "LED flexível Print7 - Adaptabilidade total a qualquer design" },
+  { src: imgAD6, alt: "Neon comercial Print7 - Destaque para estabelecimentos e eventos" },
+  { src: imgAD7, alt: "Iluminação decorativa Print7 - LED neon para ambientes únicos" },
+  { src: imgAD8, alt: "Neon artístico Print7 - Criações luminosas personalizadas" },
+  { src: imgAD9, alt: "LED neon durável Print7 - Tecnologia resistente para uso prolongado" },
 ];
 
 function NeonPage() {

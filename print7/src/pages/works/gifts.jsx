@@ -37,37 +37,103 @@ import imgGifts30 from "../../assets/images/carousel/brindes/bg30.jpg";
 import imgGifts31 from "../../assets/images/carousel/brindes/bg31.jpg";
 
 const IMAGES = [
-  { src: imgGifts1, alt: "AD #1" },
-  { src: imgGifts2, alt: "AD #2" },
-  { src: imgGifts3, alt: "AD #3" },
-  { src: imgGifts4, alt: "AD #4" },
-  { src: imgGifts5, alt: "AD #5" },
-  { src: imgGifts6, alt: "AD #6" },
-  { src: imgGifts7, alt: "AD #7" },
-  { src: imgGifts8, alt: "AD #8" },
-  { src: imgGifts9, alt: "AD #9" },
-  { src: imgGifts10, alt: "AD #10" },
-  { src: imgGifts11, alt: "AD #11" },
-  { src: imgGifts12, alt: "AD #12" },
-  { src: imgGifts13, alt: "AD #13" },
-  { src: imgGifts14, alt: "AD #14" },
-  { src: imgGifts15, alt: "AD #15" },
-  { src: imgGifts16, alt: "AD #16" },
-  { src: imgGifts17, alt: "AD #17" },
-  { src: imgGifts18, alt: "AD #18" },
-  { src: imgGifts19, alt: "AD #19" },
-  { src: imgGifts20, alt: "AD #20" },
-  { src: imgGifts21, alt: "AD #21" },
-  { src: imgGifts22, alt: "AD #22" },
-  { src: imgGifts23, alt: "AD #23" },
-  { src: imgGifts24, alt: "AD #24" },
-  { src: imgGifts25, alt: "AD #25" },
-  { src: imgGifts26, alt: "AD #26" },
-  { src: imgGifts27, alt: "AD #27" },
-  { src: imgGifts28, alt: "AD #28" },
-  { src: imgGifts29, alt: "AD #29" },
-  { src: imgGifts30, alt: "AD #30" },
-  { src: imgGifts31, alt: "AD #31" },
+  {
+    src: imgGifts1,
+    alt: "Brindes personalizados Print7 - Canetas e acessórios corporativos com logótipo",
+  },
+  {
+    src: imgGifts2,
+    alt: "Gadgets promocionais Print7 - Produtos tecnológicos personalizados para empresas",
+  },
+  {
+    src: imgGifts3,
+    alt: "Brindes têxteis Print7 - T-shirts e vestuário personalizado com impressão",
+  },
+  { src: imgGifts4, alt: "Canecas personalizadas Print7 - Artigos promocionais para escritório" },
+  {
+    src: imgGifts5,
+    alt: "Acessórios corporativos Print7 - Porta-chaves e brindes metálicos gravados",
+  },
+  {
+    src: imgGifts6,
+    alt: "Material promocional Print7 - Cadernos e artigos de papelaria personalizados",
+  },
+  {
+    src: imgGifts7,
+    alt: "Brindes ecológicos Print7 - Produtos sustentáveis com logótipo da empresa",
+  },
+  {
+    src: imgGifts8,
+    alt: "Gadgets USB Print7 - Pen drives e acessórios tecnológicos personalizados",
+  },
+  {
+    src: imgGifts9,
+    alt: "Brindes para eventos Print7 - Artigos promocionais para feiras e congressos",
+  },
+  { src: imgGifts10, alt: "Presentes corporativos Print7 - Brindes premium com gravação laser" },
+  {
+    src: imgGifts11,
+    alt: "Artigos promocionais Print7 - Bolsas e mochilas personalizadas para empresas",
+  },
+  {
+    src: imgGifts12,
+    alt: "Brindes desportivos Print7 - Garrafas e acessórios para atividade física",
+  },
+  { src: imgGifts13, alt: "Material publicitário Print7 - Calendários e agendas personalizadas" },
+  {
+    src: imgGifts14,
+    alt: "Brindes alimentares Print7 - Produtos gourmet personalizados para clientes",
+  },
+  {
+    src: imgGifts15,
+    alt: "Acessórios de viagem Print7 - Bagagem e artigos personalizados para deslocações",
+  },
+  {
+    src: imgGifts16,
+    alt: "Brindes de escritório Print7 - Organizadores e acessórios de secretária",
+  },
+  {
+    src: imgGifts17,
+    alt: "Gadgets inovadores Print7 - Produtos tecnológicos de última geração personalizados",
+  },
+  { src: imgGifts18, alt: "Brindes sazonais Print7 - Artigos promocionais temáticos e de época" },
+  { src: imgGifts19, alt: "Presentes VIP Print7 - Brindes exclusivos para clientes preferenciais" },
+  {
+    src: imgGifts20,
+    alt: "Material promocional exterior Print7 - Brindes resistentes para uso ao ar livre",
+  },
+  { src: imgGifts21, alt: "Brindes infantis Print7 - Artigos promocionais seguros para crianças" },
+  { src: imgGifts22, alt: "Acessórios casa Print7 - Brindes para uso doméstico com logótipo" },
+  {
+    src: imgGifts23,
+    alt: "Brindes premium Print7 - Artigos de luxo personalizados para executivos",
+  },
+  {
+    src: imgGifts24,
+    alt: "Material promocional digital Print7 - Suportes tecnológicos personalizados",
+  },
+  {
+    src: imgGifts25,
+    alt: "Brindes sustentáveis Print7 - Produtos eco-friendly com impressão ecológica",
+  },
+  {
+    src: imgGifts26,
+    alt: "Artigos promocionais saúde Print7 - Brindes relacionados com bem-estar",
+  },
+  { src: imgGifts27, alt: "Brindes personalizados Print7 - Produtos únicos com design exclusivo" },
+  { src: imgGifts28, alt: "Material corporativo Print7 - Brindes profissionais para networking" },
+  {
+    src: imgGifts29,
+    alt: "Gadgets promocionais Print7 - Inovação tecnológica ao serviço da marca",
+  },
+  {
+    src: imgGifts30,
+    alt: "Brindes funcionais Print7 - Artigos úteis do quotidiano personalizados",
+  },
+  {
+    src: imgGifts31,
+    alt: "Presentes empresariais Print7 - Brindes de qualidade superior com acabamento premium",
+  },
 ];
 
 function AdvertisingPage() {

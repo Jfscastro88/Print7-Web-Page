@@ -33,33 +33,102 @@ import imgVitrin26 from "../../assets/images/carousel/fardamentos/far26.jpg";
 import imgVitrin27 from "../../assets/images/carousel/fardamentos/far27.jpg";
 
 const IMAGES = [
-  { src: imgVitrin1, alt: "AD #1" },
-  { src: imgVitrin2, alt: "AD #2" },
-  { src: imgVitrin3, alt: "AD #3" },
-  { src: imgVitrin4, alt: "AD #4" },
-  { src: imgVitrin5, alt: "AD #5" },
-  { src: imgVitrin6, alt: "AD #6" },
-  { src: imgVitrin7, alt: "AD #7" },
-  { src: imgVitrin8, alt: "AD #8" },
-  { src: imgVitrin9, alt: "AD #9" },
-  { src: imgVitrin10, alt: "AD #10" },
-  { src: imgVitrin11, alt: "AD #11" },
-  { src: imgVitrin12, alt: "AD #12" },
-  { src: imgVitrin13, alt: "AD #13" },
-  { src: imgVitrin14, alt: "AD #14" },
-  { src: imgVitrin15, alt: "AD #15" },
-  { src: imgVitrin16, alt: "AD #16" },
-  { src: imgVitrin17, alt: "AD #17" },
-  { src: imgVitrin18, alt: "AD #18" },
-  { src: imgVitrin19, alt: "AD #19" },
-  { src: imgVitrin20, alt: "AD #20" },
-  { src: imgVitrin21, alt: "AD #21" },
-  { src: imgVitrin22, alt: "AD #22" },
-  { src: imgVitrin23, alt: "AD #23" },
-  { src: imgVitrin24, alt: "AD #24" },
-  { src: imgVitrin25, alt: "AD #25" },
-  { src: imgVitrin26, alt: "AD #26" },
-  { src: imgVitrin27, alt: "AD #27" },
+  {
+    src: imgVitrin1,
+    alt: "Fardamentos Print7 - Uniformes profissionais personalizados com bordado de logótipo",
+  },
+  {
+    src: imgVitrin2,
+    alt: "EPI personalizado Print7 - Equipamentos de proteção individual com identidade corporativa",
+  },
+  {
+    src: imgVitrin3,
+    alt: "Uniformes de trabalho Print7 - Vestuário profissional de alta qualidade",
+  },
+  {
+    src: imgVitrin4,
+    alt: "Bordados corporativos Print7 - Personalização de fardas com técnica tradicional",
+  },
+  {
+    src: imgVitrin5,
+    alt: "Vestuário profissional Print7 - Uniformes confortáveis e duráveis para equipas",
+  },
+  {
+    src: imgVitrin6,
+    alt: "Fardas personalizadas Print7 - Identidade visual aplicada ao vestuário de trabalho",
+  },
+  {
+    src: imgVitrin7,
+    alt: "EPI com logótipo Print7 - Segurança e branding em equipamentos de proteção",
+  },
+  {
+    src: imgVitrin8,
+    alt: "Uniformes empresariais Print7 - Vestuário que transmite profissionalismo",
+  },
+  {
+    src: imgVitrin9,
+    alt: "Serigrafia em têxtil Print7 - Impressão de qualidade em uniformes de trabalho",
+  },
+  {
+    src: imgVitrin10,
+    alt: "Fardamentos técnicos Print7 - Vestuário especializado para diferentes setores",
+  },
+  {
+    src: imgVitrin11,
+    alt: "Bordado de precisão Print7 - Logótipos aplicados com técnica artesanal",
+  },
+  { src: imgVitrin12, alt: "Uniformes de equipa Print7 - Coesão visual para colaboradores" },
+  {
+    src: imgVitrin13,
+    alt: "EPI certificado Print7 - Equipamentos que cumprem normas de segurança",
+  },
+  {
+    src: imgVitrin14,
+    alt: "Vestuário corporativo Print7 - Fardas que reforçam a imagem da empresa",
+  },
+  { src: imgVitrin15, alt: "Personalização têxtil Print7 - DTF e outras técnicas de marcação" },
+  { src: imgVitrin16, alt: "Fardamentos duráveis Print7 - Uniformes resistentes ao uso intensivo" },
+  {
+    src: imgVitrin17,
+    alt: "Uniformes multicolor Print7 - Combinações cromáticas alinhadas com a marca",
+  },
+  {
+    src: imgVitrin18,
+    alt: "EPI funcional Print7 - Proteção e conforto em equipamentos personalizados",
+  },
+  {
+    src: imgVitrin19,
+    alt: "Bordados empresariais Print7 - Acabamentos premium em vestuário profissional",
+  },
+  {
+    src: imgVitrin20,
+    alt: "Fardas de qualidade Print7 - Materiais selecionados para máximo conforto",
+  },
+  {
+    src: imgVitrin21,
+    alt: "Uniformes sazonais Print7 - Vestuário adaptado às diferentes épocas do ano",
+  },
+  {
+    src: imgVitrin22,
+    alt: "EPI personalizado Print7 - Segurança com identidade visual da empresa",
+  },
+  {
+    src: imgVitrin23,
+    alt: "Vestuário profissional Print7 - Uniformes que valorizam a imagem corporativa",
+  },
+  {
+    src: imgVitrin24,
+    alt: "Fardamentos completos Print7 - Soluções integradas para equipas de trabalho",
+  },
+  {
+    src: imgVitrin25,
+    alt: "Uniformes ergonómicos Print7 - Conforto e funcionalidade em primeiro lugar",
+  },
+  {
+    src: imgVitrin26,
+    alt: "Bordado corporativo Print7 - Técnica tradicional com resultados modernos",
+  },
+  { src: imgVitrin27, alt: "EPI de excelência Print7 - Equipamentos que protegem e identificam" },
 ];
 
 function uniformsPage() {

@@ -23,23 +23,62 @@ import imgAD16 from "../../assets/images/carousel/outros/out16.jpg";
 import imgAD17 from "../../assets/images/carousel/outros/out17.jpg";
 
 const IMAGES = [
-  { src: imgAD1, alt: "AD #1" },
-  { src: imgAD2, alt: "AD #2" },
-  { src: imgAD3, alt: "AD #3" },
-  { src: imgAD4, alt: "AD #4" },
-  { src: imgAD5, alt: "AD #5" },
-  { src: imgAD6, alt: "AD #6" },
-  { src: imgAD7, alt: "AD #7" },
-  { src: imgAD8, alt: "AD #8" },
-  { src: imgAD9, alt: "AD #9" },
-  { src: imgAD10, alt: "AD #10" },
-  { src: imgAD11, alt: "AD #11" },
-  { src: imgAD12, alt: "AD #12" },
-  { src: imgAD13, alt: "AD #13" },
-  { src: imgAD14, alt: "AD #14" },
-  { src: imgAD15, alt: "AD #15" },
-  { src: imgAD16, alt: "AD #16" },
-  { src: imgAD17, alt: "AD #17" },
+  {
+    src: imgAD1,
+    alt: "Projetos especiais Print7 - Soluções criativas personalizadas para necessidades únicas",
+  },
+  {
+    src: imgAD2,
+    alt: "Trabalhos à medida Print7 - Desenvolvimento de conceitos inovadores e exclusivos",
+  },
+  {
+    src: imgAD3,
+    alt: "Soluções criativas Print7 - Combinação de técnicas para resultados extraordinários",
+  },
+  { src: imgAD4, alt: "Projetos únicos Print7 - Cada desafio é uma oportunidade de inovação" },
+  {
+    src: imgAD5,
+    alt: "Trabalhos especializados Print7 - Expertise aplicada a projetos fora do comum",
+  },
+  { src: imgAD6, alt: "Inovação gráfica Print7 - Pioneirismo em soluções de comunicação visual" },
+  {
+    src: imgAD7,
+    alt: "Projetos experimentais Print7 - Exploração de novas possibilidades criativas",
+  },
+  { src: imgAD8, alt: "Soluções integradas Print7 - Combinação harmoniosa de diferentes técnicas" },
+  {
+    src: imgAD9,
+    alt: "Trabalhos artísticos Print7 - Criatividade sem limites aplicada à comunicação",
+  },
+  { src: imgAD10, alt: "Projetos inovadores Print7 - Vanguarda em design e produção gráfica" },
+  {
+    src: imgAD11,
+    alt: "Soluções personalizadas Print7 - Adaptação total às necessidades específicas do cliente",
+  },
+  {
+    src: imgAD12,
+    alt: "Trabalhos exclusivos Print7 - Originalidade garantida em cada projeto desenvolvido",
+  },
+  {
+    src: imgAD13,
+    alt: "Projetos multidisciplinares Print7 - Integração de várias especialidades numa solução",
+  },
+  {
+    src: imgAD14,
+    alt: "Soluções inovadoras Print7 - Tecnologia e criatividade ao serviço da comunicação",
+  },
+  {
+    src: imgAD15,
+    alt: "Trabalhos conceituais Print7 - Ideias transformadas em realidade tangível",
+  },
+  {
+    src: imgAD16,
+    alt: "Projetos vanguardistas Print7 - Antecipação de tendências em comunicação visual",
+  },
+  {
+    src: imgAD17,
+    alt: "Soluções extraordinárias Print7 - Superação de expectativas em cada entrega",
+  },
 ];
 
 function OthersPage() {

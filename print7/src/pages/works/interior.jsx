@@ -11,11 +11,23 @@ import imgAD4 from "../../assets/images/carousel/decorinterior/di4.jpg";
 import imgAD5 from "../../assets/images/carousel/decorinterior/di5.jpg";
 
 const IMAGES = [
-  { src: imgAD1, alt: "AD #1" },
-  { src: imgAD2, alt: "AD #2" },
-  { src: imgAD3, alt: "AD #3" },
-  { src: imgAD4, alt: "AD #4" },
-  { src: imgAD5, alt: "AD #5" },
+  {
+    src: imgAD1,
+    alt: "Decoração de interiores Print7 - Vinil decorativo em vidro com design elegante",
+  },
+  {
+    src: imgAD2,
+    alt: "Sinalética interior Print7 - Placas direcionais com acabamento profissional",
+  },
+  {
+    src: imgAD3,
+    alt: "Decoração de paredes Print7 - Aplicação de gráficos em superfícies interiores",
+  },
+  { src: imgAD4, alt: "Vinil fosco Print7 - Privacidade e estética em vidros de escritório" },
+  {
+    src: imgAD5,
+    alt: "Ambientação corporativa Print7 - Transformação de espaços com identidade visual",
+  },
 ];
 
 function InterirorPage() {

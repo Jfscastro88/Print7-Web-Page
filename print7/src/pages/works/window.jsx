@@ -39,39 +39,111 @@ import imgVitrin32 from "../../assets/images/carousel/decormontras/mon32.jpg";
 import imgVitrin33 from "../../assets/images/carousel/decormontras/mon33.jpg";
 
 const IMAGES = [
-  { src: imgVitrin1, alt: "AD #1" },
-  { src: imgVitrin2, alt: "AD #2" },
-  { src: imgVitrin3, alt: "AD #3" },
-  { src: imgVitrin4, alt: "AD #4" },
-  { src: imgVitrin5, alt: "AD #5" },
-  { src: imgVitrin6, alt: "AD #6" },
-  { src: imgVitrin7, alt: "AD #7" },
-  { src: imgVitrin8, alt: "AD #8" },
-  { src: imgVitrin9, alt: "AD #9" },
-  { src: imgVitrin10, alt: "AD #10" },
-  { src: imgVitrin11, alt: "AD #11" },
-  { src: imgVitrin12, alt: "AD #12" },
-  { src: imgVitrin13, alt: "AD #13" },
-  { src: imgVitrin14, alt: "AD #14" },
-  { src: imgVitrin15, alt: "AD #15" },
-  { src: imgVitrin16, alt: "AD #16" },
-  { src: imgVitrin17, alt: "AD #17" },
-  { src: imgVitrin18, alt: "AD #18" },
-  { src: imgVitrin19, alt: "AD #19" },
-  { src: imgVitrin20, alt: "AD #20" },
-  { src: imgVitrin21, alt: "AD #21" },
-  { src: imgVitrin22, alt: "AD #22" },
-  { src: imgVitrin23, alt: "AD #23" },
-  { src: imgVitrin24, alt: "AD #24" },
-  { src: imgVitrin25, alt: "AD #25" },
-  { src: imgVitrin26, alt: "AD #26" },
-  { src: imgVitrin27, alt: "AD #27" },
-  { src: imgVitrin28, alt: "AD #28" },
-  { src: imgVitrin29, alt: "AD #29" },
-  { src: imgVitrin30, alt: "AD #30" },
-  { src: imgVitrin31, alt: "AD #31" },
-  { src: imgVitrin32, alt: "AD #32" },
-  { src: imgVitrin33, alt: "AD #33" },
+  {
+    src: imgVitrin1,
+    alt: "Decoração de montras Print7 - Vinil recortado para lojas e estabelecimentos comerciais",
+  },
+  {
+    src: imgVitrin2,
+    alt: "Autocolantes de montra Print7 - Comunicação visual atrativa e profissional",
+  },
+  {
+    src: imgVitrin3,
+    alt: "Vinil microperfurado Print7 - Visibilidade exterior mantendo privacidade interior",
+  },
+  {
+    src: imgVitrin4,
+    alt: "Sinalização de loja Print7 - Horários, promoções e informações essenciais",
+  },
+  {
+    src: imgVitrin5,
+    alt: "Decoração comercial Print7 - Transformação de espaços com design criativo",
+  },
+  {
+    src: imgVitrin6,
+    alt: "Grafismos de montra Print7 - Arte aplicada que atrai e informa clientes",
+  },
+  {
+    src: imgVitrin7,
+    alt: "Vinil decorativo Print7 - Personalização elegante de superfícies de vidro",
+  },
+  { src: imgVitrin8, alt: "Comunicação visual Print7 - Mensagens claras e impactantes em montras" },
+  {
+    src: imgVitrin9,
+    alt: "Autocolantes promocionais Print7 - Campanhas temporárias com fácil remoção",
+  },
+  {
+    src: imgVitrin10,
+    alt: "Decoração sazonal Print7 - Adaptação de montras às diferentes épocas do ano",
+  },
+  {
+    src: imgVitrin11,
+    alt: "Sinalética comercial Print7 - Informação essencial para funcionamento da loja",
+  },
+  { src: imgVitrin12, alt: "Vinil fosco Print7 - Privacidade e elegância em vidros comerciais" },
+  {
+    src: imgVitrin13,
+    alt: "Branding de loja Print7 - Identidade visual consistente em todos os pontos",
+  },
+  {
+    src: imgVitrin14,
+    alt: "Decoração temática Print7 - Ambientação especial para eventos e promoções",
+  },
+  {
+    src: imgVitrin15,
+    alt: "Autocolantes informativos Print7 - Horários, contactos e serviços disponíveis",
+  },
+  { src: imgVitrin16, alt: "Vinil de segurança Print7 - Sinalização obrigatória e de emergência" },
+  {
+    src: imgVitrin17,
+    alt: "Decoração artística Print7 - Criatividade aplicada a superfícies comerciais",
+  },
+  { src: imgVitrin18, alt: "Comunicação promocional Print7 - Ofertas e novidades em destaque" },
+  {
+    src: imgVitrin19,
+    alt: "Vinil removível Print7 - Flexibilidade para mudanças frequentes de campanha",
+  },
+  {
+    src: imgVitrin20,
+    alt: "Sinalização direccional Print7 - Orientação clara para clientes e visitantes",
+  },
+  {
+    src: imgVitrin21,
+    alt: "Decoração corporativa Print7 - Profissionalismo em cada detalhe visual",
+  },
+  {
+    src: imgVitrin22,
+    alt: "Autocolantes de marca Print7 - Logótipos e símbolos com aplicação perfeita",
+  },
+  { src: imgVitrin23, alt: "Vinil publicitário Print7 - Mensagens comerciais com máximo impacto" },
+  {
+    src: imgVitrin24,
+    alt: "Decoração moderna Print7 - Design contemporâneo para espaços comerciais",
+  },
+  { src: imgVitrin25, alt: "Sinalização regulamentar Print7 - Cumprimento de normas com estilo" },
+  {
+    src: imgVitrin26,
+    alt: "Vinil personalizado Print7 - Soluções únicas para cada tipo de negócio",
+  },
+  { src: imgVitrin27, alt: "Decoração funcional Print7 - Beleza e utilidade em perfeita harmonia" },
+  {
+    src: imgVitrin28,
+    alt: "Autocolantes duráveis Print7 - Materiais resistentes para uso prolongado",
+  },
+  { src: imgVitrin29, alt: "Comunicação eficaz Print7 - Mensagens que chegam ao público-alvo" },
+  {
+    src: imgVitrin30,
+    alt: "Vinil técnico Print7 - Especificações profissionais para cada aplicação",
+  },
+  { src: imgVitrin31, alt: "Decoração inovadora Print7 - Soluções criativas que se destacam" },
+  {
+    src: imgVitrin32,
+    alt: "Sinalização premium Print7 - Qualidade superior em decoração de montras",
+  },
+  {
+    src: imgVitrin33,
+    alt: "Vinil de qualidade Print7 - Excelência garantida em cada projeto realizado",
+  },
 ];
 
 function windowPage() {

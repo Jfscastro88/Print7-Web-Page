@@ -313,22 +313,34 @@
     }
   },
   "seo": {
-    "home": { "title": "Início", "desc": "Portfólio e soluções de comunicação visual em Setúbal." },
+    "home": {
+      "title": "Print7 - Publicidade & Design em Setúbal | Impressão, Sinalética e Brindes",
+      "desc": "Print7: empresa de publicidade e design gráfico em Setúbal desde 2012. Especialistas em impressão, sinalética, brindes personalizados, fardamentos e soluções de comunicação visual. Orçamentos gratuitos."
+    },
     "about": {
-      "title": "Sobre Nós",
-      "desc": "Desde 2012, soluções criativas e produção gráfica em Setúbal."
+      "title": "Sobre a Print7 - História e Experiência em Publicidade",
+      "desc": "Conheça a Print7: 12 anos de experiência em publicidade e design gráfico em Setúbal. Equipa especializada, tecnologia moderna e compromisso com a qualidade em cada projeto."
     },
-    "catalogs": { "title": "Catálogos", "desc": "Explore os nossos catálogos: têxtil e brindes." },
+    "catalogs": {
+      "title": "Catálogos Print7 - Têxtil e Brindes Personalizados",
+      "desc": "Explore os catálogos Print7: ampla seleção de produtos têxteis e brindes personalizados. Qualidade garantida, prazos rápidos e preços competitivos em Setúbal."
+    },
     "design": {
-      "title": "Design",
-      "desc": "Criação e melhoramento de identidade visual e materiais."
+      "title": "Serviços de Design Gráfico - Criação de Identidade Visual",
+      "desc": "Serviços de design gráfico profissional: criação de logótipos, identidade visual, materiais promocionais e branding. Soluções criativas para empresas em Setúbal."
     },
-    "contacts": { "title": "Contactos", "desc": "Fale connosco para pedidos e orçamentos." },
+    "contacts": {
+      "title": "Contactos Print7 - Orçamentos e Informações",
+      "desc": "Entre em contacto com a Print7 para orçamentos gratuitos e informações sobre os nossos serviços. Localização em Setúbal, atendimento personalizado e resposta rápida."
+    },
     "privacy": {
-      "title": "Política de Privacidade",
-      "desc": "Site vitrine sem cookies de análise/marketing."
+      "title": "Política de Privacidade - Print7",
+      "desc": "Política de privacidade do site Print7. Informações sobre tratamento de dados pessoais e cookies utilizados no nosso website."
     },
-    "notFound": { "title": "Página não encontrada", "desc": "" }
+    "notFound": {
+      "title": "Página Não Encontrada - Print7",
+      "desc": "A página que procura não foi encontrada. Visite a página inicial da Print7 ou contacte-nos para mais informações sobre os nossos serviços."
+    }
   },
   "common": {
     "explore": "Explorar"
