@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Box, Container, Burger, Menu } from "@mantine/core";
 import { createPortal } from "react-dom";
 import { Link, useLocation } from "react-router-dom";
@@ -10,10 +10,23 @@ function Navbar() {
   const [opened, setOpened] = useState(false);
   const { t } = useTranslation();
   const location = useLocation();
+  const detailsRef = useRef(null);
 
   useEffect(() => {
     setOpened(false);
+    // Close the details dropdown when navigating
+    if (detailsRef.current) {
+      detailsRef.current.open = false;
+    }
   }, [location.pathname]);
+
+  // Helper function to close mobile menu and reset dropdown
+  const closeMobileMenu = () => {
+    setOpened(false);
+    if (detailsRef.current) {
+      detailsRef.current.open = false;
+    }
+  };
 
   useEffect(() => {
     const prev = document.body.style.overflow;
@@ -134,7 +147,7 @@ function Navbar() {
                 : "opacity-0 -translate-y-2 pointer-events-none",
             ].join(" ")}
             onClick={(e) => {
-              if (e.target === e.currentTarget) setOpened(false);
+              if (e.target === e.currentTarget) closeMobileMenu();
             }}
           >
             {/* Backdrop + tinta brand */}
@@ -149,16 +162,12 @@ function Navbar() {
             >
               {/* Top bar */}
               <div className="flex items-center justify-between px-6 py-4">
-                <Link
-                  to="/"
-                  className="flex items-center space-x-2"
-                  onClick={() => setOpened(false)}
-                >
+                <Link to="/" className="flex items-center space-x-2" onClick={closeMobileMenu}>
                   <img src={Logo} alt="Print7 logo" className="h-10 w-auto object-contain" />
                 </Link>
                 <Burger
                   opened
-                  onClick={() => setOpened(false)}
+                  onClick={closeMobileMenu}
                   color="white"
                   size="md"
                   aria-label="Close mobile menu"
@@ -172,7 +181,7 @@ function Navbar() {
                     <li key={link.to}>
                       <Link
                         to={link.to}
-                        onClick={() => setOpened(false)}
+                        onClick={closeMobileMenu}
                         className="block py-4 text-white text-2xl font-semibold active:scale-[.98]"
                       >
                         {link.label}
@@ -181,7 +190,7 @@ function Navbar() {
                   ))}
 
                   <li>
-                    <details className="group">
+                    <details ref={detailsRef} className="group">
                       <summary className="py-4 cursor-pointer text-white text-2xl font-semibold flex items-center justify-center gap-2 select-none">
                         {t("navbar.categories")}
                         <span className="transform transition-transform group-open:rotate-180">
@@ -193,7 +202,7 @@ function Navbar() {
                           <li key={cat.to}>
                             <Link
                               to={cat.to}
-                              onClick={() => setOpened(false)}
+                              onClick={closeMobileMenu}
                               className="block py-2 text-white text-xl active:scale-[.98]"
                             >
                               {t(cat.key)}
@@ -208,7 +217,7 @@ function Navbar() {
                     <li key={link.to}>
                       <Link
                         to={link.to}
-                        onClick={() => setOpened(false)}
+                        onClick={closeMobileMenu}
                         className="block py-4 text-white text-2xl font-semibold active:scale-[.98]"
                       >
                         {link.label}
