@@ -1,9 +1,10 @@
-# Print7 — Web App  --  https://print7.pt/ 
+# Print7 — https://print7.pt/
 
 A modern React + Vite web app for Print7 (design & advertising).  
 Showcases services, projects, and contact with a clean, responsive UI.
 
 ## 🚀 Tech Stack
+
 - **React + Vite**
 - **Mantine UI** (components) + **@mantine/carousel** (Embla)
 - **Tailwind CSS** (utility-first styling)
@@ -13,6 +14,7 @@ Showcases services, projects, and contact with a clean, responsive UI.
 - **Supabase** for auth & favorites
 
 ## ✨ Features
+
 - **Responsive Navbar**
   - Hamburger full-screen menu on mobile
   - Dropdown for service categories
@@ -37,6 +39,7 @@ Showcases services, projects, and contact with a clean, responsive UI.
 - **Favicon & Meta setup** included
 
 ## 🛠 Getting Started
+
 ```bash
 # install dependencies
 npm i
@@ -69,3 +72,4 @@ Further SEO optimization (structured data, sitemap, Open Graph tags)
 Image optimization (consider next/image alternatives or CDN)
 
 Analytics integration
+```
