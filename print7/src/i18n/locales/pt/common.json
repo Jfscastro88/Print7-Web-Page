@@ -181,7 +181,7 @@
     "home": "Início",
     "about": "Sobre Nós",
     "catalogs": "Catálogos",
-    "contact": "Contacto",
+    "contact": "Contact",
     "categories": "Serviços"
   },
   "footer": {
@@ -304,7 +304,7 @@
     "desc": "A rota que tentou aceder não existe. Verifique o URL ou volte à página inicial.",
     "goHome": "Ir para Início",
     "goBack": "Voltar",
-    "contact": "Contactos",
+    "contact": "Contact",
     "quickLinks": "Links rápidos",
     "links": {
       "about": "Sobre Nós",
@@ -330,7 +330,7 @@
       "desc": "Serviços de design gráfico profissional: criação de logótipos, identidade visual, materiais promocionais e branding. Soluções criativas para empresas em Setúbal."
     },
     "contacts": {
-      "title": "Contactos Print7 - Orçamentos e Informações",
+      "title": "Contact Print7 - Orçamentos e Informações",
       "desc": "Entre em contacto com a Print7 para orçamentos gratuitos e informações sobre os nossos serviços. Localização em Setúbal, atendimento personalizado e resposta rápida."
     },
     "privacy": {

@@ -2,7 +2,7 @@ import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
 
 const SITE_NAME = "Print7";
-const DEFAULT_IMAGE = "/og.jpg";
+const DEFAULT_IMAGE = "/fav.jpg";
 const BASE_URL = import.meta.env.VITE_SITE_URL || "https://print7.pt/";
 
 export default function Seo({
