@@ -181,7 +181,7 @@
     "home": "Início",
     "about": "Sobre Nós",
     "catalogs": "Catálogos",
-    "contact": "Contact",
+    "contact": "Contactos",
     "categories": "Serviços"
   },
   "footer": {
@@ -304,7 +304,7 @@
     "desc": "A rota que tentou aceder não existe. Verifique o URL ou volte à página inicial.",
     "goHome": "Ir para Início",
     "goBack": "Voltar",
-    "contact": "Contact",
+    "contact": "Contactos",
     "quickLinks": "Links rápidos",
     "links": {
       "about": "Sobre Nós",
